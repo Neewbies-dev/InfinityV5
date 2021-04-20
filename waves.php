@@ -1,48 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="fontawesome/css/all.css">
-    <title>Infinity Agency</title>
-</head>
-<body>
-
-                                    <!-- OPENING VIDEO      -->
-    <div class="video">
-    <video id="opening" src="vids/opening.mp4" autoplay="" muted="" playsinline=""  loop="" preload="auto" ></video>
-    </div>
-                                    <!-- BUGRER MENU -->
-<section>
-    <nav>
-
-        <div id="menuToggle">
-            <input type="checkbox"/>
-
-            <span></span>
-            <span></span>
-            <span></span>
-            <ul id="menu">
-                <a href="digital.html">Digital</a>
-                <a href="Strategic.html">Strategic</a>
-                <a href="Influence.html">Influence</a>
-                <a href="Supply.html">Supply chain</a>
-            </ul>
-        </div>
-
-    </nav>
-</section>
-<section>
-                                    <!-- FIRST TITLE -->
-    <div class="title">
-        <h1>An Infinity of Branding</h1>
-        <h2>solutions for e-business</h2>
-    </div>
-</section>
-                                    <!-- WAVES EFFECTS -->
-
 <div class="header">
 
 <!--Content before waves-->
@@ -82,25 +37,7 @@
 
     <!--Content starts-->
     <div class="content flex">
-        <p>Communication. Présence digitale. Développement.Infinity est une agence belge située à liège qui vousfournit une infinité de solutions personnalisées pour votree-commerce grâce à notre panel d'experts. Awesome</p>
+        <p>Communication. Présence digitale. Développement. Infinity est une agence belge située à liège qui vous fournit une infinité de solutions personnalisées pour votre e-commerce grâce à notre panel d'experts. Awesome</p>
         <button>Parlons-en</button>
     </div>
 <!--Content ends-->
-
-
-<h3 class="joinUs">Nous rejoindre en tant que </h3>
-
-<div class="pictures">
-    <img src="img/partenaire2.jpg"/>
-    <img src="img/Influ3.jpg" />
-    <div class="userButton">
-        <p class="part">Partenaires  <i class="fas fa-arrow-right"></i> </p>
-        
-        <p class="influ">Influenceurs  <i class="fas fa-arrow-right"></i> </p>
-    </div>
-    
-</div>
-
-
-</body>
-</html>
