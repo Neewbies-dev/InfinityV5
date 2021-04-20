@@ -1,4 +1,51 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
 
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
 @import "burgermenu.scss";
 @import "waves.scss";
 @import "front-page.scss";
@@ -22,3 +69,49 @@ body {
     src: url(fonts/leelawad.ttf);
 }
 
+// formPart css 
+
+
+.inputPartName, .inputPartName, .inputPartEmail, .inputPartSubject, .inputPartMessage {
+    margin-top: 10px;
+}
+
+#namePart, #emailPart, #subjetPart, #messagePart {
+    margin-top: 10px;
+    width: 400px;
+    height: 40px;
+    border-radius: 10px;
+    border: 1px solid #f3f3f3;
+}
+#messagePart {
+    height: 300px;
+}
+#messagePart::placeholder {
+    padding-top: 12px;
+}
+textarea {
+    resize: none;
+}
+
+#namePart::placeholder, #emailPart::placeholder, #subjetPart::placeholder, #messagePart::placeholder {
+    color: #c7ceda;
+    padding-left: 20px;
+}
+.buttonPart {
+    margin-top: 20px;
+    background-color: #ffbe56;
+    color: white;
+    width: 180px;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-radius: 50px;
+}
+.imagePart2 {
+    width: 50%;
+    margin-top: 100px;
+}
+.containerPart {
+    width: 100%;
+    display: flex;
+}
