@@ -7,5 +7,11 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="fontawesome/css/all.css">
     <link rel="stylesheet" href="formPart.css">
+    <link rel="stylesheet" href="headerClient.css">
     <title>Infinity Agency</title>
 </head>
+<div class="headerClient">
+</div>
+<?php 
+include 'waves2.php'
+?>
