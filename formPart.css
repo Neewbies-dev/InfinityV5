@@ -58,7 +58,7 @@ textarea {
     display: none;
   }
   .imagePart3 {
-    width: 100%;
+    display: none;
   }
   .titlePart {
     font-size: 1.5rem;

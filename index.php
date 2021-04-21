@@ -2,7 +2,7 @@
 include 'header.php' ?>
 
 <?php 
-include 'body.php' ?>
+include 'front-page.php' ?>
 
 <?php 
 include 'footer.php' ?>

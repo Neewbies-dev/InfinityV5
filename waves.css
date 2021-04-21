@@ -4,14 +4,14 @@ body {
 }
 
 h1 {
-  font-family: 'Lato', sans-serif;
+  font-family: Aargh sans-serif;
   font-weight: 300;
   letter-spacing: 2px;
   font-size: 48px;
 }
 
 p {
-  font-family: 'Lato', sans-serif;
+  font-family: Aargh sans-serif;
   letter-spacing: 1px;
   font-size: 14px;
   color: #000000;
@@ -67,18 +67,19 @@ p {
   position: relative;
   height: 20vh;
   text-align: center;
-  background-color: #f08412;
+  background-color: #DF7806;
+  font-family: Aargh sans-serif;
 }
 
 .content button {
   -webkit-transform: scale(1);
           transform: scale(1);
-  -webkit-transition: -webkit-transform 450ms;
-  transition: -webkit-transform 450ms;
-  transition: transform 450ms;
-  transition: transform 450ms, -webkit-transform 450ms;
-  -webkit-transition-delay: 150ms;
-          transition-delay: 150ms;
+  -webkit-transition: -webkit-transform 350ms;
+  transition: -webkit-transform 350ms;
+  transition: transform 350ms;
+  transition: transform 350ms, -webkit-transform 350ms;
+  -webkit-transition-delay: 50ms;
+          transition-delay: 50ms;
 }
 
 .content button:hover {
@@ -174,5 +175,15 @@ p {
   .content {
     height: 60vh;
   }
+}
+
+@font-face {
+  font-family: RabbiHighway sans-serif;
+  src: url("fonts/RabbidHighwaySignII.otf");
+}
+
+@font-face {
+  font-family: Aargh sans-serif;
+  src: url("fonts/Aaargh.ttf");
 }
 /*# sourceMappingURL=waves.css.map */

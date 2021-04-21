@@ -70,7 +70,6 @@ body {
   /* make it look decent enough */
   background: #232323;
   color: #cdcdcd;
-  font-family: "Avenir Next", "Avenir", sans-serif;
 }
 
 #menuToggle {
@@ -183,7 +182,7 @@ body {
 }
 
 #menu a:hover {
-  color: orange;
+  color: #DF7806;
 }
 
 /*
@@ -203,19 +202,27 @@ body {
     margin-right: 2%;
   }
 }
+@font-face {
+  font-family: RabbiHighway sans-serif;
+  src: url("fonts/RabbidHighwaySignII.otf");
+}
+@font-face {
+  font-family: Aargh sans-serif;
+  src: url("fonts/Aaargh.ttf");
+}
 body {
   margin: 0;
 }
 
 h1 {
-  font-family: "Lato", sans-serif;
+  font-family: Aargh sans-serif;
   font-weight: 300;
   letter-spacing: 2px;
   font-size: 48px;
 }
 
 p {
-  font-family: "Lato", sans-serif;
+  font-family: Aargh sans-serif;
   letter-spacing: 1px;
   font-size: 14px;
   color: #000000;
@@ -265,12 +272,13 @@ p {
   position: relative;
   height: 20vh;
   text-align: center;
-  background-color: #f08412;
+  background-color: #DF7806;
+  font-family: Aargh sans-serif;
 }
 .content button {
   transform: scale(1);
-  transition: transform 450ms;
-  transition-delay: 150ms;
+  transition: transform 350ms;
+  transition-delay: 50ms;
 }
 .content button:hover {
   transform: scale(1.15);
@@ -340,136 +348,239 @@ p {
     height: 60vh;
   }
 }
-body {
-  margin: 0;
+@font-face {
+  font-family: RabbiHighway sans-serif;
+  src: url("fonts/RabbidHighwaySignII.otf");
 }
-
-h1 {
-  font-family: "Lato", sans-serif;
-  font-weight: 300;
-  letter-spacing: 2px;
-  font-size: 48px;
+@font-face {
+  font-family: Aargh sans-serif;
+  src: url("fonts/Aaargh.ttf");
 }
-
-p {
-  font-family: "Lato", sans-serif;
-  letter-spacing: 1px;
-  font-size: 14px;
-  color: #000000;
-}
-
-.header {
-  position: relative;
-  text-align: center;
-  background: #DF7806;
-  color: white;
-}
-
-.HeaderWaveClient {
-  background: #DF7806;
-}
-
-.inner-header {
-  height: 15vh;
-  width: 100%;
-  margin: 0;
-  padding: 0;
-}
-
-.HeaderWaveLogoClient2 {
-  width: 100px;
-}
-
-.flex {
-  /*Flexbox for containers*/
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
-.waves {
-  position: relative;
-  width: 100%;
-  height: 15vh;
-  margin-bottom: -7px;
-  /*Fix for safari gap*/
-  min-height: 100px;
-  max-height: 150px;
-}
-
-.content {
-  position: relative;
-  height: 20vh;
-  text-align: center;
-  background-color: #ffffff;
-}
-.content button {
-  transform: scale(1);
-  transition: transform 450ms;
-  transition-delay: 150ms;
-}
-.content button:hover {
-  transform: scale(1.15);
-}
-.content p {
-  width: 70%;
-  padding: 2%;
-}
-
-/* Animation */
-.parallax > use {
-  animation: move-forever 25s cubic-bezier(0.55, 0.5, 0.45, 0.5) infinite;
-}
-
-.parallax > use:nth-child(1) {
-  animation-delay: -2s;
-  animation-duration: 7s;
-}
-
-.parallax > use:nth-child(2) {
-  animation-delay: -3s;
-  animation-duration: 10s;
-}
-
-.parallax > use:nth-child(3) {
-  animation-delay: -4s;
-  animation-duration: 13s;
-}
-
-.parallax > use:nth-child(4) {
-  animation-delay: -5s;
-  animation-duration: 20s;
-}
-
-@keyframes move-forever {
-  0% {
-    transform: translate3d(-90px, 0, 0);
-  }
-  100% {
-    transform: translate3d(85px, 0, 0);
-  }
-}
-/*Shrinking for mobile*/
-@media (max-width: 767px) {
-  .waves {
-    height: 40px;
-    min-height: 40px;
-  }
-
-  .content {
-    height: 30vh;
-  }
-  .content p {
-    margin-bottom: 1%;
+@media only screen and (max-width: 600px) {
+  body {
+    margin: 0;
   }
 
   h1 {
-    font-size: 24px;
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    letter-spacing: 2px;
+    font-size: 48px;
+  }
+
+  p {
+    font-family: "Lato", sans-serif;
+    letter-spacing: 1px;
+    font-size: 14px;
+    color: #000000;
+  }
+
+  .header {
+    position: relative;
+    text-align: center;
+    background: #DF7806;
+    color: white;
+  }
+
+  .HeaderWaveClient {
+    background: #DF7806;
+  }
+
+  .inner-header {
+    height: 15vh;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .HeaderWaveLogoClientMobile {
+    width: 80px;
+    margin-top: 20px;
   }
 
   .flex {
-    flex-direction: column;
+    /*Flexbox for containers*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .waves {
+    position: relative;
+    width: 100%;
+    height: 15vh;
+    margin-bottom: -7px;
+    /*Fix for safari gap*/
+    min-height: 100px;
+    max-height: 150px;
+  }
+
+  .contentWhite {
+    position: relative;
+    height: 8vh;
+    text-align: center;
+    background-color: #ffffff;
+  }
+  .contentWhite button {
+    transform: scale(1);
+    transition: transform 450ms;
+    transition-delay: 150ms;
+  }
+  .contentWhite button:hover {
+    transform: scale(1.15);
+  }
+  .contentWhite p {
+    width: 70%;
+    padding: 2%;
+  }
+
+  /* Animation */
+  .parallax > use {
+    animation: move-forever 25s cubic-bezier(0.55, 0.5, 0.45, 0.5) infinite;
+  }
+
+  .parallax > use:nth-child(1) {
+    animation-delay: -2s;
+    animation-duration: 7s;
+  }
+
+  .parallax > use:nth-child(2) {
+    animation-delay: -3s;
+    animation-duration: 10s;
+  }
+
+  .parallax > use:nth-child(3) {
+    animation-delay: -4s;
+    animation-duration: 13s;
+  }
+
+  .parallax > use:nth-child(4) {
+    animation-delay: -5s;
+    animation-duration: 20s;
+  }
+
+  @keyframes move-forever {
+    0% {
+      transform: translate3d(-90px, 0, 0);
+    }
+    100% {
+      transform: translate3d(85px, 0, 0);
+    }
+  }
+  /*Shrinking for mobile*/
+}
+@media only screen and (min-width: 768px) {
+  body {
+    margin: 0;
+  }
+
+  h1 {
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    letter-spacing: 2px;
+    font-size: 48px;
+  }
+
+  p {
+    font-family: "Lato", sans-serif;
+    letter-spacing: 1px;
+    font-size: 14px;
+    color: #000000;
+  }
+
+  .headerOrange {
+    position: relative;
+    text-align: center;
+    background: #DF7806;
+    color: white;
+  }
+
+  .HeaderWaveClient {
+    background: #DF7806;
+  }
+
+  .inner-header {
+    height: 15vh;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .HeaderWaveLogoClientMobile {
+    width: 80px;
+    margin-top: 20px;
+  }
+
+  .flex {
+    /*Flexbox for containers*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .waves {
+    position: relative;
+    width: 100%;
+    height: 15vh;
+    margin-bottom: -7px;
+    /*Fix for safari gap*/
+    min-height: 100px;
+    max-height: 150px;
+  }
+
+  .contentWhite {
+    position: relative;
+    height: 8vh;
+    text-align: center;
+    background-color: #ffffff;
+  }
+  .contentWhite button {
+    transform: scale(1);
+    transition: transform 450ms;
+    transition-delay: 150ms;
+  }
+  .contentWhite button:hover {
+    transform: scale(1.15);
+  }
+  .contentWhite p {
+    width: 70%;
+    padding: 2%;
+  }
+
+  /* Animation */
+  .parallax > use {
+    animation: move-forever 25s cubic-bezier(0.55, 0.5, 0.45, 0.5) infinite;
+  }
+
+  .parallax > use:nth-child(1) {
+    animation-delay: -2s;
+    animation-duration: 7s;
+  }
+
+  .parallax > use:nth-child(2) {
+    animation-delay: -3s;
+    animation-duration: 10s;
+  }
+
+  .parallax > use:nth-child(3) {
+    animation-delay: -4s;
+    animation-duration: 13s;
+  }
+
+  .parallax > use:nth-child(4) {
+    animation-delay: -5s;
+    animation-duration: 20s;
+  }
+
+  @keyframes move-forever {
+    0% {
+      transform: translate3d(-90px, 0, 0);
+    }
+    100% {
+      transform: translate3d(85px, 0, 0);
+    }
   }
 }
 @media (max-width: 767px) and (orientation: landscape) {
@@ -487,6 +598,19 @@ video {
 
 .title {
   text-align: center;
+  font-family: RabbiHighway sans-serif;
+}
+.title h1 {
+  font-family: RabbiHighway sans-serif;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+.title h1 p {
+  font-size: 3rem;
+  font-family: RabbiHighway sans-serif;
+  text-shadow: black 1px 0px 0px, black 0.540302px 0.841471px 0px, black -0.416147px 0.909297px 0px, black -0.989993px 0.14112px 0px, black -0.653644px -0.756803px 0px, black 0.283662px -0.958924px 0px, black 0.96017px -0.279416px 0px;
+  color: white;
 }
 
 section {
@@ -505,10 +629,11 @@ button {
 }
 
 h3 {
-  color: #f08412;
+  color: #DF7806;
   text-align: center;
   margin: 5%;
-  font-size: 1.5rem;
+  font-size: 2rem;
+  font-family: RabbiHighway sans-serif;
 }
 
 .pictures {
@@ -521,7 +646,7 @@ h3 {
   position: relative;
 }
 .pictures i {
-  color: #ac0909;
+  color: #C30700;
   margin-left: 3px;
 }
 
@@ -562,7 +687,7 @@ h3 {
     margin-bottom: 15px;
   }
   .pictures i {
-    color: #ac0909;
+    color: #C30700;
   }
 }
 @media screen and (min-width: 740px) and (max-width: 1025px) {
@@ -598,26 +723,250 @@ h3 {
     margin: auto;
   }
   .pictures i {
-    color: #ac0909;
+    color: #C30700;
   }
   .pictures .influ {
     width: 160px;
   }
+}
+@font-face {
+  font-family: RabbiHighway sans-serif;
+  src: url("fonts/RabbidHighwaySignII.otf");
+}
+@font-face {
+  font-family: Aargh sans-serif;
+  src: url("fonts/Aaargh.ttf");
+}
+.mainFooter {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.contentFooter {
+  display: flex;
+  flex-direction: column;
+  padding: 5%;
+}
+
+.content2Footer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2%;
+}
+
+.logoFooter {
+  width: 10%;
+}
+
+.socialFooter {
+  width: 200%;
+  border-right: 1px black solid;
+}
+.socialFooter p {
+  font-size: 2.5rem;
+}
+.socialFooter:nth-child(1) {
+  order: 2;
+}
+.socialFooter .socialIcon {
+  display: flex;
+  justify-content: center;
+}
+.socialFooter p {
+  width: auto;
+}
+
+.infoFooter {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.infoFooter:nth-child(2) {
+  order: 2;
+}
+
+.titleFooter {
+  font-size: 16px;
+  color: white;
+  font-weight: bold;
+}
+
+.contactFooter {
+  border-right: 1px black solid;
+  width: 70%;
+}
+.contactFooter:nth-child(3) {
+  order: 1;
+}
+
+.copyrightFooter {
+  display: flex;
+  justify-content: space-between;
+  font-size: 8px;
+  width: 100%;
+}
+.copyrightFooter p {
+  text-align: left;
+}
+.copyrightFooter ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.copyrightFooter ul li {
+  margin-right: 2px;
+}
+
+@media screen and (max-width: 767px) {
+  .contentFooter {
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .content2Footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .logoFooter {
+    width: 40%;
+    margin-bottom: 5%;
+  }
+
+  .socialFooter {
+    width: 100%;
+    border: none;
+  }
+  .socialFooter p {
+    font-size: 1rem;
+  }
+
+  .socialIcon i {
+    font-size: 1.5rem;
+  }
+
+  .infoFooter {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .contactFooter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: none;
+  }
+
+  .copyrightFooter {
+    border-top: 1px black solid;
+    font-size: 12px;
+    color: #bbbbbb;
+    display: flex;
+    align-items: center;
+  }
+  .copyrightFooter p {
+    font-size: 8px;
+  }
+  .copyrightFooter ul {
+    font-size: 8px;
+  }
+}
+@media screen and (min-width: 740px) and (max-width: 1025px) {
+  .contentFooter {
+    flex-direction: column;
+  }
+
+  .content2Footer {
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .mainFooter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .logoFooter {
+    margin-top: 5%;
+    margin-left: 5%;
+    width: 20%;
+  }
+
+  .socialFooter {
+    width: 100%;
+    border: none;
+  }
+  .socialFooter a {
+    font-size: 1.8rem;
+  }
+  .socialFooter p {
+    font-size: 1.3rem;
+  }
+
+  .copyrightFooter {
+    border-top: 1px black solid;
+    font-size: 12px;
+    color: #bbbbbb;
+    display: flex;
+    align-items: center;
+  }
+
+  .infoFooter {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .contactFooter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    border: none;
+  }
+}
+@font-face {
+  font-family: RabbiHighway sans-serif;
+  src: url("fonts/RabbidHighwaySignII.otf");
+}
+@font-face {
+  font-family: Aargh sans-serif;
+  src: url("fonts/Aaargh.ttf");
 }
 * {
   margin: 0;
   padding: 0;
 }
 
+a {
+  text-decoration: none;
+  color: black;
+}
+
+ul {
+  list-style-type: none;
+}
+
 body {
   background-color: white;
   color: black;
-  font-family: Leelawad, sans-serif;
 }
 
 @font-face {
-  font-family: Leelawad, sans-serif;
-  src: url(fonts/leelawad.ttf);
+  font-family: RabbiHighway sans-serif;
+  src: url("fonts/RabbidHighwaySignII.otf");
+}
+@font-face {
+  font-family: Aargh sans-serif;
+  src: url("fonts/Aaargh.ttf");
 }
 
 /*# sourceMappingURL=style.css.map */

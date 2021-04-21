@@ -51,6 +51,12 @@ table {
 @import "waves2.scss";
 @import "headerClient.scss";
 @import "front-page.scss";
+@import "footer.scss";
+
+
+$dark-orange : #DF7806;
+$light-orange: #F99E0B;
+$red: #C30700;
 
 * {
 
@@ -58,15 +64,30 @@ table {
     padding: 0;
 }
 
+a {
+
+    text-decoration: none;
+    color:black;
+}
+
+ul {
+
+    list-style-type: none;
+}
 
 body {
 
     background-color: white;
     color:black;
-    font-family: Leelawad, sans-serif;
+    
 }
 
 @font-face {
-    font-family: Leelawad, sans-serif;
-    src: url(fonts/leelawad.ttf);
+    font-family: RabbiHighway sans-serif;
+    src: url('fonts/RabbidHighwaySignII.otf');
 }
+
+@font-face {
+    font-family: Aargh sans-serif;
+    src: url('fonts/Aaargh.ttf');
+  }

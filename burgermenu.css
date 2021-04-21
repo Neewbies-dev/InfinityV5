@@ -14,7 +14,6 @@ body {
   /* make it look decent enough */
   background: #232323;
   color: #cdcdcd;
-  font-family: "Avenir Next", "Avenir", sans-serif;
 }
 
 #menuToggle {
@@ -149,7 +148,7 @@ body {
 }
 
 #menu a:hover {
-  color: orange;
+  color: #DF7806;
 }
 
 /*
@@ -172,5 +171,15 @@ body {
   #menu a {
     margin-right: 2%;
   }
+}
+
+@font-face {
+  font-family: RabbiHighway sans-serif;
+  src: url("fonts/RabbidHighwaySignII.otf");
+}
+
+@font-face {
+  font-family: Aargh sans-serif;
+  src: url("fonts/Aaargh.ttf");
 }
 /*# sourceMappingURL=burgermenu.css.map */
