@@ -9,6 +9,11 @@
  * prefixes.
  */
 
+$dark-orange : #DF7806;
+$light-orange: #F99E0B;
+$red: #C30700;
+
+
  body
  {
    margin: 0;
@@ -17,7 +22,7 @@
    /* make it look decent enough */
    background: #232323;
    color: #cdcdcd;
-   font-family: "Avenir Next", "Avenir", sans-serif;
+  
  }
  
  #menuToggle
@@ -162,7 +167,7 @@
 #menu a {
     &:hover{
 
-        color:orange;
+        color:$dark-orange;
        }
 }
 
@@ -191,3 +196,12 @@
  }
 
  
+ @font-face {
+  font-family: RabbiHighway sans-serif;
+  src: url('fonts/RabbidHighwaySignII.otf');
+}
+
+@font-face {
+  font-family: Aargh sans-serif;
+  src: url('fonts/Aaargh.ttf');
+}

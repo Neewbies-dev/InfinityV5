@@ -1,5 +1,7 @@
 
-
+$dark-orange : #DF7806;
+$light-orange: #F99E0B;
+$red: #C30700;
 
 @import url(//fonts.googleapis.com/css?family=Lato:300:400);
 
@@ -8,13 +10,13 @@ body {
 }
 
 h1 {
-  font-family: 'Lato', sans-serif;
+  font-family: Aargh sans-serif;
   font-weight:300;
   letter-spacing: 2px;
   font-size:48px;
 }
 p {
-  font-family: 'Lato', sans-serif;
+  font-family: Aargh sans-serif;
   letter-spacing: 1px;
   font-size:14px;
   color: #000000;
@@ -61,12 +63,14 @@ p {
   position:relative;
   height:20vh;
   text-align:center;
-  background-color: #f08412;
+  background-color: $dark-orange;
+  font-family: Aargh sans-serif;
+
 
   button {
     transform: scale(1);
-    transition: transform 450ms;
-    transition-delay:  150ms; 
+    transition: transform 350ms;
+    transition-delay:  50ms; 
     &:hover {
         transform:scale(1.15);
   }
@@ -141,3 +145,12 @@ p {
 
 
 
+@font-face {
+  font-family: RabbiHighway sans-serif;
+  src: url('fonts/RabbidHighwaySignII.otf');
+}
+
+@font-face {
+  font-family: Aargh sans-serif;
+  src: url('fonts/Aaargh.ttf');
+}
