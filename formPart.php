@@ -1,11 +1,11 @@
 <?php 
-include 'header.php' 
+include 'headerClient.php' 
 ?>
 <!-- creat a contact form partenaire -->
 <div class="containerPart">
     <div class="leftPart">
         <h2 class="titlePart">Get in Touch</h2>
-        <p class="description part">Sed ut perspiciatis unde omnis iste natus error sit volupatem accusantium dolorem laudantium totam</p>
+        <p class="textPart">Sed ut perspiciatis unde omnis iste natus error sit volupatem accusantium dolorem laudantium totam</p>
         <div calss="formPart">
             <form method = "post">
                 <div><input class="inputPartName" type="name" placeholder="Your Name" name="your Name" id="namePart"></div>
