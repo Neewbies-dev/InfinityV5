@@ -18,7 +18,8 @@ include 'headerClient.php'
         </div>
     </div>
     <div class="imagePart">
-        <img class="imagePart2" src="img/imagetemp.jpeg" alt="troti">
+        <img class="imagePart2" src="img/contact-us.png" alt="contactez-nous-infinity-agency">
+        <img class="imagePart3" src="img/infinity-agency.png" alt="infinity agency">
     </div>
 </div>
 <?php 

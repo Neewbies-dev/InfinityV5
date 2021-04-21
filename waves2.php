@@ -1,6 +1,10 @@
-
+<div class ="HeaderWaveClient">
+    <div class="HeaderWaveLogoClient">
+    <img class="HeaderWaveLogoClient2" src="img/infinity-agency.png" alt="infinity agency">
+    </div>
+    <?php include "burgermenu.php" ?>
+</div>
 <div class="header">
-
 <!--Content before waves-->
     <div class="inner-header flex">
         <!--Just the logo.. Don't mind this-->
@@ -36,7 +40,5 @@
 
     <!--Content starts-->
     <div class="content flex">
-        <p>Communication. Présence digitale. Développement. Infinity est une agence belge située à liège qui vous fournit une infinité de solutions personnalisées pour votre e-commerce grâce à notre panel d'experts. Awesome</p>
-        <button>Parlons-en</button>
     </div>
 <!--Content ends-->

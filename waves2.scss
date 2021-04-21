@@ -26,13 +26,10 @@ p {
   background: #DF7806;
   color:white;
 }
-.logo {
-  width:50px;
-  fill:white;
-  padding-right:15px;
-  display:inline-block;
-  vertical-align: middle;
+.HeaderWaveClient {
+    background: #DF7806;
 }
+
 
 .inner-header {
   height:15vh;
@@ -40,7 +37,9 @@ p {
   margin: 0;
   padding: 0;
 }
-
+.HeaderWaveLogoClient2 {
+    width: 100px;
+}
 .flex { /*Flexbox for containers*/
   display: flex;
   justify-content: center;

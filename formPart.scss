@@ -7,6 +7,7 @@ textarea {
 // Mobile format
 
 @media only screen and (max-width: 600px){
+    
     .inputPartName, .inputPartName, .inputPartEmail, .inputPartSubject, .inputPartMessage {
         margin-top: 10px;
     }
@@ -41,9 +42,10 @@ textarea {
     }
 
     .imagePart2 {
-        // width: 355px;
-        // margin-top: 30px;
         display: none;
+    }
+    .imagePart3 {
+        width: 100%;
     }
     .titlePart {
         font-size: 1.5rem;
@@ -113,6 +115,9 @@ textarea {
     .inputPartName, .inputPartName, .inputPartEmail, .inputPartSubject, .inputPartMessage {
         margin-top: 10px;
     }
+    // input {
+    //     margin-left: 10px;
+    // }
 
     #namePart, #emailPart, #subjetPart, #messagePart {
         margin-top: 10px;
@@ -143,10 +148,21 @@ textarea {
         border-radius: 50px;
     }
 
+    .imagePart {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 60px;
+    }
+
     .imagePart2 {
         width: 100%;
         margin-top: 30px;
-        margin-left: 60px;
+    }
+    .imagePart3 {
+        display: flex;
+        width: 70%;
+        justify-content: center;
     }
     .titlePart {
         font-size: 1.5rem;
@@ -169,5 +185,71 @@ textarea {
 }    
 
 @media only screen and (min-width: 1200px) {
+    .inputPartName, .inputPartName, .inputPartEmail, .inputPartSubject, .inputPartMessage {
+        margin-top: 10px;
+    }
+    // input {
+    //     margin-left: 10px;
+    // }
+    #namePart, #emailPart, #subjetPart, #messagePart {
+        margin-top: 10px;
+        width: 150%;
+        height: 40px;
+        border-radius: 10px;
+        border: 1px solid #f3f3f3;
+    }
+    #messagePart {
+        height: 150px;
+    }
+    #messagePart::placeholder {
+        padding-top: 12px;
+    }
 
+    #namePart::placeholder, #emailPart::placeholder, #subjetPart::placeholder, #messagePart::placeholder {
+        color: #c7ceda;
+        padding-left: 20px;
+    }
+    .buttonPart {
+        margin-top: 20px;
+        background-color: #ffbe56;
+        color: white;
+        width: 180px;
+        text-align: center;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        border-radius: 50px;
+    }
+    .imagePart {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 60px;
+    }
+
+    .imagePart2 {
+        width: 100%;
+        margin-top: 30px;
+    }
+    .imagePart3 {
+        display: flex;
+        width: 70%;
+        justify-content: center;
+    }
+    .titlePart {
+        font-size: 1.5rem;
+        margin-bottom: 15px ;
+    }
+    .textPart {
+        margin-bottom: 15px;
+    }
+
+    .containerPart {
+        margin-top: 50px;
+        margin-right: 80px;
+        margin-left: 80px;
+        display: flex;
+    }
+    .leftPart {
+        margin-right: 200px;
+    } 
 }

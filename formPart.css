@@ -57,6 +57,9 @@ textarea {
   .imagePart2 {
     display: none;
   }
+  .imagePart3 {
+    width: 100%;
+  }
   .titlePart {
     font-size: 1.5rem;
     margin-bottom: 10px;
@@ -183,10 +186,129 @@ textarea {
     padding-bottom: 15px;
     border-radius: 50px;
   }
+  .imagePart {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-left: 60px;
+  }
   .imagePart2 {
     width: 100%;
     margin-top: 30px;
+  }
+  .imagePart3 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 70%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .titlePart {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+  }
+  .textPart {
+    margin-bottom: 15px;
+  }
+  .containerPart {
+    margin-top: 50px;
+    margin-right: 80px;
+    margin-left: 80px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .leftPart {
+    margin-right: 200px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .inputPartName, .inputPartName, .inputPartEmail, .inputPartSubject, .inputPartMessage {
+    margin-top: 10px;
+  }
+  #namePart, #emailPart, #subjetPart, #messagePart {
+    margin-top: 10px;
+    width: 150%;
+    height: 40px;
+    border-radius: 10px;
+    border: 1px solid #f3f3f3;
+  }
+  #messagePart {
+    height: 150px;
+  }
+  #messagePart::-webkit-input-placeholder {
+    padding-top: 12px;
+  }
+  #messagePart:-ms-input-placeholder {
+    padding-top: 12px;
+  }
+  #messagePart::-ms-input-placeholder {
+    padding-top: 12px;
+  }
+  #messagePart::placeholder {
+    padding-top: 12px;
+  }
+  #namePart::-webkit-input-placeholder, #emailPart::-webkit-input-placeholder, #subjetPart::-webkit-input-placeholder, #messagePart::-webkit-input-placeholder {
+    color: #c7ceda;
+    padding-left: 20px;
+  }
+  #namePart:-ms-input-placeholder, #emailPart:-ms-input-placeholder, #subjetPart:-ms-input-placeholder, #messagePart:-ms-input-placeholder {
+    color: #c7ceda;
+    padding-left: 20px;
+  }
+  #namePart::-ms-input-placeholder, #emailPart::-ms-input-placeholder, #subjetPart::-ms-input-placeholder, #messagePart::-ms-input-placeholder {
+    color: #c7ceda;
+    padding-left: 20px;
+  }
+  #namePart::placeholder, #emailPart::placeholder, #subjetPart::placeholder, #messagePart::placeholder {
+    color: #c7ceda;
+    padding-left: 20px;
+  }
+  .buttonPart {
+    margin-top: 20px;
+    background-color: #ffbe56;
+    color: white;
+    width: 180px;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-radius: 50px;
+  }
+  .imagePart {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     margin-left: 60px;
+  }
+  .imagePart2 {
+    width: 100%;
+    margin-top: 30px;
+  }
+  .imagePart3 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 70%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .titlePart {
     font-size: 1.5rem;
