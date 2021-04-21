@@ -34,8 +34,5 @@
     <!--Header ends-->
 
     <!--Content starts-->
-    <div class="content flex">
-        <p>Communication. Présence digitale. Développement. Infinity est une agence belge située à liège qui vous fournit une infinité de solutions personnalisées pour votre e-commerce grâce à notre panel d'experts. Awesome</p>
-        <button>Parlons-en</button>
-    </div>
+    
 <!--Content ends-->
