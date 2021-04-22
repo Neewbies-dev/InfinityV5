@@ -156,6 +156,8 @@
   .logoFooter {
     width: 40%;
     margin-bottom: 5%;
+    margin-left: auto;
+    margin-right: auto;
   }
   .socialFooter {
     width: 100%;

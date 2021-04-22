@@ -24,7 +24,10 @@ $red: #C30700;
    color: #cdcdcd;
   
  }
- 
+ #menuToggle {
+   display: none;
+ }
+ @media only screen and (max-width: 768px) {
  #menuToggle
  {
    display: block;
@@ -180,7 +183,7 @@ $red: #C30700;
  {
    transform: none;
  }
-
+ }
  @media screen and (max-width: 767px) {
 
     #menu{

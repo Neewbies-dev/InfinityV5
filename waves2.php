@@ -3,6 +3,12 @@
 <div class="headerOrange">
     <div class="HeaderWaveLogoClient">
     <img class="HeaderWaveLogoClientMobile" src="img/infinity-agency.png" alt="infinity agency">
+    <div class="menuDesktop">
+        <a href="digital.html">Digital</a>
+        <a href="Strategic.html">Strategic</a>
+        <a href="Influence.html">Influence</a>
+        <a href="Supply.html">Supply chain</a>
+    </div>
     </div>
     <?php include "menu.php" ?>
 <!--Content before waves-->
