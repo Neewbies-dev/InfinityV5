@@ -3,7 +3,6 @@
    License: none (public domain)
 */
 @import url(//fonts.googleapis.com/css?family=Lato:300:400);
-@import url(//fonts.googleapis.com/css?family=Lato:300:400);
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -617,7 +616,7 @@ section {
   position: relative;
 }
 
-button {
+.content button {
   background-color: rgba(255, 255, 255, 0.609);
   color: black;
   font-weight: bold;
@@ -933,6 +932,111 @@ h3 {
     border: none;
   }
 }
+@font-face {
+  font-family: RabbiHighway sans-serif;
+  src: url("fonts/RabbidHighwaySignII.otf");
+}
+@font-face {
+  font-family: Aargh sans-serif;
+  src: url("fonts/Aaargh.ttf");
+}
+.formContainer {
+  width: 360px;
+  height: 400px;
+  margin: 8% auto;
+  background: #fff;
+  border-radius: 5px;
+  position: relative;
+  overflow: hidden;
+}
+.formContainer form {
+  width: 280px;
+  position: absolute;
+  top: 100px;
+  left: 40px;
+  transition: 0.5s;
+}
+.formContainer form input {
+  width: 100%;
+  padding: 10px 5px;
+  margin: 5px 0;
+  border: 0;
+  border-bottom: 1px solid #999;
+  outline: none;
+  background: transparent;
+}
+.formContainer form input::placeholder {
+  color: #777;
+}
+
+.formTitle {
+  text-align: center;
+  margin-bottom: 40px;
+  color: #777;
+}
+
+#Next1, #Back2, #Back1, #Next2 {
+  width: 110px;
+  height: 35px;
+  margin: 0 10px;
+  background: #DF7806;
+  border-radius: 30px;
+  border: 0;
+  outline: none;
+  color: #fff;
+  cursor: pointer;
+}
+
+.btn-box {
+  width: 100%;
+  margin: 30px auto;
+  text-align: center;
+}
+
+#Form2 {
+  left: 450px;
+}
+
+#Form3 {
+  left: 450px;
+}
+
+.step-row {
+  width: 360px;
+  height: 40px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 -1px 5px 1px #000;
+  position: relative;
+}
+
+.step-col {
+  width: 120px;
+  text-align: center;
+  color: #333;
+  position: relative;
+}
+
+#progress {
+  position: absolute;
+  height: 100%;
+  width: 120px;
+  background: #F99E0B;
+  transition: 1s;
+}
+#progress::after {
+  content: "";
+  height: 0;
+  width: 0;
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+  position: absolute;
+  right: -20px;
+  top: 0;
+  border-left: 20px solid #DF7806;
+}
+
 @font-face {
   font-family: RabbiHighway sans-serif;
   src: url("fonts/RabbidHighwaySignII.otf");

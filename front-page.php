@@ -31,7 +31,7 @@ include "waves.php"
     <img src="img/partenaire2.jpg"/>
     <img src="img/Influ3.jpg" />
     <div class="userButton">
-        <p class="part"> <a  href="formPart.php"> <i class="fas fa-arrow-left"></i>Partenaires    </a> </p>
+        <p class="part"> <a  href="formPart.php"> <i class="fas fa-arrow-left"></i> Partenaires    </a> </p>
         
         <p class="influ"> <a  href="formInflu.php">Influenceurs  <i class="fas fa-arrow-right"></i> </a> </p>
     </div>
