@@ -508,8 +508,10 @@ p {
   }
 
   .HeaderWaveLogoClientMobile {
-    width: 80px;
+    width: 150px;
     margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .flex {
@@ -599,13 +601,6 @@ p {
 }
 .menuDesktop > a {
   margin-right: 10px;
-}
-
-.HeaderWaveLogoClient {
-  display: flex;
-  justify-content: space-between;
-  margin-left: 80px;
-  margin-right: 80px;
 }
 
 .menuDesktop {

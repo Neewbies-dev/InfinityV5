@@ -156,8 +156,10 @@
     padding: 0;
   }
   .HeaderWaveLogoClientMobile {
-    width: 80px;
+    width: 150px;
     margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
   }
   .flex {
     /*Flexbox for containers*/
@@ -273,17 +275,6 @@
 
 .menuDesktop > a {
   margin-right: 10px;
-}
-
-.HeaderWaveLogoClient {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  margin-left: 80px;
-  margin-right: 80px;
 }
 
 .menuDesktop {
