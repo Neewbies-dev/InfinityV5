@@ -32,7 +32,7 @@ textarea {
     }
     .buttonPart {
         margin-top: 20px;
-        background-color: #ffbe56;
+        background-color: #DF7806;
         color: white;
         width: 180px;
         text-align: center;
@@ -59,7 +59,7 @@ textarea {
 
 // Tablet format
 
-@media only screen and (min-width: 767px) {
+@media only screen and (min-width: 768px) {
 
     .containerPart {
         margin: 20px;
@@ -88,7 +88,7 @@ textarea {
     }
     .buttonPart {
         margin-top: 20px;
-        background-color: #ffbe56;
+        background-color: #DF7806;
         color: white;
         width: 180px;
         text-align: center;
@@ -97,9 +97,18 @@ textarea {
         border-radius: 50px;
     }
 
+    .imagePart {
+        display: flex;
+        flex-direction: column;
+    }
     .imagePart2 {
         width: 100%;
         margin-top: 30px;
+    }
+    .imagePart3 {
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
     }
     .titlePart {
         font-size: 1.5rem;
@@ -139,7 +148,7 @@ textarea {
     }
     .buttonPart {
         margin-top: 20px;
-        background-color: #ffbe56;
+        background-color: #DF7806;
         color: white;
         width: 180px;
         text-align: center;
@@ -211,7 +220,7 @@ textarea {
     }
     .buttonPart {
         margin-top: 20px;
-        background-color: #ffbe56;
+        background-color: #DF7806;
         color: white;
         width: 180px;
         text-align: center;
