@@ -81,7 +81,7 @@ textarea {
     width: 100%;
     height: 40px;
     border-radius: 10px;
-    border: 1px solid #f3f3f3;
+    border: 1px solid #868686;
   }
   #messagePart {
     height: 150px;
@@ -99,19 +99,19 @@ textarea {
     padding-top: 12px;
   }
   #namePart::-webkit-input-placeholder, #emailPart::-webkit-input-placeholder, #subjetPart::-webkit-input-placeholder, #messagePart::-webkit-input-placeholder {
-    color: #c7ceda;
+    color: #9c9c9c;
     padding-left: 20px;
   }
   #namePart:-ms-input-placeholder, #emailPart:-ms-input-placeholder, #subjetPart:-ms-input-placeholder, #messagePart:-ms-input-placeholder {
-    color: #c7ceda;
+    color: #9c9c9c;
     padding-left: 20px;
   }
   #namePart::-ms-input-placeholder, #emailPart::-ms-input-placeholder, #subjetPart::-ms-input-placeholder, #messagePart::-ms-input-placeholder {
-    color: #c7ceda;
+    color: #9c9c9c;
     padding-left: 20px;
   }
   #namePart::placeholder, #emailPart::placeholder, #subjetPart::placeholder, #messagePart::placeholder {
-    color: #c7ceda;
+    color: #9c9c9c;
     padding-left: 20px;
   }
   .buttonPart {
@@ -250,7 +250,7 @@ textarea {
   }
   #namePart, #emailPart, #subjetPart, #messagePart {
     margin-top: 10px;
-    width: 150%;
+    width: 110%;
     height: 40px;
     border-radius: 10px;
     border: 1px solid #f3f3f3;

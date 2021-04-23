@@ -3,7 +3,6 @@
    License: none (public domain)
 */
 @import url(//fonts.googleapis.com/css?family=Lato:300:400);
-@import url(//fonts.googleapis.com/css?family=Lato:300:400);
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -386,17 +385,17 @@ p {
   }
 
   .inner-header {
-    height: 15vh;
+    height: 1vh;
     width: 100%;
     margin: 0;
     padding: 0;
   }
 
   .HeaderWaveLogoClientMobile {
-    width: 100px;
-    margin-top: 20px;
-    margin-left: auto;
-    margin-right: auto;
+    display: flex;
+    width: 80px;
+    padding-top: 20px;
+    margin-left: 15px;
   }
 
   .flex {
@@ -501,17 +500,17 @@ p {
   }
 
   .inner-header {
-    height: 15vh;
+    height: 1vh;
     width: 100%;
     margin: 0;
     padding: 0;
   }
 
   .HeaderWaveLogoClientMobile {
-    width: 150px;
-    margin-top: 20px;
-    margin-left: auto;
-    margin-right: auto;
+    display: flex;
+    width: 100px;
+    padding-top: 20px;
+    margin-left: 30px;
   }
 
   .flex {
@@ -636,7 +635,7 @@ section {
   position: relative;
 }
 
-button {
+.content button {
   background-color: rgba(255, 255, 255, 0.609);
   color: black;
   font-weight: bold;
@@ -985,6 +984,662 @@ h3 {
 @font-face {
   font-family: Aargh sans-serif;
   src: url("fonts/Aaargh.ttf");
+}
+.contactUs {
+  font-weight: 400;
+  padding-top: 0;
+  margin-top: 0;
+  font-family: RabbiHighway sans-serif;
+  text-align: center;
+}
+
+#svg_form_time {
+  height: 15px;
+  max-width: 80%;
+  margin: 40px auto 20px;
+  display: block;
+}
+
+#svg_form_time circle,
+#svg_form_time rect {
+  fill: white;
+}
+
+.buttonForm {
+  background: #DF7806;
+  border-radius: 5px;
+  padding: 15px 25px;
+  display: inline-block;
+  margin: 10px;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
+  display: flex;
+  margin-right: auto;
+  margin-left: auto;
+  width: 5%;
+  font-family: Marie sans-serif;
+}
+
+.disabled {
+  display: none;
+}
+
+.sectionForm {
+  padding: 50px;
+  max-width: 300px;
+  margin: 30px auto;
+  background: white;
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(10px);
+  box-shadow: 0px 2px 10px 2px rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+  transition: transform 0.2s ease-in-out;
+}
+.sectionForm input {
+  width: 100%;
+  margin: 7px 0px;
+  display: inline-block;
+  padding: 12px 25px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  border: 1px solid lightgrey;
+  font-size: 1em;
+  font-family: Aargh sans-serif;
+  background: white;
+}
+.sectionForm p {
+  text-align: justify;
+  margin-top: 0;
+  font-family: Marie sans-serif;
+}
+.sectionForm textarea {
+  width: 100%;
+  margin: 7px 0px;
+  display: inline-block;
+  padding: 12px 25px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  border: 1px solid lightgrey;
+  font-size: 1em;
+  font-family: Aargh sans-serif;
+  background: white;
+}
+
+@media only screen and (max-width: 600px) {
+  .buttonForm {
+    width: 30%;
+    font-family: Marie sans-serif;
+  }
+}
+@font-face {
+  font-family: RabbiHighway sans-serif;
+  src: url("fonts/RabbidHighwaySignII.otf");
+}
+@font-face {
+  font-family: Aargh sans-serif;
+  src: url("fonts/Aaargh.ttf");
+}
+@font-face {
+  font-family: Marie sans-serif;
+  src: url("fonts/StMarie-Thin.otf");
+}
+textarea {
+  resize: none;
+}
+
+@media only screen and (max-width: 600px) {
+  .inputPartName, .inputPartName, .inputPartEmail, .inputPartSubject, .inputPartMessage {
+    margin-top: 10px;
+  }
+
+  #namePart, #emailPart, #subjetPart, #messagePart {
+    margin-top: 10px;
+    width: 100%;
+    height: 40px;
+    border-radius: 10px;
+    border: 1px solid #f3f3f3;
+  }
+
+  #messagePart {
+    height: 150px;
+  }
+
+  #messagePart::placeholder {
+    padding-top: 12px;
+  }
+
+  #namePart::placeholder, #emailPart::placeholder, #subjetPart::placeholder, #messagePart::placeholder {
+    color: #c7ceda;
+    padding-left: 20px;
+  }
+
+  .buttonPart {
+    margin-top: 20px;
+    background-color: #DF7806;
+    color: white;
+    width: 180px;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-radius: 50px;
+  }
+
+  .imagePart2 {
+    display: none;
+  }
+
+  .imagePart3 {
+    display: none;
+  }
+
+  .titlePart {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+
+  .containerPart {
+    margin: 10px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .containerPart {
+    margin: 20px;
+  }
+
+  .inputPartName, .inputPartName, .inputPartEmail, .inputPartSubject, .inputPartMessage {
+    margin-top: 10px;
+  }
+
+  #namePart, #emailPart, #subjetPart, #messagePart {
+    margin-top: 10px;
+    width: 100%;
+    height: 40px;
+    border-radius: 10px;
+    border: 1px solid #868686;
+  }
+
+  #messagePart {
+    height: 150px;
+  }
+
+  #messagePart::placeholder {
+    padding-top: 12px;
+  }
+
+  #namePart::placeholder, #emailPart::placeholder, #subjetPart::placeholder, #messagePart::placeholder {
+    color: #9c9c9c;
+    padding-left: 20px;
+  }
+
+  .buttonPart {
+    margin-top: 20px;
+    background-color: #DF7806;
+    color: white;
+    width: 180px;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-radius: 50px;
+  }
+
+  .imagePart {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .imagePart2 {
+    width: 100%;
+    margin-top: 30px;
+  }
+
+  .imagePart3 {
+    display: none;
+  }
+
+  .titlePart {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .inputPartName, .inputPartName, .inputPartEmail, .inputPartSubject, .inputPartMessage {
+    margin-top: 10px;
+  }
+
+  #namePart, #emailPart, #subjetPart, #messagePart {
+    margin-top: 10px;
+    width: 150%;
+    height: 40px;
+    border-radius: 10px;
+    border: 1px solid #f3f3f3;
+  }
+
+  #messagePart {
+    height: 150px;
+  }
+
+  #messagePart::placeholder {
+    padding-top: 12px;
+  }
+
+  #namePart::placeholder, #emailPart::placeholder, #subjetPart::placeholder, #messagePart::placeholder {
+    color: #c7ceda;
+    padding-left: 20px;
+  }
+
+  .buttonPart {
+    margin-top: 20px;
+    background-color: #DF7806;
+    color: white;
+    width: 180px;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-radius: 50px;
+  }
+
+  .imagePart {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 60px;
+  }
+
+  .imagePart2 {
+    width: 100%;
+    margin-top: 30px;
+  }
+
+  .imagePart3 {
+    display: flex;
+    width: 70%;
+    justify-content: center;
+  }
+
+  .titlePart {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+  }
+
+  .textPart {
+    margin-bottom: 15px;
+  }
+
+  .containerPart {
+    margin-top: 50px;
+    margin-right: 80px;
+    margin-left: 80px;
+    display: flex;
+  }
+
+  .leftPart {
+    margin-right: 200px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .inputPartName, .inputPartName, .inputPartEmail, .inputPartSubject, .inputPartMessage {
+    margin-top: 10px;
+  }
+
+  #namePart, #emailPart, #subjetPart, #messagePart {
+    margin-top: 10px;
+    width: 110%;
+    height: 40px;
+    border-radius: 10px;
+    border: 1px solid #f3f3f3;
+  }
+
+  #messagePart {
+    height: 150px;
+  }
+
+  #messagePart::placeholder {
+    padding-top: 12px;
+  }
+
+  #namePart::placeholder, #emailPart::placeholder, #subjetPart::placeholder, #messagePart::placeholder {
+    color: #c7ceda;
+    padding-left: 20px;
+  }
+
+  .buttonPart {
+    margin-top: 20px;
+    background-color: #DF7806;
+    color: white;
+    width: 180px;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-radius: 50px;
+  }
+
+  .imagePart {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 60px;
+  }
+
+  .imagePart2 {
+    width: 100%;
+    margin-top: 30px;
+  }
+
+  .imagePart3 {
+    display: flex;
+    width: 70%;
+    justify-content: center;
+  }
+
+  .titlePart {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+  }
+
+  .textPart {
+    margin-bottom: 15px;
+  }
+
+  .containerPart {
+    margin-top: 50px;
+    margin-right: 80px;
+    margin-left: 80px;
+    display: flex;
+  }
+
+  .leftPart {
+    margin-right: 200px;
+  }
+}
+.buttonPart {
+  cursor: pointer;
+}
+
+/***************************
+ *  Variables
+ **************************/
+/***************************
+ *  Project Main Styles
+ **************************/
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1em;
+  background-color: #e2e2e2;
+}
+
+/***************************
+ *  Application Main Styles
+ **************************/
+#menu--toggle[type=checkbox]:not(:checked),
+#menu--toggle[type=checkbox]:checked {
+  display: none;
+}
+
+.menu--toggle__trigger,
+.menu--toggle__burger,
+.menu--toggle__burger:before,
+.menu--toggle__burger:after {
+  position: absolute;
+  margin-right: 30px;
+  top: -3em;
+  right: 1.6em;
+  width: 2em;
+  height: 5px;
+  background-color: #282828;
+  border-radius: 2px;
+  cursor: pointer;
+  z-index: 100;
+  transition: 0.35s cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+
+.menu--toggle__trigger {
+  height: 2em;
+  background: none;
+}
+
+.menu--toggle__burger:before {
+  content: "";
+  top: 10px;
+  left: 0;
+}
+.menu--toggle__burger:after {
+  content: "";
+  top: 20px;
+  left: 0;
+}
+
+.menu__body {
+  position: absolute;
+  width: 0em;
+  height: 0em;
+  margin: 0;
+  padding: 0;
+  background-color: #fcfcfc;
+  border-bottom-right-radius: 100%;
+  box-shadow: 3px 3px 7px rgba(40, 40, 40, 0.2);
+  z-index: 10;
+  animation: checkboxUncheckedAnimation 0.35s both;
+}
+
+.menu__body-element,
+.menu__body-link {
+  display: none;
+  margin: 4.4em 0 -3.3em -0.1em;
+  font-weight: normal;
+  color: #282828;
+  text-decoration: none;
+  text-transform: none;
+  list-style: none;
+  outline: 0;
+}
+
+.menu__body-element {
+  text-indent: 2em;
+}
+
+.menu__body-link:hover {
+  display: block;
+  width: 0;
+  color: #282828;
+  background-color: #e2e2e2;
+  animation: changeWidthOfElementAnimation 0.35s both;
+}
+
+#menu--toggle:checked + .menu--toggle__trigger + .menu--toggle__burger {
+  top: 35px;
+  transform: rotate(45deg);
+  transition: transform 0.35s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+#menu--toggle:checked + .menu--toggle__trigger + .menu--toggle__burger:before {
+  top: 0;
+  transform: rotate(90deg);
+  transition: transform 0.35s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  animation-direction: reverse;
+}
+#menu--toggle:checked + .menu--toggle__trigger + .menu--toggle__burger:after {
+  top: 0;
+  transform: rotate(90deg);
+  transition: transform 0.35s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+#menu--toggle:checked + .menu--toggle__trigger + .menu--toggle__burger + .menu__body {
+  animation: checkboxCheckedAnimation 1s cubic-bezier(0.25, 0.1, 0.25, 1) both;
+}
+#menu--toggle:checked + .menu--toggle__trigger ~ .menu__body .menu__body-element, #menu--toggle:checked + .menu--toggle__trigger ~ .menu__body .menu__body-link {
+  display: block;
+}
+
+.promotion {
+  background-size: cover;
+}
+
+/**
+ *  Animations
+ *
+ *  @note checkboxCheckedAnimation - added fix for Microsoft Edge
+ */
+@keyframes checkboxCheckedAnimation {
+  50% {
+    width: 100vw;
+    height: 100vh;
+  }
+  100% {
+    width: 100vw;
+    height: 100vh;
+    border-radius: 0;
+  }
+}
+@keyframes checkboxUncheckedAnimation {
+  0% {
+    width: 100vw;
+    height: 100vh;
+  }
+}
+@keyframes changeWidthOfElementAnimation {
+  50% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .menu--toggle__trigger,
+.menu--toggle__burger,
+.menu--toggle__burger:before,
+.menu--toggle__burger:after {
+    position: absolute;
+    margin-right: 5px;
+    top: -3em;
+    right: 1.6em;
+    width: 2em;
+    height: 5px;
+    background-color: #282828;
+    border-radius: 2px;
+    cursor: pointer;
+    z-index: 100;
+    transition: 0.35s cubic-bezier(0.25, 0.1, 0.25, 1);
+  }
+
+  .menu--toggle__trigger {
+    height: 2em;
+    background: none;
+  }
+
+  .menu--toggle__burger:before {
+    content: "";
+    top: 10px;
+    left: 0;
+  }
+  .menu--toggle__burger:after {
+    content: "";
+    top: 20px;
+    left: 0;
+  }
+
+  .menu__body {
+    position: absolute;
+    width: 0em;
+    height: 0em;
+    margin: 0;
+    padding: 0;
+    background-color: #fcfcfc;
+    border-bottom-right-radius: 100%;
+    box-shadow: 3px 3px 7px rgba(40, 40, 40, 0.2);
+    z-index: 10;
+    animation: checkboxUncheckedAnimation 0.35s both;
+  }
+
+  .menu__body-element,
+.menu__body-link {
+    display: none;
+    margin: 4.4em 0 -3.3em -0.1em;
+    font-weight: normal;
+    color: #282828;
+    text-decoration: none;
+    text-transform: none;
+    list-style: none;
+    outline: 0;
+  }
+
+  .menu__body-element {
+    text-indent: 2em;
+  }
+
+  .menu__body-link:hover {
+    display: block;
+    width: 0;
+    color: #282828;
+    background-color: #e2e2e2;
+    animation: changeWidthOfElementAnimation 0.35s both;
+  }
+
+  #menu--toggle:checked + .menu--toggle__trigger + .menu--toggle__burger {
+    top: 35px;
+    transform: rotate(45deg);
+    transition: transform 0.35s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  #menu--toggle:checked + .menu--toggle__trigger + .menu--toggle__burger:before {
+    top: 0;
+    transform: rotate(90deg);
+    transition: transform 0.35s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    animation-direction: reverse;
+  }
+  #menu--toggle:checked + .menu--toggle__trigger + .menu--toggle__burger:after {
+    top: 0;
+    transform: rotate(90deg);
+    transition: transform 0.35s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  #menu--toggle:checked + .menu--toggle__trigger + .menu--toggle__burger + .menu__body {
+    animation: checkboxCheckedAnimation 1s cubic-bezier(0.25, 0.1, 0.25, 1) both;
+  }
+  #menu--toggle:checked + .menu--toggle__trigger ~ .menu__body .menu__body-element, #menu--toggle:checked + .menu--toggle__trigger ~ .menu__body .menu__body-link {
+    display: block;
+  }
+
+  .promotion {
+    background-size: cover;
+  }
+
+  /**
+   *  Animations
+   *
+   *  @note checkboxCheckedAnimation - added fix for Microsoft Edge
+   */
+  @keyframes checkboxCheckedAnimation {
+    50% {
+      width: 100vw;
+      height: 100vh;
+    }
+    100% {
+      width: 100vw;
+      height: 100vh;
+      border-radius: 0;
+    }
+  }
+  @keyframes checkboxUncheckedAnimation {
+    0% {
+      width: 100vw;
+      height: 100vh;
+    }
+  }
+  @keyframes changeWidthOfElementAnimation {
+    50% {
+      width: 0;
+    }
+    100% {
+      width: 100%;
+    }
+  }
 }
 * {
   margin: 0;
