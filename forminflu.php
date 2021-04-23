@@ -1,7 +1,7 @@
 <?php
 include 'headerClient.php'
 ?>
-
+  <script src="app.js" type="text/javascript"></script>
 <div id="svg_wrap"></div>
 
  <h1 class="contactUs">Contactez-nous</h1>
