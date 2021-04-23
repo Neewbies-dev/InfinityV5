@@ -2,7 +2,7 @@
 </div>
 <div class="headerOrange">
     <div class="HeaderWaveLogoClient">
-    <img class="HeaderWaveLogoClientMobile" src="img/infinity-agency.png" alt="infinity agency">
+    <img class="HeaderWaveLogoClientMobile" src="img/infinity_one.png" alt="infinity agency">
     <!-- <div class="menuDesktop">
         <a href="digital.html">Digital</a>
         <a href="Strategic.html">Strategic</a>

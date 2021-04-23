@@ -386,17 +386,17 @@ p {
   }
 
   .inner-header {
-    height: 15vh;
+    height: 1vh;
     width: 100%;
     margin: 0;
     padding: 0;
   }
 
   .HeaderWaveLogoClientMobile {
-    width: 100px;
-    margin-top: 20px;
-    margin-left: auto;
-    margin-right: auto;
+    display: flex;
+    width: 80px;
+    padding-top: 20px;
+    margin-left: 15px;
   }
 
   .flex {
@@ -499,17 +499,17 @@ p {
   }
 
   .inner-header {
-    height: 15vh;
+    height: 1vh;
     width: 100%;
     margin: 0;
     padding: 0;
   }
 
   .HeaderWaveLogoClientMobile {
-    width: 150px;
-    margin-top: 20px;
-    margin-left: auto;
-    margin-right: auto;
+    display: flex;
+    width: 100px;
+    padding-top: 20px;
+    margin-left: 30px;
   }
 
   .flex {
@@ -1007,7 +1007,7 @@ h3 {
 .buttonForm {
   background: #DF7806;
   border-radius: 5px;
-  padding: 15px 25px;
+  padding: 10px;
   display: inline-block;
   margin: 10px;
   font-weight: bold;
@@ -1017,7 +1017,7 @@ h3 {
   display: flex;
   margin-right: auto;
   margin-left: auto;
-  width: 5%;
+  width: 8%;
   font-family: Marie sans-serif;
 }
 
@@ -1203,11 +1203,11 @@ textarea {
   }
 }
 @media only screen and (min-width: 992px) {
-  .inputPartName, .inputPartName, .inputPartEmail, .inputPartSubject, .inputPartMessage {
+  .inputPartName, .inputPartName, .inputPartEmail, .inputPartSubject, .inputPartMessage, .inputPartCompany {
     margin-top: 10px;
   }
 
-  #namePart, #emailPart, #subjetPart, #messagePart {
+  #namePart, #emailPart, #subjetPart, #messagePart, #inputPartCompany {
     margin-top: 10px;
     width: 150%;
     height: 40px;
@@ -1278,13 +1278,13 @@ textarea {
   }
 }
 @media only screen and (min-width: 1200px) {
-  .inputPartName, .inputPartName, .inputPartEmail, .inputPartSubject, .inputPartMessage {
+  .inputPartName, .inputPartName, .inputPartEmail, .inputPartSubject, .inputPartMessage, .inputPartCompany {
     margin-top: 10px;
   }
 
-  #namePart, #emailPart, #subjetPart, #messagePart {
+  #namePart, #emailPart, #subjetPart, #messagePart, #yourCompany {
     margin-top: 10px;
-    width: 150%;
+    width: 110%;
     height: 40px;
     border-radius: 10px;
     border: 1px solid #f3f3f3;
@@ -1298,7 +1298,7 @@ textarea {
     padding-top: 12px;
   }
 
-  #namePart::placeholder, #emailPart::placeholder, #subjetPart::placeholder, #messagePart::placeholder {
+  #namePart::placeholder, #emailPart::placeholder, #subjetPart::placeholder, #messagePart::placeholder, #yourCompany::placeholder {
     color: #c7ceda;
     padding-left: 20px;
   }
@@ -1389,7 +1389,8 @@ body {
 .menu--toggle__burger:before,
 .menu--toggle__burger:after {
   position: absolute;
-  top: 1.6em;
+  margin-right: 30px;
+  top: -3em;
   right: 1.6em;
   width: 2em;
   height: 5px;
@@ -1508,6 +1509,135 @@ body {
   }
   100% {
     width: 100%;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .menu--toggle__trigger,
+.menu--toggle__burger,
+.menu--toggle__burger:before,
+.menu--toggle__burger:after {
+    position: absolute;
+    margin-right: 5px;
+    top: -3em;
+    right: 1.6em;
+    width: 2em;
+    height: 5px;
+    background-color: #282828;
+    border-radius: 2px;
+    cursor: pointer;
+    z-index: 100;
+    transition: 0.35s cubic-bezier(0.25, 0.1, 0.25, 1);
+  }
+
+  .menu--toggle__trigger {
+    height: 2em;
+    background: none;
+  }
+
+  .menu--toggle__burger:before {
+    content: "";
+    top: 10px;
+    left: 0;
+  }
+  .menu--toggle__burger:after {
+    content: "";
+    top: 20px;
+    left: 0;
+  }
+
+  .menu__body {
+    position: absolute;
+    width: 0em;
+    height: 0em;
+    margin: 0;
+    padding: 0;
+    background-color: #fcfcfc;
+    border-bottom-right-radius: 100%;
+    box-shadow: 3px 3px 7px rgba(40, 40, 40, 0.2);
+    z-index: 10;
+    animation: checkboxUncheckedAnimation 0.35s both;
+  }
+
+  .menu__body-element,
+.menu__body-link {
+    display: none;
+    margin: 4.4em 0 -3.3em -0.1em;
+    font-weight: normal;
+    color: #282828;
+    text-decoration: none;
+    text-transform: none;
+    list-style: none;
+    outline: 0;
+  }
+
+  .menu__body-element {
+    text-indent: 2em;
+  }
+
+  .menu__body-link:hover {
+    display: block;
+    width: 0;
+    color: #282828;
+    background-color: #e2e2e2;
+    animation: changeWidthOfElementAnimation 0.35s both;
+  }
+
+  #menu--toggle:checked + .menu--toggle__trigger + .menu--toggle__burger {
+    top: 35px;
+    transform: rotate(45deg);
+    transition: transform 0.35s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  #menu--toggle:checked + .menu--toggle__trigger + .menu--toggle__burger:before {
+    top: 0;
+    transform: rotate(90deg);
+    transition: transform 0.35s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    animation-direction: reverse;
+  }
+  #menu--toggle:checked + .menu--toggle__trigger + .menu--toggle__burger:after {
+    top: 0;
+    transform: rotate(90deg);
+    transition: transform 0.35s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  #menu--toggle:checked + .menu--toggle__trigger + .menu--toggle__burger + .menu__body {
+    animation: checkboxCheckedAnimation 1s cubic-bezier(0.25, 0.1, 0.25, 1) both;
+  }
+  #menu--toggle:checked + .menu--toggle__trigger ~ .menu__body .menu__body-element, #menu--toggle:checked + .menu--toggle__trigger ~ .menu__body .menu__body-link {
+    display: block;
+  }
+
+  .promotion {
+    background-size: cover;
+  }
+
+  /**
+   *  Animations
+   *
+   *  @note checkboxCheckedAnimation - added fix for Microsoft Edge
+   */
+  @keyframes checkboxCheckedAnimation {
+    50% {
+      width: 100vw;
+      height: 100vh;
+    }
+    100% {
+      width: 100vw;
+      height: 100vh;
+      border-radius: 0;
+    }
+  }
+  @keyframes checkboxUncheckedAnimation {
+    0% {
+      width: 100vw;
+      height: 100vh;
+    }
+  }
+  @keyframes changeWidthOfElementAnimation {
+    50% {
+      width: 0;
+    }
+    100% {
+      width: 100%;
+    }
   }
 }
 body {
@@ -1839,6 +1969,7 @@ body {
 
 .container2, .container3 {
   display: flex;
+  justify-content: center;
 }
 
 .container3 {
@@ -1866,6 +1997,7 @@ body {
   align-items: center;
   margin-top: 10%;
   font-family: StMarie sans-serif;
+  width: 20%;
 }
 .visualID .iconSubtitle, .stratMarket .iconSubtitle, .community .iconSubtitle, .print .iconSubtitle, .webSite .iconSubtitle, .shipping .iconSubtitle {
   color: #8d8d8d;
@@ -1874,7 +2006,6 @@ body {
 }
 
 .webSite, .shipping {
-  width: 50%;
   margin-right: 5%;
 }
 
@@ -1891,6 +2022,91 @@ body {
   font-size: 48px;
 }
 
+@media only screen and (max-width: 600px) {
+  .services {
+    background-size: 90%;
+    margin-bottom: 130%;
+  }
+
+  .container2, .container3 {
+    flex-direction: column;
+  }
+
+  .webSite, .shipping {
+    width: 100%;
+  }
+
+  .visualID, .webSite, .print, .community, .shipping, .stratMarket {
+    width: 100%;
+  }
+
+  .print {
+    width: 100%;
+  }
+
+  .community {
+    width: 100%;
+  }
+
+  .stratMarket {
+    width: 100%;
+  }
+
+  .pricing-table {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1%;
+  }
+
+  .trust {
+    margin-top: -190%;
+  }
+}
+@media screen and (min-width: 740px) and (max-width: 1025px) {
+  .services {
+    background-size: 90%;
+    margin-bottom: 130%;
+  }
+
+  .container2, .container3 {
+    flex-direction: column;
+  }
+
+  .webSite, .shipping {
+    width: 100%;
+  }
+
+  .visualID, .webSite, .print, .community, .shipping, .stratMarket {
+    width: 100%;
+  }
+
+  .print {
+    width: 100%;
+  }
+
+  .community {
+    width: 100%;
+  }
+
+  .stratMarket {
+    width: 100%;
+  }
+
+  .pricing-table {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1%;
+  }
+
+  .trust {
+    margin-top: -100%;
+  }
+}
+@media screen and (min-width: 740px) and (max-width: 1025px) and (orientation: landscape) {
+  .trust {
+    margin-top: -70%;
+  }
+}
 @font-face {
   font-family: RabbiHighway sans-serif;
   src: url("fonts/RabbidHighwaySignII.otf");

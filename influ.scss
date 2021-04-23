@@ -36,6 +36,7 @@ font-size: 1.8rem;
 
 .container2 {
     display:flex;
+    justify-content: center;
     
 }
 
@@ -69,6 +70,7 @@ font-size: 1.8rem;
     align-items: center;
     margin-top:10%;
     font-family: StMarie sans-serif;
+    width:20%;
 
     
         .iconSubtitle{
@@ -81,7 +83,7 @@ font-size: 1.8rem;
 .webSite {
 
     @extend .visualID;
-    width:50%;
+   
     margin-right:5%;
 }
 
@@ -117,6 +119,120 @@ font-size: 1.8rem;
 
     @extend .infiTitle;
     font-size:48px;
+}
+
+@media only screen and (max-width: 600px) {
+
+    .services{
+
+        background-size: 90%;
+        margin-bottom:130%;
+    }
+
+    .container2 {
+
+        flex-direction: column;
+    }
+
+    .webSite {
+
+        width:100%;
+
+    }
+
+    .visualID{
+
+        width:100%;
+    }
+
+    .print{
+
+        width:100%
+    }
+
+    .community {
+
+        width:100%
+    }
+
+    .stratMarket{
+
+        width: 100%;
+    }
+
+    .pricing-table{
+
+        flex-direction: column;
+        align-items:center;
+        margin-bottom:1%;
+    }
+
+    .trust{
+
+        margin-top:-190%;
+    }
+}
+
+@media screen and (min-width: 740px) and (max-width:1025px){
+
+
+    .services{
+
+        background-size: 90%;
+        margin-bottom:130%;
+    }
+
+    .container2 {
+
+        flex-direction: column;
+    }
+
+    .webSite {
+
+        width:100%;
+
+    }
+
+    .visualID{
+
+        width:100%;
+    }
+
+    .print{
+
+        width:100%
+    }
+
+    .community {
+
+        width:100%
+    }
+
+    .stratMarket{
+
+        width: 100%;
+    }
+
+    .pricing-table{
+
+        flex-direction: column;
+        align-items:center;
+        margin-bottom:1%;
+    }
+
+    .trust{
+
+        margin-top:-100%;
+    }
+
+}
+
+@media screen and (min-width: 740px) and (max-width:1025px) and (orientation:landscape) {
+
+    .trust{
+
+        margin-top:-70%;
+    }
 }
 
 @font-face {

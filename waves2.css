@@ -16,16 +16,18 @@
     display: none;
   }
   .inner-header {
-    height: 15vh;
+    height: 1vh;
     width: 100%;
     margin: 0;
     padding: 0;
   }
   .HeaderWaveLogoClientMobile {
-    width: 100px;
-    margin-top: 20px;
-    margin-left: auto;
-    margin-right: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 80px;
+    padding-top: 20px;
+    margin-left: 15px;
   }
   .flex {
     /*Flexbox for containers*/
@@ -150,16 +152,18 @@
     background: #DF7806;
   }
   .inner-header {
-    height: 15vh;
+    height: 1vh;
     width: 100%;
     margin: 0;
     padding: 0;
   }
   .HeaderWaveLogoClientMobile {
-    width: 150px;
-    margin-top: 20px;
-    margin-left: auto;
-    margin-right: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100px;
+    padding-top: 20px;
+    margin-left: 30px;
   }
   .flex {
     /*Flexbox for containers*/
