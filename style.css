@@ -1008,7 +1008,7 @@ h3 {
 .buttonForm {
   background: #DF7806;
   border-radius: 5px;
-  padding: 15px 25px;
+  padding: 10px;
   display: inline-block;
   margin: 10px;
   font-weight: bold;
@@ -1018,7 +1018,7 @@ h3 {
   display: flex;
   margin-right: auto;
   margin-left: auto;
-  width: 5%;
+  width: 8%;
   font-family: Marie sans-serif;
 }
 
