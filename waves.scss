@@ -81,6 +81,9 @@ p {
     padding:2%;
   }
 }
+.titleFooter {
+  margin-bottom: 6px;
+}
 
 /* Animation */
 
@@ -111,6 +114,8 @@ p {
     transform: translate3d(85px,0,0);
   }
 }
+
+
 /*Shrinking for mobile*/
 @media (max-width: 767px) {
   .waves {

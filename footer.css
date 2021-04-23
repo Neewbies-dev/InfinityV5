@@ -32,6 +32,7 @@
 
 .logoFooter {
   width: 10%;
+  margin-left: 41px;
 }
 
 .socialFooter {
@@ -155,6 +156,8 @@
   .logoFooter {
     width: 40%;
     margin-bottom: 5%;
+    margin-left: auto;
+    margin-right: auto;
   }
   .socialFooter {
     width: 100%;
@@ -243,7 +246,8 @@
   }
   .logoFooter {
     margin-top: 5%;
-    margin-left: 5%;
+    margin-left: auto;
+    margin-right: auto;
     width: 20%;
   }
   .socialFooter {

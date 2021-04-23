@@ -3,8 +3,15 @@
 <div class="headerOrange">
     <div class="HeaderWaveLogoClient">
     <img class="HeaderWaveLogoClientMobile" src="img/infinity-agency.png" alt="infinity agency">
+    <!-- <div class="menuDesktop">
+        <a href="digital.html">Digital</a>
+        <a href="Strategic.html">Strategic</a>
+        <a href="Influence.html">Influence</a>
+        <a href="Supply.html">Supply chain</a>
+    </div> -->
+    <?php include "burgermenu2.php" ?>
     </div>
-    <?php include "menu.php" ?>
+ 
 <!--Content before waves-->
     <div class="inner-header flex">
         <!--Just the logo.. Don't mind this-->

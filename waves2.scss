@@ -9,20 +9,7 @@ $red: #C30700;
     margin:0;
     }
 
-    h1 {
-    font-family: 'Lato', sans-serif;
-    font-weight:300;
-    letter-spacing: 2px;
-    font-size:48px;
-    }
-    p {
-    font-family: 'Lato', sans-serif;
-    letter-spacing: 1px;
-    font-size:14px;
-    color: #000000;
-    }
-
-    .header {
+    .headerOrange {
     position:relative;
     text-align:center;
     background: #DF7806;
@@ -32,7 +19,9 @@ $red: #C30700;
         background: #DF7806;
     }
 
-
+    .menuDesktop {
+        display: none;
+    }
     .inner-header {
     height:15vh;
     width:100%;
@@ -40,8 +29,10 @@ $red: #C30700;
     padding: 0;
     }
     .HeaderWaveLogoClientMobile {
-        width: 80px;
+        width: 100px;
         margin-top: 20px;
+        margin-left: auto;
+        margin-right: auto;
     }
     .flex { /*Flexbox for containers*/
     display: flex;
@@ -109,28 +100,7 @@ $red: #C30700;
         transform: translate3d(85px,0,0);
     }
     }
-    /*Shrinking for mobile*/
-    // @media (max-width: 767px) {
-    // .waves {
-    //     height:40px;
-    //     min-height:40px;
-    // }
-    // .content {
-    //     height:30vh;
-
-    //     p{
-    //         margin-bottom: 1%;
-    //     }
-    // }
-    // h1 {
-    //     font-size:24px;
-    // }
-
-    // .flex {
-
-    //     flex-direction: column;
-    // }
-    // }
+    
 }
 
 @media only screen and (min-width: 768px) {
@@ -161,6 +131,9 @@ $red: #C30700;
         background: #DF7806;
     }
 
+    // .menuDesktop {
+    //     display: none;
+    // }
 
     .inner-header {
     height:15vh;
@@ -169,8 +142,10 @@ $red: #C30700;
     padding: 0;
     }
     .HeaderWaveLogoClientMobile {
-        width: 80px;
+        width: 150px;
         margin-top: 20px;
+        margin-left: auto;
+        margin-right: auto;
     }
     .flex { /*Flexbox for containers*/
     display: flex;
@@ -239,14 +214,31 @@ $red: #C30700;
     }
     }
 }
-@media (max-width: 767px) and  (orientation:landscape){
+@media only screen and (min-width: 768px) and (orientation:portrait) {
+    .menuDesktop {
+        display: none;
+    }
+}
+@media (max-width: 768px) and  (orientation:landscape){
     
     .content{
         height:60vh;
     }
-
+    .menuDesktop > a {
+        margin-right: 10px;
+    }
 }
 
+.menuDesktop > a {
+    margin-right: 10px;
+}
 
-
-
+// .HeaderWaveLogoClient {
+//     display: flex;
+//     justify-content: space-between;
+//     margin-left: 80px;
+//     margin-right: 80px;
+// }
+.menuDesktop {
+    margin-top: 30px;
+}

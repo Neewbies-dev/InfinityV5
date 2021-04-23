@@ -32,7 +32,7 @@ textarea {
     }
     .buttonPart {
         margin-top: 20px;
-        background-color: #ffbe56;
+        background-color: #DF7806;
         color: white;
         width: 180px;
         text-align: center;
@@ -59,7 +59,7 @@ textarea {
 
 // Tablet format
 
-@media only screen and (min-width: 767px) {
+@media only screen and (min-width: 768px) {
 
     .containerPart {
         margin: 20px;
@@ -73,7 +73,7 @@ textarea {
         width: 100%;
         height: 40px;
         border-radius: 10px;
-        border: 1px solid #f3f3f3;
+        border: 1px solid #868686;
     }
     #messagePart {
         height: 150px;
@@ -83,12 +83,12 @@ textarea {
     }
 
     #namePart::placeholder, #emailPart::placeholder, #subjetPart::placeholder, #messagePart::placeholder {
-        color: #c7ceda;
+        color: #9c9c9c;
         padding-left: 20px;
     }
     .buttonPart {
         margin-top: 20px;
-        background-color: #ffbe56;
+        background-color: #DF7806;
         color: white;
         width: 180px;
         text-align: center;
@@ -97,9 +97,16 @@ textarea {
         border-radius: 50px;
     }
 
+    .imagePart {
+        display: flex;
+        flex-direction: column;
+    }
     .imagePart2 {
         width: 100%;
         margin-top: 30px;
+    }
+    .imagePart3 {
+        display: none;
     }
     .titlePart {
         font-size: 1.5rem;
@@ -139,7 +146,7 @@ textarea {
     }
     .buttonPart {
         margin-top: 20px;
-        background-color: #ffbe56;
+        background-color: #DF7806;
         color: white;
         width: 180px;
         text-align: center;
@@ -211,7 +218,7 @@ textarea {
     }
     .buttonPart {
         margin-top: 20px;
-        background-color: #ffbe56;
+        background-color: #DF7806;
         color: white;
         width: 180px;
         text-align: center;
@@ -252,4 +259,7 @@ textarea {
     .leftPart {
         margin-right: 200px;
     } 
+}
+.buttonPart {
+    cursor: pointer;
 }

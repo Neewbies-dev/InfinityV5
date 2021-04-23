@@ -54,6 +54,7 @@ table {
 @import "footer.scss";
 @import "formInflu.scss";
 @import "formPart.scss";
+@import "burgermenu2.scss";
 
 $dark-orange : #DF7806;
 $light-orange: #F99E0B;
@@ -74,6 +75,7 @@ a {
 ul {
 
     list-style-type: none;
+    line-height: 1.7rem;
 }
 
 body {

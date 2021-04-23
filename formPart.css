@@ -46,7 +46,7 @@ textarea {
   }
   .buttonPart {
     margin-top: 20px;
-    background-color: #ffbe56;
+    background-color: #DF7806;
     color: white;
     width: 180px;
     text-align: center;
@@ -116,7 +116,7 @@ textarea {
   }
   .buttonPart {
     margin-top: 20px;
-    background-color: #ffbe56;
+    background-color: #DF7806;
     color: white;
     width: 180px;
     text-align: center;
@@ -124,9 +124,21 @@ textarea {
     padding-bottom: 15px;
     border-radius: 50px;
   }
+  .imagePart {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
   .imagePart2 {
     width: 100%;
     margin-top: 30px;
+  }
+  .imagePart3 {
+    display: none;
   }
   .titlePart {
     font-size: 1.5rem;
@@ -178,7 +190,7 @@ textarea {
   }
   .buttonPart {
     margin-top: 20px;
-    background-color: #ffbe56;
+    background-color: #DF7806;
     color: white;
     width: 180px;
     text-align: center;
@@ -276,7 +288,7 @@ textarea {
   }
   .buttonPart {
     margin-top: 20px;
-    background-color: #ffbe56;
+    background-color: #DF7806;
     color: white;
     width: 180px;
     text-align: center;
@@ -328,5 +340,9 @@ textarea {
   .leftPart {
     margin-right: 200px;
   }
+}
+
+.buttonPart {
+  cursor: pointer;
 }
 /*# sourceMappingURL=formPart.css.map */

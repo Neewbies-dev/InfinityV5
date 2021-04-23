@@ -82,6 +82,32 @@ h3 {
   margin-top: 15px;
 }
 
+@media only screen and (max-width: 600px) {
+  .title {
+    text-align: center;
+    font-family: RabbiHighway sans-serif;
+  }
+  .title h1 {
+    font-family: RabbiHighway sans-serif;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    text-align: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .title h1 p {
+    font-size: 1.5rem;
+    font-family: RabbiHighway sans-serif;
+    text-shadow: black 1px 0px 0px, black 0.5403px 0.84147px 0px, black -0.41615px 0.9093px 0px, black -0.98999px 0.14112px 0px, black -0.65364px -0.7568px 0px, black 0.28366px -0.95892px 0px, black 0.96017px -0.27942px 0px;
+    color: white;
+  }
+  section {
+    position: relative;
+  }
+}
+
 @media screen and (max-width: 767px) {
   video {
     width: 100%;

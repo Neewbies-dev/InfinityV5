@@ -1,6 +1,6 @@
 $( document ).ready(function() {
 var base_color = "rgb(230,230,230)";
-var active_color = "rgb(223,120,6)";
+var active_color = "rgb(195,7,0)";
 
 
 
@@ -54,7 +54,7 @@ $('#svg_form_time circle').css('fill',base_color);
 $("circle:nth-of-type(1)").css("fill", active_color);
 
  
-$(".button").click(function () {
+$(".buttonForm").click(function () {
   $("#svg_form_time rect").css("fill", active_color);
   $("#svg_form_time circle").css("fill", active_color);
   var id = $(this).attr("id");
