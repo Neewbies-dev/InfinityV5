@@ -16,7 +16,7 @@ include "menu.php"
     </div>
 </section>
                                     <!-- WAVES EFFECTS -->
-
+<?php include "aninfinitymov.php" ?>
 <?php 
 include "waves.php"
 ?>
@@ -33,7 +33,7 @@ include "waves.php"
     <div class="userButton">
         <p class="part"> <a  href="formPart.php"> <i class="fas fa-arrow-left"></i> Partenaires    </a> </p>
         
-        <p class="influ"> <a  href="formInflu.php">Influenceurs  <i class="fas fa-arrow-right"></i> </a> </p>
+        <p class="influ"> <a  href="influ.php">Influenceurs  <i class="fas fa-arrow-right"></i> </a> </p>
     </div>
     
 </div>

@@ -9,6 +9,5 @@
     <link rel="icon" type="image/x-icon" href="img/favicon.png" />
     <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="app.js" type="text/javascript"></script>
     <title>Infinity Agency</title>
 </head>
