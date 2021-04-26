@@ -1306,13 +1306,19 @@ textarea {
 
   .buttonPart {
     margin-top: 20px;
-    background-color: #DF7806;
+    background-color: #F99E0B;
     color: white;
     width: 180px;
     text-align: center;
     padding-top: 15px;
     padding-bottom: 15px;
     border-radius: 50px;
+    transition: 300ms;
+  }
+  .buttonPart:hover {
+    background-color: #DF7806;
+    transform: scale(1.2);
+    transition: 300ms;
   }
 
   .imagePart {
