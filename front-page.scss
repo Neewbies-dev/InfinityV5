@@ -86,7 +86,10 @@ h3 {
     margin-top:15px;
 
 }
-
+.text_anime {
+    display: flex;
+    flex-direction: column;
+}
 @media only screen and (max-width: 600px) {
     .title{
 

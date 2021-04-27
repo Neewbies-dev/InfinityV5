@@ -10,13 +10,9 @@ include "menu.php"
 ?>
 <section>
                                     <!-- FIRST TITLE -->
-    <div class="title">
-        <h1> <p>An Infinity </p>  of Branding</h1>
-        <h2>solutions for e-business</h2>
-    </div>
+    <div class="text_anime"><?php include "aninfinitymov.php" ?></div>
 </section>
                                     <!-- WAVES EFFECTS -->
-<?php include "aninfinitymov.php" ?>
 <?php 
 include "waves.php"
 ?>
