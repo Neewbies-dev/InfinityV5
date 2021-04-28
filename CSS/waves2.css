@@ -1,0 +1,287 @@
+@import url(//fonts.googleapis.com/css?family=Lato:300:400);
+@media only screen and (max-width: 600px) {
+  body {
+    margin: 0;
+  }
+  .headerOrange {
+    position: relative;
+    text-align: center;
+    background: #DF7806;
+    color: white;
+  }
+  .HeaderWaveClient {
+    background: #DF7806;
+  }
+  .menuDesktop {
+    display: none;
+  }
+  .inner-header {
+    height: 1vh;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  .HeaderWaveLogoClientMobile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 80px;
+    padding-top: 20px;
+    margin-left: 15px;
+  }
+  .flex {
+    /*Flexbox for containers*/
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+  }
+  .waves {
+    position: relative;
+    width: 100%;
+    height: 15vh;
+    margin-bottom: -7px;
+    /*Fix for safari gap*/
+    min-height: 100px;
+    max-height: 150px;
+  }
+  .contentWhite {
+    position: relative;
+    height: 8vh;
+    text-align: center;
+    background-color: #ffffff;
+  }
+  .contentWhite button {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-transition: -webkit-transform 450ms;
+    transition: -webkit-transform 450ms;
+    transition: transform 450ms;
+    transition: transform 450ms, -webkit-transform 450ms;
+    -webkit-transition-delay: 150ms;
+            transition-delay: 150ms;
+  }
+  .contentWhite button:hover {
+    -webkit-transform: scale(1.15);
+            transform: scale(1.15);
+  }
+  .contentWhite p {
+    width: 70%;
+    padding: 2%;
+  }
+  /* Animation */
+  .parallax > use {
+    -webkit-animation: move-forever 25s cubic-bezier(0.55, 0.5, 0.45, 0.5) infinite;
+            animation: move-forever 25s cubic-bezier(0.55, 0.5, 0.45, 0.5) infinite;
+  }
+  .parallax > use:nth-child(1) {
+    -webkit-animation-delay: -2s;
+            animation-delay: -2s;
+    -webkit-animation-duration: 7s;
+            animation-duration: 7s;
+  }
+  .parallax > use:nth-child(2) {
+    -webkit-animation-delay: -3s;
+            animation-delay: -3s;
+    -webkit-animation-duration: 10s;
+            animation-duration: 10s;
+  }
+  .parallax > use:nth-child(3) {
+    -webkit-animation-delay: -4s;
+            animation-delay: -4s;
+    -webkit-animation-duration: 13s;
+            animation-duration: 13s;
+  }
+  .parallax > use:nth-child(4) {
+    -webkit-animation-delay: -5s;
+            animation-delay: -5s;
+    -webkit-animation-duration: 20s;
+            animation-duration: 20s;
+  }
+  @-webkit-keyframes move-forever {
+    0% {
+      -webkit-transform: translate3d(-90px, 0, 0);
+              transform: translate3d(-90px, 0, 0);
+    }
+    100% {
+      -webkit-transform: translate3d(85px, 0, 0);
+              transform: translate3d(85px, 0, 0);
+    }
+  }
+  @keyframes move-forever {
+    0% {
+      -webkit-transform: translate3d(-90px, 0, 0);
+              transform: translate3d(-90px, 0, 0);
+    }
+    100% {
+      -webkit-transform: translate3d(85px, 0, 0);
+              transform: translate3d(85px, 0, 0);
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  body {
+    margin: 0;
+  }
+  h1 {
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    letter-spacing: 2px;
+    font-size: 48px;
+  }
+  p {
+    font-family: 'Lato', sans-serif;
+    letter-spacing: 1px;
+    font-size: 14px;
+    color: #000000;
+  }
+  .headerOrange {
+    position: relative;
+    text-align: center;
+    background: #DF7806;
+    color: white;
+  }
+  .HeaderWaveClient {
+    background: #DF7806;
+  }
+  .inner-header {
+    height: 1vh;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  .HeaderWaveLogoClientMobile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100px;
+    padding-top: 20px;
+    margin-left: 30px;
+  }
+  .flex {
+    /*Flexbox for containers*/
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+  }
+  .waves {
+    position: relative;
+    width: 100%;
+    height: 15vh;
+    margin-bottom: -7px;
+    /*Fix for safari gap*/
+    min-height: 100px;
+    max-height: 150px;
+  }
+  .contentWhite {
+    position: relative;
+    height: 8vh;
+    text-align: center;
+    background-color: #ffffff;
+  }
+  .contentWhite button {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-transition: -webkit-transform 450ms;
+    transition: -webkit-transform 450ms;
+    transition: transform 450ms;
+    transition: transform 450ms, -webkit-transform 450ms;
+    -webkit-transition-delay: 150ms;
+            transition-delay: 150ms;
+  }
+  .contentWhite button:hover {
+    -webkit-transform: scale(1.15);
+            transform: scale(1.15);
+  }
+  .contentWhite p {
+    width: 70%;
+    padding: 2%;
+  }
+  /* Animation */
+  .parallax > use {
+    -webkit-animation: move-forever 25s cubic-bezier(0.55, 0.5, 0.45, 0.5) infinite;
+            animation: move-forever 25s cubic-bezier(0.55, 0.5, 0.45, 0.5) infinite;
+  }
+  .parallax > use:nth-child(1) {
+    -webkit-animation-delay: -2s;
+            animation-delay: -2s;
+    -webkit-animation-duration: 7s;
+            animation-duration: 7s;
+  }
+  .parallax > use:nth-child(2) {
+    -webkit-animation-delay: -3s;
+            animation-delay: -3s;
+    -webkit-animation-duration: 10s;
+            animation-duration: 10s;
+  }
+  .parallax > use:nth-child(3) {
+    -webkit-animation-delay: -4s;
+            animation-delay: -4s;
+    -webkit-animation-duration: 13s;
+            animation-duration: 13s;
+  }
+  .parallax > use:nth-child(4) {
+    -webkit-animation-delay: -5s;
+            animation-delay: -5s;
+    -webkit-animation-duration: 20s;
+            animation-duration: 20s;
+  }
+  @-webkit-keyframes move-forever {
+    0% {
+      -webkit-transform: translate3d(-90px, 0, 0);
+              transform: translate3d(-90px, 0, 0);
+    }
+    100% {
+      -webkit-transform: translate3d(85px, 0, 0);
+              transform: translate3d(85px, 0, 0);
+    }
+  }
+  @keyframes move-forever {
+    0% {
+      -webkit-transform: translate3d(-90px, 0, 0);
+              transform: translate3d(-90px, 0, 0);
+    }
+    100% {
+      -webkit-transform: translate3d(85px, 0, 0);
+              transform: translate3d(85px, 0, 0);
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) and (orientation: portrait) {
+  .menuDesktop {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) and (orientation: landscape) {
+  .content {
+    height: 60vh;
+  }
+  .menuDesktop > a {
+    margin-right: 10px;
+  }
+}
+
+.menuDesktop > a {
+  margin-right: 10px;
+}
+
+.menuDesktop {
+  margin-top: 30px;
+}
+/*# sourceMappingURL=waves2.css.map */
