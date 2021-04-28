@@ -2288,6 +2288,22 @@ body {
     margin-top: -330px;
   }
 }
+@media only screen and (max-width: 600px) {
+  .animate_letter {
+    display: flex;
+    flex-direction: column;
+    margin-left: 15px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .subtitle_aninfinity h2 {
+    font-size: 61px;
+  }
+
+  .subtitle_aninfinity {
+    margin-left: 0;
+  }
+}
 * {
   margin: 0;
   padding: 0;
