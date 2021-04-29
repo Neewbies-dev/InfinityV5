@@ -34,19 +34,7 @@ section {
 
     position:relative;
 }
-.content{
-button {
 
-    background-color: rgba(255, 255, 255, 0.609);
-    color:black;
-    font-weight: bold;
-    border:none;
-    border-radius: 28px;
-    width: 150px;
-    padding: 1%;
-    cursor:pointer;
-}
-}
 
 h3 {
 
@@ -86,6 +74,28 @@ h3 {
     cursor: pointer;
     margin-top:15px;
 
+}
+
+.agency-description {
+width: 56%;
+padding:11%;
+margin-right:23%;
+font-size: 1.3rem;
+font-family:Aargh sans-serif;
+text-align: justify;
+}
+
+.tellUs {
+
+    background-color: rgba(255, 255, 255, 0.609);
+    color: black;
+    font-weight: bold;
+    border: none;
+    border-radius: 28px;
+    width: 200px;
+    padding: 1%;
+    cursor: pointer;
+    font-size: 22px;
 }
 
 @media only screen and (max-width: 600px) {
@@ -201,10 +211,11 @@ h3 {
 
 @font-face {
     font-family: RabbiHighway sans-serif;
-    src: url('fonts/RabbidHighwaySignII.otf');
-}
-
-@font-face {
-  font-family: Aargh sans-serif;
-  src: url('fonts/Aaargh.ttf');
-}
+    src: url('./fonts/RabbidHighwaySignII.otf');
+  }
+  
+  @font-face {
+    font-family: Aargh sans-serif;
+    src: url('./fonts/Aaargh.ttf');
+  }
+  

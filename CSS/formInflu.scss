@@ -94,17 +94,14 @@
       font-family: Marie sans-serif;
     }
 }
+
+
 @font-face {
   font-family: RabbiHighway sans-serif;
-  src: url('fonts/RabbidHighwaySignII.otf');
+  src: url('./fonts/RabbidHighwaySignII.otf');
 }
 
 @font-face {
   font-family: Aargh sans-serif;
-  src: url('fonts/Aaargh.ttf');
-}
-
-@font-face {
-  font-family: Marie sans-serif;
-  src: url('fonts/StMarie-Thin.otf');
+  src: url('./fonts/Aaargh.ttf');
 }

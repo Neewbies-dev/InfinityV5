@@ -1,8 +1,8 @@
 <?php 
-include 'header.php' ?>
+include 'assets/header.php' ?>
 
 <?php 
-include 'front-page.php' ?>
+include 'assets/front-page.php' ?>
 
 <?php 
-include 'footer.php' ?>
+include 'assets/footer.php' ?>

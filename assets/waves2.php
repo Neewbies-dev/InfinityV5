@@ -2,13 +2,7 @@
 </div>
 <div class="headerOrange">
     <div class="HeaderWaveLogoClient">
-    <!-- <img class="HeaderWaveLogoClientMobile" src="img/infinity_one.png" alt="infinity agency"> -->
-    <!-- <div class="menuDesktop">
-        <a href="digital.html">Digital</a>
-        <a href="Strategic.html">Strategic</a>
-        <a href="Influence.html">Influence</a>
-        <a href="Supply.html">Supply chain</a>
-    </div> -->
+    
     <?php include "menu3.php" ?>
     </div>
  
