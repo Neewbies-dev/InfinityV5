@@ -2369,6 +2369,10 @@ body {
   .animate_letter {
     display: flex;
   }
+
+  #container_aninfinity {
+    margin-left: 0px;
+  }
 }
 * {
   margin: 0;
