@@ -98,6 +98,10 @@ text-align: justify;
     font-size: 22px;
 }
 
+.text_anime {
+    display: flex;
+    flex-direction: column;
+}
 @media only screen and (max-width: 600px) {
     .title{
 

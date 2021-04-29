@@ -1,0 +1,223 @@
+// --------------- Animation SVG An Infinity ---------------
+
+#aninfinitymov path:nth-child(2) {
+    stroke-dasharray: 572;
+    stroke-dashoffset: 572;
+    animation:line-anim 2.45s ease forwards 0.8s infinite;
+    
+}
+#aninfinitymov path:nth-child(3) {
+    stroke-dasharray: 495;
+    stroke-dashoffset: 495;
+    animation:line-anim 2.45s ease forwards 0.8s infinite;
+}
+#aninfinitymov path:nth-child(4) {
+    stroke-dasharray: 635;
+    stroke-dashoffset: 635;
+    animation:line-anim 2.45s ease forwards 0.8s infinite;
+}
+#aninfinitymov path:nth-child(5) {
+    stroke-dasharray: 604;
+    stroke-dashoffset: 604;
+    animation:line-anim 2.45s ease forwards 0.8s infinite;   
+}
+#aninfinitymov path:nth-child(6) {
+    stroke-dasharray: 463;
+    stroke-dashoffset: 463;
+    animation:line-anim 2.45s ease forwards 0.8s infinite;
+}
+#aninfinitymov path:nth-child(7) {
+    stroke-dasharray: 550;
+    stroke-dashoffset: 550;
+    animation:line-anim 2.45s ease forwards 0.8s infinite;
+}
+#aninfinitymov path:nth-child(8) {
+    stroke-dasharray: 604;
+    stroke-dashoffset: 604;
+    animation:line-anim 2.45s ease forwards 0.8s infinite;
+}
+#aninfinitymov path:nth-child(9) {
+    stroke-dasharray: 570;
+    stroke-dashoffset: 570;
+    animation:line-anim 2.45s ease forwards 0.8s infinite;
+}
+#aninfinitymov path:nth-child(10) {
+    stroke-dasharray: 470;
+    stroke-dashoffset: 470;
+    animation:line-anim 2.45s ease forwards 0.8s infinite;
+}
+#aninfinitymov path:nth-child(11) {
+    stroke-dasharray: 470;
+    stroke-dashoffset: 470;
+    animation:line-anim 2.45s ease forwards 0.8s infinite;
+}
+@keyframes line-anim{
+    to{
+        stroke-dashoffset: 0;
+    }
+}
+// --------------- END of Animation SVG An Infinity ---------------
+
+// --------------- DIV for Tablet only ---------------
+.animate_tablet {
+    display: flex;
+}
+
+// --------------- For center text in full screen ---------------
+.animate_letter {
+    display: flex;
+    justify-content: center;
+}
+
+// --------------- Render letter "of" ---------------
+
+.title_aninfinity {
+    font-size: 4rem;
+    font-family: RabbiHighway sans-serif;
+    text-shadow: rgb(0, 0, 0) 2px 0px 0px, rgb(0, 0, 0) 1.75517px 0.958851px 0px, rgb(0, 0, 0) 1.0806px 1.68294px 0px, rgb(0, 0, 0) 0.141474px 1.99499px 0px, rgb(0, 0, 0) -0.832294px 1.81859px 0px, rgb(0, 0, 0) -1.60229px 1.19694px 0px, rgb(0, 0, 0) -1.97999px 0.28224px 0px, rgb(0, 0, 0) -1.87291px -0.701566px 0px, rgb(0, 0, 0) -1.30729px -1.51361px 0px, rgb(0, 0, 0) -0.421592px -1.95506px 0px, rgb(0, 0, 0) 0.567324px -1.91785px 0px, rgb(0, 0, 0) 1.41734px -1.41108px 0px, rgb(0, 0, 0) 1.92034px -0.558831px 0px;
+    color:white;
+    margin-left: 10px;
+    margin-top: 6px;
+    margin-right: 15px;
+}
+.aninfinitymovall {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    margin: auto;
+}
+.aninfinitymovallflex {
+    margin: auto;
+}
+// --------------- Subtitle of Animation SVG An Infinity and flip text ---------------
+.subtitle_aninfinity {
+    display: flex;
+    justify-content: center;
+    margin-left: 30px;
+    h2 {
+        font-size: 65px;
+        font-weight: 300;
+        font-family: RabbiHighway sans-serif;
+    }
+}
+@import url('https://fonts.googleapis.com/css?family=Roboto:700');
+
+// --------------- Animation flip text ---------------
+
+#container_aninfinity {
+  font-size:50px;
+  font-weight:bold;
+  font-family: RabbiHighway sans-serif;
+}
+
+#flip_aninfinity {
+  height:77px;
+  overflow:hidden;
+}
+
+#flip_aninfinity > div > div {
+  color:black;
+  height:40px;
+  margin-bottom:50px;
+  display:inline-block;
+  font-size: 40px;
+  font-family: RabbiHighway sans-serif;
+}
+
+#flip_aninfinity div:first-child {
+    font-size: 65px;
+    animation: show 12s reverse infinite;
+}
+
+// --------------- Keyframe anime flip text ---------------
+
+@keyframes show {
+  0% {margin: top -330px;}
+  //supply
+  5% {margin-top:-228px;}
+  25% {margin-top:-228px;}
+  // word influence
+  30% {margin-top:-150px;}
+  50% {margin-top:-150px;}
+  // Strategic
+  55% {margin-top: -72px;}
+  75% {margin-top: -72px;}
+  // Digital
+  80% {margin-top:3px;}
+  99.99% {margin-top:3px;}
+  100% {margin-top:-330px;}
+  
+}
+@media only screen and (max-width: 600px) {
+    .animate_letter {
+        display: flex;
+        flex-direction: column;
+        margin-left: 15px;
+    }
+    .subtitle_aninfinity {
+        display: flex;
+        justify-content: center;
+        margin-left: 30px;
+        h2 {
+            margin-top: 40px;
+            font-size: 45px;
+            font-weight: 300;
+            font-family: RabbiHighway sans-serif;
+        }
+    }
+    #container_aninfinity {
+        font-size:40px;
+        font-weight:bold;
+        font-family: RabbiHighway sans-serif;
+      }
+    #flip_aninfinity div:first-child {
+        font-size: 45px;
+        animation: show 12s reverse infinite;
+    }
+    #container_aninfinity {
+        margin-left: 15px;
+    }
+    #aninfinitymov {
+        width: 230px;
+        margin-left: 15px;
+    }
+    .title_aninfinity {
+        font-size: 2.8rem;
+        font-family: RabbiHighway sans-serif;
+        text-shadow: rgb(0, 0, 0) 2px 0px 0px, rgb(0, 0, 0) 1.75517px 0.958851px 0px, rgb(0, 0, 0) 1.0806px 1.68294px 0px, rgb(0, 0, 0) 0.141474px 1.99499px 0px, rgb(0, 0, 0) -0.832294px 1.81859px 0px, rgb(0, 0, 0) -1.60229px 1.19694px 0px, rgb(0, 0, 0) -1.97999px 0.28224px 0px, rgb(0, 0, 0) -1.87291px -0.701566px 0px, rgb(0, 0, 0) -1.30729px -1.51361px 0px, rgb(0, 0, 0) -0.421592px -1.95506px 0px, rgb(0, 0, 0) 0.567324px -1.91785px 0px, rgb(0, 0, 0) 1.41734px -1.41108px 0px, rgb(0, 0, 0) 1.92034px -0.558831px 0px;
+        color:white;
+        margin-left: 15px;
+        margin-top: 17px;
+        margin-right: 15px;
+    }
+}
+@media only screen and (min-width: 768px) {
+    .subtitle_aninfinity{
+        h2 {
+            font-size: 66px;
+            margin-left: 100px;
+            margin-top: 40px;
+        }
+    }
+    .subtitle_aninfinity {
+        margin-left: 0;
+    }
+    .animate_tablet {
+        display: flex;
+        margin-left: 100px;
+    }
+    #container_aninfinity {
+        margin-left: 100px;
+    }
+    .animate_letter {
+        display: block;
+    }
+}
+@media only screen and (min-width: 1250px) {
+    .animate_letter {
+        display: flex;
+    }
+    #container_aninfinity {
+        margin-left: 0px;
+    }
+}
