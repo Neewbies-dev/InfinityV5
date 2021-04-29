@@ -1,0 +1,18 @@
+.btncon {
+    position:absolute;
+}
+
+.backButton
+{
+position: fixed;
+top:0px;
+cursor:pointer;
+z-index: 10;
+width:5%;
+}
+
+@media only screen and (min-width: 768px) and (orientation:portrait) {
+    .backButton {
+        width:10%;
+    }
+}

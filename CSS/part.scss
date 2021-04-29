@@ -1,0 +1,263 @@
+$dark-orange : #DF7806;
+$light-orange: #F99E0B;
+$red: #C30700;
+
+
+
+.services{
+
+    background-image: url("img/infini_vertical_opacity.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 15%;
+}
+.infiTitle {
+
+    text-align: center;
+    font-family: RabbiHighway sans-serif;
+    font-weight: bold;
+    margin-top:1%;
+}
+
+.infiSubtitle {
+
+text-align: center;
+font-family: StMarie sans-serif;
+font-size: 1.8rem;
+
+}
+
+.services{
+
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container2 {
+    display:flex;
+    justify-content: center;
+    width:100%;
+    
+}
+
+.container3 {
+
+    @extend .container2;
+    margin-bottom:1%;
+}
+
+.orange-bg {
+
+    background-color: $light-orange;
+    border-radius: 50%;
+    width:50px;
+    height:50px;
+    text-align: center;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size:25px;
+
+    i{
+        color:$red;
+    }
+}
+
+.visualID {
+
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top:3%;
+    font-family: StMarie sans-serif;
+    width:20%;
+
+    
+        .iconSubtitle{
+            color:rgb(141, 141, 141);
+            margin-top:1%;
+            margin-bottom:1%;
+        }
+}
+
+.webSite {
+
+    @extend .visualID;
+   
+    margin-right:10%;
+}
+
+.print {
+
+    @extend .visualID;
+
+}
+
+.community {
+
+    @extend .visualID;
+    margin-top:5%;
+}
+
+.shipping {
+
+    @extend .webSite;
+}
+
+.stratMarket {
+
+    @extend .visualID;
+}
+
+.trust {
+
+    margin-top:-10%;
+    margin-bottom:10%;
+}
+
+.trustTitle{
+
+    @extend .infiTitle;
+    font-size:48px;
+}
+
+@media only screen and (max-width: 600px) {
+
+    .services{
+
+        background-size: 70%;
+        margin-bottom:5%;
+    }
+
+    .container2 {
+
+        flex-direction: column;
+        width:100%
+    }
+
+    .webSite {
+
+        margin-right:9%;
+
+    }
+
+    .visualID{
+
+        width:100%;
+    }
+
+    .print{
+
+        width:100%
+    }
+
+    .community {
+
+        width:100%
+    }
+
+    .stratMarket{
+
+        width: 100%;
+    }
+
+    .pricing-table{
+
+        flex-direction: column;
+        align-items:center;
+        margin-bottom:1%;
+    }
+
+    .trust{
+
+        margin-top:-190%;
+    }
+
+    .trustTitle{
+        margin-top:10%;
+    }
+}
+
+@media screen and (min-width: 740px) and (max-width:1025px){
+
+
+    .services{
+
+        background-size: 70%;
+    
+    }
+
+    .container2 {
+
+        flex-direction: column;
+    }
+
+    .webSite {
+
+        width:100%;
+
+    }
+
+    .visualID{
+
+        width:100%;
+    }
+
+    .print{
+
+        width:100%
+    }
+
+    .community {
+
+        width:100%
+    }
+
+    .stratMarket{
+
+        width: 100%;
+    }
+
+    .pricing-table{
+
+        flex-direction: column;
+        align-items:center;
+        margin-bottom:1%;
+    }
+
+    .trust{
+
+        margin-top:-100%;
+    }
+
+    .trustTitle{
+
+        margin-top:5%;
+    }
+
+}
+
+@media screen and (min-width: 740px) and (max-width:1025px) and (orientation:landscape) {
+
+    .trust{
+
+        margin-top:-70%;
+    }
+}
+
+@font-face {
+    font-family: RabbiHighway sans-serif;
+    src: url('./fonts/RabbidHighwaySignII.otf');
+  }
+  
+  @font-face {
+    font-family: Aargh sans-serif;
+    src: url('./fonts/Aaargh.ttf');
+  }
+  
+
+  @font-face {
+      font-family: StMarie sans-serif;
+      src: url('./fonts/StMarie-Thin.otf;');
+  }

@@ -1,0 +1,99 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+@import "burgermenu.scss";
+@import "waves.scss";
+@import "waves2.scss";
+@import "headerClient.scss";
+@import "front-page.scss";
+@import "footer.scss";
+@import "formInflu.scss";
+@import "formPart.scss";
+@import "burgermenu2.scss";
+@import "trustUs.scss";
+@import "pricingInflu.scss";
+@import "influ.scss";
+@import "part.scss";
+@import "backButton.scss";
+@import "menu3.scss";
+@import "sendButton.scss";
+
+$dark-orange : #DF7806;
+$light-orange: #F99E0B;
+$red: #C30700;
+
+* {
+
+    margin: 0;
+    padding: 0;
+}
+
+a {
+
+    text-decoration: none;
+    color:black;
+}
+
+ul {
+
+    list-style-type: none;
+    line-height: 1.7rem;
+}
+
+body {
+
+    background-color: white;
+    color:black;
+    
+}
+
+@font-face {
+    font-family: RabbiHighway sans-serif;
+    src: url('../fonts/RabbidHighwaySignII.otf');
+  }
+  
+  @font-face {
+    font-family: Aargh sans-serif;
+    src: url('../fonts/Aaargh.ttf');
+  }
+  
