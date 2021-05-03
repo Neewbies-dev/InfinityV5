@@ -15,7 +15,6 @@
 			<input type="radio" name="slides" id="radio-1" checked>
 			<input type="radio" name="slides" id="radio-2">
 			<input type="radio" name="slides" id="radio-3">
-			<input type="radio" name="slides" id="radio-4">
 			<ul class="slides">
 			<li class="slide">
             <img src="../img/E-scoot2go-logo_black.png" id="logo_our_partners_escoot2go" alt="Escoot2go">
@@ -31,7 +30,6 @@
 				<label for="radio-1" id="dotForRadio-1"></label>
 				<label for="radio-2" id="dotForRadio-2"></label>
 				<label for="radio-3" id="dotForRadio-3"></label>
-				<label for="radio-4" id="dotForRadio-4"></label>
 			</div>
 </div>		
     </Div>

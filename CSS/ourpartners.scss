@@ -147,9 +147,6 @@
   #radio-3:checked ~ .slides {
     transform: translateX(-50%);
   }
-  #radio-4:checked ~ .slides {
-    transform: translateX(-75%);
-  }
   
   
   .carrousel .slidesNavigation label:hover {
@@ -158,16 +155,16 @@
   /* You have to repeat this with each slide/dot */
   .carrousel #radio-1:checked ~ .slidesNavigation label#dotForRadio-1,
   .carrousel #radio-2:checked ~ .slidesNavigation label#dotForRadio-2,
-  .carrousel #radio-3:checked ~ .slidesNavigation label#dotForRadio-3,
-  .carrousel #radio-4:checked ~ .slidesNavigation label#dotForRadio-4 {
+  .carrousel #radio-3:checked ~ .slidesNavigation label#dotForRadio-3
+   {
     background:rgb(136, 136, 136);
   }
   
-  @media  (max-width: 796px) {
+  @media only screen and (max-width: 600px){
     .carrousel{
       height: 23.5em;
     }
-  }
+  
   .title_our_partners {
     display: flex;
     flex-direction: column;
@@ -184,6 +181,7 @@
         font-size: 40px;
         text-transform: uppercase;
         margin-left: 30px;
+    }
     }
 }
   @media  (max-width: 480px) {

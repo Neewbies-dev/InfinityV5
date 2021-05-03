@@ -2970,10 +2970,6 @@ TODO: make it easier with SCSS
   transform: translateX(-50%);
 }
 
-#radio-4:checked ~ .slides {
-  transform: translateX(-75%);
-}
-
 .carrousel .slidesNavigation label:hover {
   cursor: pointer;
 }
@@ -2981,35 +2977,34 @@ TODO: make it easier with SCSS
 /* You have to repeat this with each slide/dot */
 .carrousel #radio-1:checked ~ .slidesNavigation label#dotForRadio-1,
 .carrousel #radio-2:checked ~ .slidesNavigation label#dotForRadio-2,
-.carrousel #radio-3:checked ~ .slidesNavigation label#dotForRadio-3,
-.carrousel #radio-4:checked ~ .slidesNavigation label#dotForRadio-4 {
+.carrousel #radio-3:checked ~ .slidesNavigation label#dotForRadio-3 {
   background: #888888;
 }
 
-@media (max-width: 796px) {
+@media only screen and (max-width: 600px) {
   .carrousel {
     height: 23.5em;
   }
-}
-.title_our_partners {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 80px;
-}
-.title_our_partners .title_our {
-  font-family: RabbiHighway sans-serif;
-  text-transform: uppercase;
-  color: #C30700;
-  font-size: 40px;
-  margin-left: 30px;
-}
-.title_our_partners .title_partners {
-  font-family: RabbiHighway sans-serif;
-  font-size: 40px;
-  text-transform: uppercase;
-  margin-left: 30px;
-}
 
+  .title_our_partners {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 80px;
+  }
+  .title_our_partners .title_our {
+    font-family: RabbiHighway sans-serif;
+    text-transform: uppercase;
+    color: #C30700;
+    font-size: 40px;
+    margin-left: 30px;
+  }
+  .title_our_partners .title_partners {
+    font-family: RabbiHighway sans-serif;
+    font-size: 40px;
+    text-transform: uppercase;
+    margin-left: 30px;
+  }
+}
 @media (max-width: 480px) {
   .carrousel li p {
     padding-left: 0.5em;
