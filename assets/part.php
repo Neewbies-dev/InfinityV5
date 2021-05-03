@@ -1,8 +1,6 @@
 <?php 
 
 include "headerClient.php" ?>
-
-
 <h1 class="infiTitle"> Infinity of solutions</h1>
 <h2 class="infiSubtitle"> Rien n'est impossible </h2>
 

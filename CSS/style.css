@@ -2182,10 +2182,13 @@ main {
   transition: transform 0.7s ease-in-out;
 }
 
+.testFixed {
+  position: fixed;
+}
+
 .sidebar {
   height: 100%;
   width: 100%;
-  position: fixed;
   top: 0;
   z-index: 1;
   right: 0;
@@ -2834,7 +2837,7 @@ html {
   justify-content: space-around;
   margin-left: auto;
   margin-right: auto;
-  width: 80%;
+  width: 100%;
 }
 .logo_our_partners #logo_our_partners_escoot2go {
   width: 200px;
@@ -2862,6 +2865,10 @@ html {
 
 .slide {
   margin-right: 100px;
+}
+
+.carrousel {
+  width: 56%;
 }
 
 @media only screen and (max-width: 600px) {
