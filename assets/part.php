@@ -45,16 +45,9 @@ include "headerClient.php" ?>
 
 
 <?php include "waves.php"?>
-<?php include 
-"pricingInflu.php"?>
 
-
-
-<section class="trust">
-<h2 class="trustTitle"> Ceux qui nous font confiance </h2>
-<?php
-include "trustUs.php"
-?>
+<section>
+<?php include "ourpartners.php" ?>
 </section>
 
 <?php include "footer.php"?>
