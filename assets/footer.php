@@ -5,7 +5,7 @@ include "waves.php"
 ?>  
     <div class="content flex mainFooter">
         <div class="contentFooter">
-            <img src="img/INFINITY.png" class="logoFooter">
+            <img src="../img/INFINITY.png" class="logoFooter">
             <div class="content2Footer">
                 <div class="socialFooter">
                     <p class="titleFooter">Suivez-nous sur les réseaux sociaux</p>

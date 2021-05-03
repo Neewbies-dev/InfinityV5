@@ -3,7 +3,7 @@
 <div class="headerOrange">
     <div class="HeaderWaveLogoClient">
     
-    <?php include "menu3.php" ?>
+    
     </div>
  
 <!--Content before waves-->

@@ -54,10 +54,15 @@ h3 {
         width: 40%;
         height:40%;
         position:relative;
+        
+        filter:brightness(50%);
+        transition: .3s ease-in-out;
+        &:hover  {
+            filter:brightness(100%);
+        }
     }
     
- 
-       
+
     i{
 
         color:$red;
@@ -83,6 +88,11 @@ margin-right:23%;
 font-size: 1.3rem;
 font-family:Aargh sans-serif;
 text-align: justify;
+}
+
+.airplane {
+    width:25%;
+    margin-top:25%;
 }
 
 .tellUs {
@@ -151,6 +161,7 @@ text-align: justify;
         
         img{
             display:none;
+
         }
 
         .userButton{
@@ -162,6 +173,11 @@ text-align: justify;
 
             color:$red;
         }
+    }
+
+    .airplane {
+        width:30%;
+        margin-top:48%;
     }
 }
 
@@ -212,14 +228,3 @@ text-align: justify;
     }
 
 }
-
-@font-face {
-    font-family: RabbiHighway sans-serif;
-    src: url('./fonts/RabbidHighwaySignII.otf');
-  }
-  
-  @font-face {
-    font-family: Aargh sans-serif;
-    src: url('./fonts/Aaargh.ttf');
-  }
-  

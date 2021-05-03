@@ -50,6 +50,7 @@ table {
 @import "formInflu.scss";
 @import "formPart.scss";
 @import "burgermenu2.scss";
+@import "burgermenu3.scss";
 @import "trustUs.scss";
 @import "pricingInflu.scss";
 @import "influ.scss";
@@ -98,3 +99,7 @@ body {
     src: url('../fonts/Aaargh.ttf');
   }
   
+  @font-face {
+    font-family: JennaSue serif;
+    src: url('../fonts/JennaSue.ttf');
+  }

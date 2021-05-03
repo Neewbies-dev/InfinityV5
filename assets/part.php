@@ -45,16 +45,15 @@ include "headerClient.php" ?>
 
 
 <?php include "waves.php"?>
-<?php include 
-"pricingInflu.php"?>
+<div class="content flex">
+    <?php include "pricingInflu.php"?>
+</div>
 
 
 
 <section class="trust">
-<h2 class="trustTitle"> Ceux qui nous font confiance </h2>
-<?php
-include "trustUs.php"
-?>
+
+
 </section>
 
 <?php include "footer.php"?>

@@ -1,4 +1,4 @@
-<script type="text/javascript" src="aninfinitymov.js"></script>
+<script type="text/javascript" src="../JS/aninfinitymov.js"></script>
 <div class="aninfinitymovall">
     <div class="aninfinitymovallflex">
         <div class="animate_letter">

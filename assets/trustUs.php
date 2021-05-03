@@ -1,31 +1,132 @@
-<ul class="honeycomb" lang="es">
-  <li class="honeycomb-cell">
-    <img class="honeycomb-cell__image" src="https://source.unsplash.com/random/1">
-    <div class="honeycomb-cell__title">Diseño exclusivo</div>
-  </li>
-  <li class="honeycomb-cell">
-    <img class="honeycomb-cell__image" src="https://source.unsplash.com/random/2">
-    <div class="honeycomb-cell__title">Impermeables</div>
-  </li>
-  <li class="honeycomb-cell">
-    <img class="honeycomb-cell__image" src="https://source.unsplash.com/random/3">
-    <div class="honeycomb-cell__title">Tablero doble cara</div>
-  </li>
-  <li class="honeycomb-cell">
-    <img class="honeycomb-cell__image" src="https://source.unsplash.com/random/4">
-    <div class="honeycomb-cell__title">Maletín de empaque</div>
-  </li>
-  <li class="honeycomb-cell">
-    <img class="honeycomb-cell__image" src="https://source.unsplash.com/random/5">
-    <div class="honeycomb-cell__title">Antireflectivo<small>No vidrio</small></div>
-  </li>
-  <li class="honeycomb-cell">
-    <img class="honeycomb-cell__image" src="https://source.unsplash.com/random/6">
-    <div class="honeycomb-cell__title">6 fichas<small>1 de repuesto</small></div>
-  </li>
-  <li class="honeycomb-cell">
-    <img class="honeycomb-cell__image" src="https://source.unsplash.com/random/7">
-    <div class="honeycomb-cell__title">Tablero magnético</div>
-  </li>
-  <li class="honeycomb-cell honeycomb__placeholder"></li>
-</ul>
+<h2 class="trustTitle"> Welcome to </h2>
+<h2 class="trustTitle2">Community</h2>
+<img class="bubles" src="../img/Influenceurs_bubles.png"/>
+<div class="comeBtn">
+    <a href="" class="orangeBtn">Allez viens !</a>
+    <p>(On est bien ^)</p>
+  </div>
+
+<div class="cardContainer">
+  <div class="cardInflu">
+        <img src="../img/avatar.png"/>
+        <p class="name">Jane Doe</p>
+        <p class="type">Chevaucheuse de Licorne</p>
+        <div class="nbrCom">
+          <p class="numbers"> 500m</p>
+          <p class="numbersDescription">Communauté Licorne Mauve</p>
+        </div>
+        <div class="socialNumbers">
+          <div class="InstaNumbers"> <i class="fab fa-instagram"></i> 100m</div>
+          <div class="TwitterNumbers"> <i class="fab fa-twitter"></i>100m</div>
+          <div class="FBNumbers"><i class="fab fa-facebook-f"></i>100m </div>
+          <div class="YTNumbers"><i class="fab fa-youtube"></i>100m</div>
+        </div>
+      </div>
+    <div class="cardInflu">
+      <img src="../img/avatar.png"/>
+      <p class="name">Jane Doe</p>
+      <p class="type">Chevaucheuse de Licorne</p>
+      <div class="nbrCom">
+        <p class="numbers"> 500m</p>
+        <p class="numbersDescription">Communauté Licorne Mauve</p>
+      </div>
+      <div class="socialNumbers">
+        <div class="InstaNumbers"> <i class="fab fa-instagram"></i> 100m</div>
+        <div class="TwitterNumbers"> <i class="fab fa-twitter"></i>100m</div>
+        <div class="FBNumbers"><i class="fab fa-facebook-f"></i>100m </div>
+        <div class="YTNumbers"><i class="fab fa-youtube"></i>100m</div>
+      </div>
+    </div>
+    <div class="cardInflu">
+      <img src="../img/avatar.png"/>
+      <p class="name">Jane Doe</p>
+      <p class="type">Chevaucheuse de Licorne</p>
+      <div class="nbrCom">
+        <p class="numbers"> 500m</p>
+        <p class="numbersDescription">Communauté Licorne Mauve</p>
+      </div>
+      <div class="socialNumbers">
+        <div class="InstaNumbers"> <i class="fab fa-instagram"></i> 100m</div>
+        <div class="TwitterNumbers"> <i class="fab fa-twitter"></i>100m</div>
+        <div class="FBNumbers"><i class="fab fa-facebook-f"></i>100m </div>
+        <div class="YTNumbers"><i class="fab fa-youtube"></i>100m</div>
+      </div>
+    </div>
+  
+    <div class="cardInflu">
+      <img src="../img/avatar.png"/>
+      <p class="name">Jane Doe</p>
+      <p class="type">Chevaucheuse de Licorne</p>
+      <div class="nbrCom">
+        <p class="numbers"> 500m</p>
+        <p class="numbersDescription">Communauté Licorne Mauve</p>
+      </div>
+      <div class="socialNumbers">
+        <div class="InstaNumbers"> <i class="fab fa-instagram"></i> 100m</div>
+        <div class="TwitterNumbers"> <i class="fab fa-twitter"></i>100m</div>
+        <div class="FBNumbers"><i class="fab fa-facebook-f"></i>100m </div>
+        <div class="YTNumbers"><i class="fab fa-youtube"></i>100m</div>
+      </div>
+    </div>
+    <div class="cardInflu">
+      <img src="../img/avatar.png"/>
+      <p class="name">Jane Doe</p>
+      <p class="type">Chevaucheuse de Licorne</p>
+      <div class="nbrCom">
+        <p class="numbers"> 500m</p>
+        <p class="numbersDescription">Communauté Licorne Mauve</p>
+      </div>
+      <div class="socialNumbers">
+        <div class="InstaNumbers"> <i class="fab fa-instagram"></i> 100m</div>
+        <div class="TwitterNumbers"> <i class="fab fa-twitter"></i>100m</div>
+        <div class="FBNumbers"><i class="fab fa-facebook-f"></i>100m </div>
+        <div class="YTNumbers"><i class="fab fa-youtube"></i>100m</div>
+      </div>
+    </div>
+    <div class="cardInflu">
+      <img src="../img/avatar.png"/>
+      <p class="name">Jane Doe</p>
+      <p class="type">Chevaucheuse de Licorne</p>
+      <div class="nbrCom">
+        <p class="numbers"> 500m</p>
+        <p class="numbersDescription">Communauté Licorne Mauve</p>
+      </div>
+      <div class="socialNumbers">
+        <div class="InstaNumbers"> <i class="fab fa-instagram"></i> 100m</div>
+        <div class="TwitterNumbers"> <i class="fab fa-twitter"></i>100m</div>
+        <div class="FBNumbers"><i class="fab fa-facebook-f"></i>100m </div>
+        <div class="YTNumbers"><i class="fab fa-youtube"></i>100m</div>
+      </div>
+    </div>
+    <div class="cardInflu">
+      <img src="../img/avatar.png"/>
+      <p class="name">Jane Doe</p>
+      <p class="type">Chevaucheuse de Licorne</p>
+      <div class="nbrCom">
+        <p class="numbers"> 500m</p>
+        <p class="numbersDescription">Communauté Licorne Mauve</p>
+      </div>
+      <div class="socialNumbers">
+        <div class="InstaNumbers"> <i class="fab fa-instagram"></i> 100m</div>
+        <div class="TwitterNumbers"> <i class="fab fa-twitter"></i>100m</div>
+        <div class="FBNumbers"><i class="fab fa-facebook-f"></i>100m </div>
+        <div class="YTNumbers"><i class="fab fa-youtube"></i>100m</div>
+      </div>
+    </div>
+    <div class="cardInflu">
+      <img src="../img/avatar.png"/>
+      <p class="name">Jane Doe</p>
+      <p class="type">Chevaucheuse de Licorne</p>
+      <div class="nbrCom">
+        <p class="numbers"> 500m</p>
+        <p class="numbersDescription">Communauté Licorne Mauve</p>
+      </div>
+      <div class="socialNumbers">
+        <div class="InstaNumbers"> <i class="fab fa-instagram"></i> 100m</div>
+        <div class="TwitterNumbers"> <i class="fab fa-twitter"></i>100m</div>
+        <div class="FBNumbers"><i class="fab fa-facebook-f"></i>100m </div>
+        <div class="YTNumbers"><i class="fab fa-youtube"></i>100m</div>
+      </div>
+    </div>
+  
+</div>

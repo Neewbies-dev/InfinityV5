@@ -6,7 +6,7 @@ $red: #C30700;
 
 .services{
 
-    background-image: url("img/infini_vertical_opacity.svg");
+    background-image: url("../img/infini_vertical_opacity.svg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: 15%;
@@ -246,18 +246,3 @@ font-size: 1.8rem;
     }
 }
 
-@font-face {
-    font-family: RabbiHighway sans-serif;
-    src: url('./fonts/RabbidHighwaySignII.otf');
-  }
-  
-  @font-face {
-    font-family: Aargh sans-serif;
-    src: url('./fonts/Aaargh.ttf');
-  }
-  
-
-  @font-face {
-      font-family: StMarie sans-serif;
-      src: url('./fonts/StMarie-Thin.otf;');
-  }

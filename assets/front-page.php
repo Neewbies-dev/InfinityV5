@@ -19,6 +19,7 @@ include "waves.php"
  <div class="content flex">
         <p class="agency-description">Communication. Présence digitale. Développement. Infinity est une agence belge située à liège qui vous fournit une infinité de solutions personnalisées pour votre e-commerce grâce à notre panel d'experts. Awesome</p>
         <?php include "sendButton.php" ?>
+        <img src="../img/Paper_plane.png" class="airplane"/>
     </div>
     
 <h3 class="joinUs">Nous rejoindre en tant que </h3>
@@ -29,7 +30,7 @@ include "waves.php"
     <div class="userButton">
         <p class="part"> <a  href="assets/part.php"> <i class="fas fa-arrow-left"></i> Partenaires    </a> </p>
         
-        <p class="influ"> <a  href="influ.php">Influenceurs  <i class="fas fa-arrow-right"></i> </a> </p>
+        <p class="influ"> <a  href="assets/influ.php"> Influenceurs  <i class="fas fa-arrow-right"></i> </a> </p>
     </div>
     
 </div>
