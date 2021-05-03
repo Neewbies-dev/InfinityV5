@@ -1,7 +1,6 @@
 <script type="text/javascript" src="aninfinitymov.js"></script>
 
 <div class="aninfinitymovall">
-    <div id="ancre1"></div>
     <div class="aninfinitymovallflex">
         <div class="animate_letter">
             <div class="animate_tablet">
