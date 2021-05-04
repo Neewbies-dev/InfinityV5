@@ -64,7 +64,7 @@ body {
 #menu {
     z-index: 99;
 	position: fixed;
-	left: calc(100% - 292px);
+	left: 400px;
 	top: 10px;
 	color: black;
 	display: none;
@@ -72,11 +72,11 @@ body {
 	text-decoration: none;
 	font-family: Arial, sans-serif;
 	font-weight: 100;
-	font-size: 20px;
+	font-size: 75px;
 	text-transform: uppercase;
 	color: #333;
 	padding: 24px;
-	width: 200px;
+	width: 500px;
 	text-align: right;
 }
 
@@ -95,11 +95,15 @@ body {
 	padding-right: 3px;
 }
 
-#menu a {
+#menu { 
+	a {
 	text-decoration: none;
 	color: inherit;
+	}
+	ul {
+	line-height: 5.4rem;
+	}
 }
-
 .menu-open .top {
 	transform: rotate(225deg);
 	-webkit-transform: rotate(225deg);
@@ -173,4 +177,43 @@ header {
 
 .par-3 {
 	width: 64%;
+}
+@media only screen and (max-width: 600px) {
+   #menu {
+    left: calc(100% - 52px);
+	width: 250px !important;
+        text-align: right;
+        ul {
+            line-height: 4rem;
+        }
+        li {
+            font-size: 30px;
+        }
+   } 
+}
+@media only screen and (min-width:601px) and (max-width:768px) {
+	#menu {
+        z-index: 99;
+        position: fixed;
+        left: calc(100% - 55px);
+        top: 10px;
+        color: black;
+        display: none;
+        margin: 120px 30px;
+        text-decoration: none;
+        font-family: Arial, sans-serif;
+        font-weight: 100;
+        font-size: 20px;
+        text-transform: uppercase;
+        color: #333;
+        padding: 24px;
+        width: 400px;
+        text-align: right;
+        ul {
+            line-height: 4.7rem;
+        }
+        li {
+            font-size: 50px;
+        }
+    }
 }
