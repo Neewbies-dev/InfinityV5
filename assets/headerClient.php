@@ -14,9 +14,9 @@
     <script src="../JS/menu3.js" type="text/javascript"></script>
     <title>Infinity Agency</title>
 </head>
-<div class="navBarHeaderClient">
+<!-- <div class="navBarHeaderClient"> -->
 <?php include "backButton.php"?>
-<?php include "menu3.php" ?>
-</div>
+<?php include "menu4.php" ?>
+<!-- </div> -->
 <div class="headerClient">
 </div>
