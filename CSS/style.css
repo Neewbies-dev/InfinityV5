@@ -49,159 +49,6 @@ table {
   border-spacing: 0;
 }
 
-/*
- * Made by Erik Terwan
- * 24th of November 2015
- * MIT License
- *
- *
- * If you are thinking of using this in
- * production code, beware of the browser
- * prefixes.
- */
-body {
-  margin: 0;
-  padding: 0;
-  /* make it look decent enough */
-  background: #232323;
-  color: #cdcdcd;
-}
-
-#menuToggle {
-  display: none;
-}
-
-@media only screen and (max-width: 768px) {
-  #menuToggle {
-    display: block;
-    position: relative;
-    top: 50px;
-    margin-left: 15px;
-    z-index: 1;
-    -webkit-user-select: none;
-    user-select: none;
-  }
-
-  #menuToggle a {
-    text-decoration: none;
-    color: #232323;
-    transition: color 0.3s ease;
-  }
-
-  #menuToggle a:hover {
-    color: tomato;
-  }
-
-  #menuToggle input {
-    display: block;
-    width: 40px;
-    height: 32px;
-    position: absolute;
-    top: -7px;
-    left: -5px;
-    cursor: pointer;
-    opacity: 0;
-    /* hide this */
-    z-index: 2;
-    /* and place it over the hamburger */
-    -webkit-touch-callout: none;
-  }
-
-  /*
-   * Just a quick hamburger
-   */
-  #menuToggle span {
-    display: block;
-    width: 33px;
-    height: 4px;
-    margin-bottom: 5px;
-    position: relative;
-    background-color: #cdcdcd;
-    border-radius: 3px;
-    z-index: 1;
-    transform-origin: 4px 0px;
-    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), background-color 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
-  }
-
-  #menuToggle span:first-child {
-    transform-origin: 0% 0%;
-  }
-
-  #menuToggle span:nth-last-child(2) {
-    transform-origin: 0% 100%;
-  }
-
-  /* 
-   * Transform all the slices of hamburger
-   * into a crossmark.
-   */
-  #menuToggle input:checked ~ span {
-    opacity: 1;
-    transform: rotate(45deg) translate(-2px, -1px);
-    background: #232323;
-  }
-
-  /*
-   * But let's hide the middle one.
-   */
-  #menuToggle input:checked ~ span:nth-last-child(3) {
-    opacity: 0;
-    transform: rotate(0deg) scale(0.2, 0.2);
-  }
-
-  /*
-   * Ohyeah and the last one should go the other direction
-   */
-  #menuToggle input:checked ~ span:nth-last-child(2) {
-    transform: rotate(-45deg) translate(0, -1px);
-  }
-
-  /*
-   * Make this absolute positioned
-   * at the top left of the screen
-   */
-  #menu {
-    position: absolute;
-    width: 150px;
-    margin: -100px 0 0 -50px;
-    padding: 50px;
-    padding-top: 125px;
-    list-style-type: none;
-    -webkit-font-smoothing: antialiased;
-    /* to stop flickering of text in safari */
-    transform-origin: 0% 0%;
-    transform: translate(-100%, 0);
-    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
-    display: flex;
-    flex-direction: column;
-  }
-
-  #menu li {
-    padding: 10px 0;
-    font-size: 22px;
-  }
-
-  #menu a:hover {
-    color: #DF7806;
-  }
-
-  /*
-   * And let's slide it in from the left
-   */
-  #menuToggle input:checked ~ ul {
-    transform: none;
-  }
-}
-@media screen and (max-width: 767px) {
-  #menu {
-    flex-direction: row;
-    padding-top: 110px;
-    width: 100%;
-  }
-  #menu a {
-    margin-right: 2%;
-  }
-}
 body {
   margin: 0;
 }
@@ -326,7 +173,7 @@ p {
   }
 
   .content {
-    height: 100vh;
+    height: 200vh;
   }
   .content .agency-description {
     width: 66%;
@@ -354,7 +201,7 @@ p {
 
   .headerOrange {
     position: relative;
-    background: #DF7806;
+    background: #0079A6;
     color: white;
   }
 
@@ -400,7 +247,6 @@ p {
 
   .contentWhite {
     position: relative;
-    height: 8vh;
     text-align: center;
     background-color: #ffffff;
   }
@@ -470,7 +316,6 @@ p {
 
   .headerOrange {
     position: relative;
-    background: #DF7806;
     color: white;
   }
 
@@ -512,7 +357,6 @@ p {
 
   .contentWhite {
     position: relative;
-    height: 8vh;
     text-align: center;
     background-color: #ffffff;
   }
@@ -779,6 +623,14 @@ h3 {
     width: 160px;
   }
 }
+footer .content {
+  background: #0079A6;
+}
+footer p {
+  padding: 0%;
+  font-size: 10px;
+}
+
 .mainFooter {
   height: 100%;
   display: flex;
@@ -788,17 +640,15 @@ h3 {
 .contentFooter {
   display: flex;
   flex-direction: column;
-  padding: 5%;
 }
 
 .content2Footer {
   display: flex;
   justify-content: space-between;
-  margin-top: 2%;
 }
 
 .logoFooter {
-  width: 10%;
+  width: 5%;
   margin-left: 41px;
 }
 
@@ -807,7 +657,7 @@ h3 {
   border-right: 1px black solid;
 }
 .socialFooter p {
-  font-size: 2.5rem;
+  font-size: 1rem;
 }
 .socialFooter:nth-child(1) {
   order: 2;
@@ -826,12 +676,15 @@ h3 {
   flex-direction: column;
   align-items: center;
 }
+.infoFooter ul {
+  font-size: 10px;
+}
 .infoFooter:nth-child(2) {
   order: 2;
 }
 
 .titleFooter {
-  font-size: 16px;
+  font-size: 1.2rem;
   color: white;
   font-weight: bold;
 }
@@ -1353,435 +1206,6 @@ textarea {
   cursor: pointer;
 }
 
-/***************************
- *  Variables
- **************************/
-/***************************
- *  Project Main Styles
- **************************/
-*,
-*:before,
-*:after {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  font-family: "Open Sans", sans-serif;
-  font-size: 1em;
-  background-color: #e2e2e2;
-}
-
-/***************************
- *  Application Main Styles
- **************************/
-#menu--toggle[type=checkbox]:not(:checked),
-#menu--toggle[type=checkbox]:checked {
-  display: none;
-}
-
-.menu--toggle__trigger,
-.menu--toggle__burger,
-.menu--toggle__burger:before,
-.menu--toggle__burger:after {
-  position: absolute;
-  margin-right: 30px;
-  top: -3em;
-  right: 1.6em;
-  width: 2em;
-  height: 5px;
-  background-color: #282828;
-  border-radius: 2px;
-  cursor: pointer;
-  z-index: 100;
-  transition: 0.35s cubic-bezier(0.25, 0.1, 0.25, 1);
-}
-
-.menu--toggle__trigger {
-  height: 2em;
-  background: none;
-}
-
-.menu--toggle__burger:before {
-  content: "";
-  top: 10px;
-  left: 0;
-}
-.menu--toggle__burger:after {
-  content: "";
-  top: 20px;
-  left: 0;
-}
-
-.menu__body {
-  position: fixed;
-  width: 0em;
-  height: 0em;
-  margin: 0;
-  padding: 0;
-  background-color: #fcfcfc;
-  border-bottom-right-radius: 100%;
-  box-shadow: 3px 3px 7px rgba(40, 40, 40, 0.2);
-  z-index: 10;
-  animation: checkboxUncheckedAnimation 0.35s both;
-}
-
-.menu__body-element,
-.menu__body-link {
-  display: none;
-  margin: 4.4em 0 -3.3em -0.1em;
-  font-weight: normal;
-  color: #282828;
-  text-decoration: none;
-  text-transform: none;
-  list-style: none;
-  outline: 0;
-}
-
-.menu__body-element {
-  text-indent: 2em;
-}
-
-.menu__body-link:hover {
-  display: block;
-  width: 0;
-  color: #282828;
-  background-color: #e2e2e2;
-  animation: changeWidthOfElementAnimation 0.35s both;
-}
-
-#menu--toggle:checked + .menu--toggle__trigger + .menu--toggle__burger {
-  top: 35px;
-  transform: rotate(45deg);
-  transition: transform 0.35s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-}
-#menu--toggle:checked + .menu--toggle__trigger + .menu--toggle__burger:before {
-  top: 0;
-  transform: rotate(90deg);
-  transition: transform 0.35s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-  animation-direction: reverse;
-}
-#menu--toggle:checked + .menu--toggle__trigger + .menu--toggle__burger:after {
-  top: 0;
-  transform: rotate(90deg);
-  transition: transform 0.35s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-}
-#menu--toggle:checked + .menu--toggle__trigger + .menu--toggle__burger + .menu__body {
-  animation: checkboxCheckedAnimation 1s cubic-bezier(0.25, 0.1, 0.25, 1) both;
-}
-#menu--toggle:checked + .menu--toggle__trigger ~ .menu__body .menu__body-element, #menu--toggle:checked + .menu--toggle__trigger ~ .menu__body .menu__body-link {
-  display: block;
-}
-
-.promotion {
-  background-size: cover;
-}
-
-/**
- *  Animations
- *
- *  @note checkboxCheckedAnimation - added fix for Microsoft Edge
- */
-@keyframes checkboxCheckedAnimation {
-  50% {
-    width: 100vw;
-    height: 100vh;
-  }
-  100% {
-    width: 100vw;
-    height: 100vh;
-    border-radius: 0;
-  }
-}
-@keyframes checkboxUncheckedAnimation {
-  0% {
-    width: 100vw;
-    height: 100vh;
-  }
-}
-@keyframes changeWidthOfElementAnimation {
-  50% {
-    width: 0;
-  }
-  100% {
-    width: 100%;
-  }
-}
-@media only screen and (max-width: 600px) {
-  .menu--toggle__trigger,
-.menu--toggle__burger,
-.menu--toggle__burger:before,
-.menu--toggle__burger:after {
-    position: absolute;
-    margin-right: 5px;
-    top: -3em;
-    right: 1.6em;
-    width: 2em;
-    height: 5px;
-    background-color: #282828;
-    border-radius: 2px;
-    cursor: pointer;
-    z-index: 100;
-    transition: 0.35s cubic-bezier(0.25, 0.1, 0.25, 1);
-  }
-
-  .menu--toggle__trigger {
-    height: 2em;
-    background: none;
-  }
-
-  .menu--toggle__burger:before {
-    content: "";
-    top: 10px;
-    left: 0;
-  }
-  .menu--toggle__burger:after {
-    content: "";
-    top: 20px;
-    left: 0;
-  }
-
-  .menu__body {
-    position: absolute;
-    width: 0em;
-    height: 0em;
-    margin: 0;
-    padding: 0;
-    background-color: #fcfcfc;
-    border-bottom-right-radius: 100%;
-    box-shadow: 3px 3px 7px rgba(40, 40, 40, 0.2);
-    z-index: 10;
-    animation: checkboxUncheckedAnimation 0.35s both;
-  }
-
-  .menu__body-element,
-.menu__body-link {
-    display: none;
-    margin: 4.4em 0 3.3em -0.1em;
-    font-weight: normal;
-    color: #282828;
-    text-decoration: none;
-    text-transform: none;
-    list-style: none;
-    outline: 0;
-  }
-
-  .menu__body-element {
-    text-indent: 2em;
-  }
-
-  .menu__body-link:hover {
-    display: block;
-    width: 0;
-    color: #282828;
-    background-color: #e2e2e2;
-    animation: changeWidthOfElementAnimation 0.35s both;
-  }
-
-  #menu--toggle:checked + .menu--toggle__trigger + .menu--toggle__burger {
-    top: 35px;
-    transform: rotate(45deg);
-    transition: transform 0.35s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-  }
-  #menu--toggle:checked + .menu--toggle__trigger + .menu--toggle__burger:before {
-    top: 0;
-    transform: rotate(90deg);
-    transition: transform 0.35s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-    animation-direction: reverse;
-  }
-  #menu--toggle:checked + .menu--toggle__trigger + .menu--toggle__burger:after {
-    top: 0;
-    transform: rotate(90deg);
-    transition: transform 0.35s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-  }
-  #menu--toggle:checked + .menu--toggle__trigger + .menu--toggle__burger + .menu__body {
-    animation: checkboxCheckedAnimation 1s cubic-bezier(0.25, 0.1, 0.25, 1) both;
-  }
-  #menu--toggle:checked + .menu--toggle__trigger ~ .menu__body .menu__body-element, #menu--toggle:checked + .menu--toggle__trigger ~ .menu__body .menu__body-link {
-    display: block;
-  }
-
-  .promotion {
-    background-size: cover;
-  }
-
-  /**
-   *  Animations
-   *
-   *  @note checkboxCheckedAnimation - added fix for Microsoft Edge
-   */
-  @keyframes checkboxCheckedAnimation {
-    50% {
-      width: 100vw;
-      height: 100vh;
-    }
-    100% {
-      width: 100vw;
-      height: 100vh;
-      border-radius: 0;
-    }
-  }
-  @keyframes checkboxUncheckedAnimation {
-    0% {
-      width: 100vw;
-      height: 100vh;
-    }
-  }
-  @keyframes changeWidthOfElementAnimation {
-    50% {
-      width: 0;
-    }
-    100% {
-      width: 100%;
-    }
-  }
-}
-menu {
-  width: 300px;
-  height: 70px;
-  margin: 2em auto;
-  position: relative;
-  text-align: left;
-  cursor: pointer;
-  z-index: 100;
-}
-
-.menu__label {
-  display: block;
-  background: none;
-  border: none;
-  width: 100%;
-  height: 70px;
-  padding: 0 1.25em;
-  font-size: 1.3em;
-  color: #fff;
-  position: relative;
-  outline: none;
-  text-align: left;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-  -webkit-tap-highlight-color: transparent;
-  /* For some Androids */
-}
-
-.menu__inner li a span,
-.menu__label span {
-  font-size: 0.68em;
-  font-family: "helvetica" sans;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  line-height: 1.2;
-  font-weight: 600;
-}
-
-.menu .fa {
-  vertical-align: top;
-  line-height: 1.25;
-  margin-right: 0.65em;
-  font-size: 1.15em;
-}
-
-.menu__inner {
-  list-style: none;
-  padding: 0 1.25em;
-  font-size: 1.3em;
-  margin: 0;
-  position: absolute;
-  overflow: hidden;
-  height: 0;
-  -webkit-transition: height 0.5s cubic-bezier(0.7, 0, 0.3, 1);
-  transition: height 0.5s cubic-bezier(0.7, 0, 0.3, 1);
-}
-
-.menu.menu--open .menu__inner {
-  height: 310px;
-}
-
-.menu__inner li a {
-  display: block;
-  padding: 0.53em 0;
-  line-height: 1.2;
-  opacity: 0;
-  color: rgba(0, 0, 0, 0.25);
-  text-decoration: none;
-  pointer-events: none;
-  outline: none;
-  -webkit-transform: translate3d(0, -20px, 0);
-  transform: translate3d(0, -20px, 0);
-  -webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
-  transition: opacity 0.3s, transform 0.3s;
-}
-
-.menu__inner li a:hover {
-  color: rgba(0, 0, 0, 0.75);
-}
-
-.menu--open .menu__inner li a {
-  opacity: 1;
-  pointer-events: auto;
-  -webkit-transform: translate3d(0, 0, 0);
-  transform: translate3d(0, 0, 0);
-}
-
-.menu--open .menu__inner li:nth-child(2) a {
-  -webkit-transition-delay: 0.04s;
-  transition-delay: 0.04s;
-}
-
-.menu--open .menu__inner li:nth-child(3) a {
-  -webkit-transition-delay: 0.08s;
-  transition-delay: 0.08s;
-}
-
-.menu--open .menu__inner li:nth-child(4) a {
-  -webkit-transition-delay: 0.12s;
-  transition-delay: 0.12s;
-}
-
-.menu--open .menu__inner li:nth-child(5) a {
-  -webkit-transition-delay: 0.16s;
-  transition-delay: 0.16s;
-}
-
-.menu--open .menu__inner li:nth-child(6) a {
-  -webkit-transition-delay: 0.2s;
-  transition-delay: 0.2s;
-}
-
-.morph-shape,
-.morph-shape svg {
-  position: absolute;
-  width: 100%;
-  top: 0;
-  left: 0;
-}
-
-.morph-shape {
-  height: 70px;
-  -webkit-transition: height 0.5s cubic-bezier(0.7, 0, 0.3, 1);
-  transition: height 0.5s cubic-bezier(0.7, 0, 0.3, 1);
-  overflow: visible;
-}
-
-.morph-shape svg {
-  height: 100%;
-  overflow: visible;
-}
-
-.menu.menu--open .morph-shape {
-  height: 500px;
-}
-
-.menu.menu--open .morph-shape svg path {
-  fill: gray;
-}
-
-.morph-shape svg path {
-  fill: #00c3ff;
-  -webkit-transition: fill 0.5s cubic-bezier(0.7, 0, 0.3, 1);
-  transition: fill 0.5s cubic-bezier(0.7, 0, 0.3, 1);
-}
-
 .trustTitle {
   font-family: RabbiHighway sans-serif;
   font-size: 3rem;
@@ -1910,6 +1334,9 @@ menu {
 }
 .pricing-table .card:nth-child(1) {
   background: white;
+  z-index: 2;
+  width: 300px;
+  height: 500px;
 }
 .pricing-table .card:nth-child(1) .price::before {
   content: "$20";
@@ -1921,19 +1348,23 @@ menu {
   width: 300px;
   height: 550px;
   background: #0079a6;
+  color: #fff;
 }
 .pricing-table .card:nth-child(2) .price::before {
   content: "$50";
 }
 .pricing-table .card:nth-child(3) {
   background: white;
+  z-index: 2;
+  width: 300px;
+  height: 500px;
 }
 .pricing-table .card:nth-child(3) .price::before {
   content: "$100";
   color: rgba(143, 138, 138, 0.171);
 }
 .pricing-table .card:nth-child(1) .price, .pricing-table .card:nth-child(3) .price {
-  font-size: 6rem;
+  font-size: 4rem;
 }
 .pricing-table .card:nth-child(1) .buy-button, .pricing-table .card:nth-child(3) .buy-button {
   width: 230px;
@@ -2055,6 +1486,44 @@ menu {
     right: -30%;
   }
 }
+@media only screen and (max-width: 600px) {
+  .card {
+    width: 200px;
+    height: 300px;
+    font-size: 1rem;
+    margin-bottom: 5%;
+  }
+  .card:nth-child(2) {
+    width: 200px;
+    height: 325px;
+  }
+  .card .price ::before {
+    font-size: 1rem;
+    text-shadow: rgba(53, 52, 52, 0.17);
+  }
+  .card .price span {
+    font-size: 1.5rem;
+    left: -18%;
+  }
+
+  .buy-button {
+    margin-top: 0;
+  }
+
+  .details {
+    line-height: 0rem;
+  }
+}
+@media (min-width: 480px) and (orientation: landscape) {
+  .backButton {
+    width: 10%;
+  }
+}
+@media screen and (min-width: 740px) and (max-width: 1025px) {
+  .backButton {
+    width: 10%;
+  }
+}
 .communauty {
   margin-bottom: 5%;
 }
@@ -2064,6 +1533,7 @@ menu {
   background-repeat: no-repeat;
   background-position: center;
   background-size: 15%;
+  margin-bottom: 10%;
 }
 
 .infiTitle, .trustTitle {
@@ -2174,8 +1644,9 @@ menu {
 
   .pricing-table {
     flex-direction: column;
+    width: 100%;
     align-items: center;
-    margin-bottom: 1%;
+    top: -25%;
   }
 
   .trust {
@@ -2216,9 +1687,8 @@ menu {
   }
 
   .pricing-table {
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 1%;
+    flex-direction: row;
+    margin-top: -600px;
   }
 
   .trust {
@@ -2246,7 +1716,17 @@ menu {
   width: 5%;
 }
 
-@media only screen and (min-width: 768px) and (orientation: portrait) {
+@media only screen and (max-width: 600px) {
+  .backButton {
+    width: 30%;
+  }
+}
+@media (min-width: 480px) and (orientation: landscape) {
+  .backButton {
+    width: 10%;
+  }
+}
+@media screen and (min-width: 740px) and (max-width: 1025px) {
   .backButton {
     width: 10%;
   }

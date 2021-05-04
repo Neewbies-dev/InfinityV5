@@ -44,10 +44,9 @@ include "headerClient.php" ?>
 </section>
 
 
-<?php include "waves.php"?>
-<div class="content flex">
+
     <?php include "pricingInflu.php"?>
-</div>
+
 
 
 

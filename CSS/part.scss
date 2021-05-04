@@ -10,6 +10,7 @@ $red: #C30700;
     background-repeat: no-repeat;
     background-position: center;
     background-size: 15%;
+    margin-bottom:10%;
 }
 .infiTitle {
 
@@ -163,10 +164,10 @@ font-size: 1.8rem;
     }
 
     .pricing-table{
-
         flex-direction: column;
-        align-items:center;
-        margin-bottom:1%;
+        width:100%;
+        align-items: center;
+        top:-25%;
     }
 
     .trust{
@@ -220,10 +221,9 @@ font-size: 1.8rem;
     }
 
     .pricing-table{
-
-        flex-direction: column;
-        align-items:center;
-        margin-bottom:1%;
+        
+            flex-direction: row;
+            margin-top:-600px; 
     }
 
     .trust{

@@ -1,4 +1,15 @@
+footer {
 
+    .content {
+        background: #0079A6;
+    }
+
+    p{
+
+        padding:0%;
+        font-size:10px;
+    }
+}
 .mainFooter {
 
     height:100%;
@@ -9,7 +20,7 @@
 
     display:flex;
     flex-direction: column;
-    padding:5%;
+    // padding:5%;
     
 }
 
@@ -17,12 +28,12 @@
 
     display:flex;
     justify-content: space-between;
-    margin-top:2%;
+    // margin-top:2%;
 }
 
 .logoFooter {
 
-    width: 10%;
+    width:5%;
     margin-left: 41px;
 
 
@@ -34,7 +45,7 @@
     border-right: 1px black solid;
 
     p{
-        font-size:2.5rem;
+        font-size:1rem;
     }
 
     &:nth-child(1){
@@ -59,7 +70,9 @@
     display:flex;
     flex-direction: column;
     align-items: center;
-
+    ul{
+        font-size:10px;
+    }
     &:nth-child(2){
         order:2;
     }
@@ -70,7 +83,7 @@
 
 .titleFooter {
 
-    font-size: 16px;
+    font-size: 1.2rem;
     color: white;
     font-weight: bold;
 

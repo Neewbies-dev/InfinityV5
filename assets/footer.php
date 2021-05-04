@@ -1,7 +1,7 @@
 <footer>
 
 <?php 
-include "waves.php"
+include "waves2.php"
 ?>  
     <div class="content flex mainFooter">
         <div class="contentFooter">

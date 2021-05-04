@@ -16,6 +16,3 @@
 <?php include "menu3.php"?>
 <div class="headerClient">
 </div>
-<?php 
-include 'waves2.php'
-?>
