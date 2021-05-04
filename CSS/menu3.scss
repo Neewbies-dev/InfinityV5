@@ -15,11 +15,12 @@ main {
   -o-transition: transform .7s ease-in-out;
   transition: transform .7s ease-in-out;
 }
-
+.testFixed {
+  position: fixed;
+}
 .sidebar {
   height: 100%;
   width: 100%;
-  position: fixed;
   top: 0;
   z-index: 1;
   right: 0;

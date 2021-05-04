@@ -496,6 +496,11 @@ h3 {
   margin-top: 15px;
 }
 
+.text_anime {
+  display: flex;
+  flex-direction: column;
+}
+
 .agency-description {
   width: 56%;
   padding: 11%;
@@ -520,11 +525,6 @@ h3 {
   padding: 1%;
   cursor: pointer;
   font-size: 22px;
-}
-
-.text_anime {
-  display: flex;
-  flex-direction: column;
 }
 
 @media only screen and (max-width: 600px) {
@@ -1742,10 +1742,13 @@ main {
   transition: transform 0.7s ease-in-out;
 }
 
+.testFixed {
+  position: fixed;
+}
+
 .sidebar {
   height: 100%;
   width: 100%;
-  position: fixed;
   top: 0;
   z-index: 1;
   right: 0;
@@ -2324,6 +2327,11 @@ html {
     margin-right: 15px;
   }
 }
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
+  .animate_letter {
+    display: flow-root;
+  }
+}
 @media only screen and (min-width: 768px) {
   .subtitle_aninfinity h2 {
     font-size: 66px;
@@ -2355,6 +2363,642 @@ html {
 
   #container_aninfinity {
     margin-left: 0px;
+  }
+}
+.master_div_our_partners {
+  height: 100vh;
+  margin-top: 100px;
+}
+
+.title_our_partners {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 80px;
+}
+.title_our_partners .title_our {
+  font-family: RabbiHighway sans-serif;
+  text-transform: uppercase;
+  color: #C30700;
+  font-size: 60px;
+  margin-left: 150px;
+}
+.title_our_partners .title_partners {
+  font-family: RabbiHighway sans-serif;
+  font-size: 60px;
+  text-transform: uppercase;
+  margin-left: 150px;
+}
+
+.logo_our_partners {
+  display: flex;
+  justify-content: space-around;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+.logo_our_partners #logo_our_partners_escoot2go {
+  width: 200px;
+  height: auto;
+  filter: grayscale(100%);
+}
+.logo_our_partners #logo_our_partners_tinyPretty {
+  width: 200px;
+  height: auto;
+  filter: grayscale(100%);
+}
+.logo_our_partners #logo_our_partners_emptybox {
+  width: 200px;
+  height: auto;
+  filter: grayscale(100%);
+}
+
+#radio-1, #radio-2, #radio-3 {
+  display: none;
+}
+
+.slides {
+  display: flex;
+}
+
+.slide {
+  margin-right: 100px;
+}
+
+.carrousel {
+  width: 56%;
+}
+
+@media only screen and (max-width: 600px) {
+  .carrousel {
+    background: #ffffff;
+    text-align: center;
+    padding: 4em 0;
+    height: 23.5em;
+    max-width: 750px;
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .carrousel h2 {
+    margin: 0;
+    margin-top: -1.7em;
+    padding: 0;
+    font-size: 1em;
+    text-align: center;
+    color: #bbbbbb;
+  }
+
+  .carrousel .slides {
+    width: 400%;
+    left: 0;
+    padding-left: 0;
+    padding-top: 1em;
+    overflow: hidden;
+    list-style: none;
+    position: relative;
+    -webkit-transition: transform 0.5s;
+    -moz-transition: transform 0.5s;
+    -o-transition: transform 0.5s;
+    transition: transform 0.5s;
+  }
+
+  .carrousel .slides li {
+    width: 25%;
+    position: relative;
+    float: left;
+  }
+
+  .carrousel li p {
+    margin-top: 0;
+  }
+
+  .carrousel li q {
+    max-width: 90%;
+    margin: auto;
+    color: #666666;
+    font-size: 1.3em;
+    font-weight: bold;
+  }
+
+  .carrousel li img {
+    width: 3em;
+    height: 3em;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-left: -1.5em;
+    margin-right: 0.5em;
+    vertical-align: middle;
+  }
+
+  .carrousel li span.author {
+    margin-top: 0.5em;
+    font-size: 1.2em;
+    color: #777777;
+    display: block;
+  }
+
+  .carrousel .slidesNavigation {
+    display: block;
+    list-style: none;
+    text-align: center;
+    bottom: 1em;
+    /*--- Centering trick---*/
+    /* Absolute positioning*/
+    position: absolute;
+    /* Abosulte positioning*/
+    width: 104px;
+    /*This width  is the addition of the width of all the navigations dots - So in this case is   104 because the navigation dots are 26px (width:10px and 6px marginleft + 6 px marginright) and there are 4 dots so 4x26=104 */
+    left: 50%;
+    /*Centering de element*/
+    margin-left: -52px;
+    /*adjusting the centering by applying a negative margin of half of the width*/
+  }
+
+  .carrousel input {
+    display: none;
+  }
+
+  .carrousel .slidesNavigation label {
+    float: left;
+    margin: 6px;
+    display: block;
+    height: 10px;
+    width: 10px;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    border: solid 1px black;
+    font-size: 0;
+  }
+
+  /* You have to repeat this with each slide
+  TODO: make it easier with SCSS
+  25% movement 100/slides-num
+  */
+  #radio-1:checked ~ .slides {
+    transform: translateX(0%);
+  }
+
+  #radio-2:checked ~ .slides {
+    transform: translateX(-25%);
+  }
+
+  #radio-3:checked ~ .slides {
+    transform: translateX(-50%);
+  }
+
+  .carrousel .slidesNavigation label:hover {
+    cursor: pointer;
+  }
+
+  /* You have to repeat this with each slide/dot */
+  .carrousel #radio-1:checked ~ .slidesNavigation label#dotForRadio-1,
+.carrousel #radio-2:checked ~ .slidesNavigation label#dotForRadio-2,
+.carrousel #radio-3:checked ~ .slidesNavigation label#dotForRadio-3 {
+    background: #888888;
+  }
+
+  .carrousel {
+    height: 23.5em;
+  }
+
+  .title_our_partners {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 80px;
+  }
+  .title_our_partners .title_our {
+    font-family: RabbiHighway sans-serif;
+    text-transform: uppercase;
+    color: #C30700;
+    font-size: 40px;
+    margin-left: 30px;
+  }
+  .title_our_partners .title_partners {
+    font-family: RabbiHighway sans-serif;
+    font-size: 40px;
+    text-transform: uppercase;
+    margin-left: 30px;
+  }
+
+  .slide {
+    margin-right: 0;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .carrousel {
+    background: #ffffff;
+    text-align: center;
+    padding: 4em 0;
+    height: 23.5em;
+    max-width: 750px;
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .carrousel h2 {
+    margin: 0;
+    margin-top: -1.7em;
+    padding: 0;
+    font-size: 1em;
+    text-align: center;
+    color: #bbbbbb;
+  }
+
+  .carrousel .slides {
+    width: 400%;
+    left: 0;
+    padding-left: 0;
+    padding-top: 1em;
+    overflow: hidden;
+    list-style: none;
+    position: relative;
+    -webkit-transition: transform 0.5s;
+    -moz-transition: transform 0.5s;
+    -o-transition: transform 0.5s;
+    transition: transform 0.5s;
+  }
+
+  .carrousel .slides li {
+    width: 25%;
+    position: relative;
+    float: left;
+  }
+
+  .carrousel li p {
+    margin-top: 0;
+  }
+
+  .carrousel li q {
+    max-width: 90%;
+    margin: auto;
+    color: #666666;
+    font-size: 1.3em;
+    font-weight: bold;
+  }
+
+  .carrousel li img {
+    width: 3em;
+    height: 3em;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-left: -1.5em;
+    margin-right: 0.5em;
+    vertical-align: middle;
+  }
+
+  .carrousel li span.author {
+    margin-top: 0.5em;
+    font-size: 1.2em;
+    color: #777777;
+    display: block;
+  }
+
+  .carrousel .slidesNavigation {
+    display: block;
+    list-style: none;
+    text-align: center;
+    bottom: 1em;
+    /*--- Centering trick---*/
+    /* Absolute positioning*/
+    position: absolute;
+    /* Abosulte positioning*/
+    width: 104px;
+    /*This width  is the addition of the width of all the navigations dots - So in this case is   104 because the navigation dots are 26px (width:10px and 6px marginleft + 6 px marginright) and there are 4 dots so 4x26=104 */
+    left: 50%;
+    /*Centering de element*/
+    margin-left: -52px;
+    /*adjusting the centering by applying a negative margin of half of the width*/
+  }
+
+  .carrousel input {
+    display: none;
+  }
+
+  .carrousel .slidesNavigation label {
+    float: left;
+    margin: 6px;
+    display: block;
+    height: 10px;
+    width: 10px;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    border: solid 1px black;
+    font-size: 0;
+  }
+
+  /* You have to repeat this with each slide
+  TODO: make it easier with SCSS
+  25% movement 100/slides-num
+  */
+  #radio-1:checked ~ .slides {
+    transform: translateX(0%);
+  }
+
+  #radio-2:checked ~ .slides {
+    transform: translateX(-25%);
+  }
+
+  #radio-3:checked ~ .slides {
+    transform: translateX(-50%);
+  }
+
+  .carrousel .slidesNavigation label:hover {
+    cursor: pointer;
+  }
+
+  /* You have to repeat this with each slide/dot */
+  .carrousel #radio-1:checked ~ .slidesNavigation label#dotForRadio-1,
+.carrousel #radio-2:checked ~ .slidesNavigation label#dotForRadio-2,
+.carrousel #radio-3:checked ~ .slidesNavigation label#dotForRadio-3 {
+    background: #888888;
+  }
+
+  .carrousel {
+    height: 23.5em;
+  }
+
+  .title_our_partners {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 80px;
+  }
+  .title_our_partners .title_our {
+    font-family: RabbiHighway sans-serif;
+    text-transform: uppercase;
+    color: #C30700;
+    font-size: 40px;
+    margin-left: 30px;
+  }
+  .title_our_partners .title_partners {
+    font-family: RabbiHighway sans-serif;
+    font-size: 40px;
+    text-transform: uppercase;
+    margin-left: 30px;
+  }
+
+  .slide {
+    margin-right: 0;
+  }
+
+  #menu {
+    z-index: 99;
+    position: fixed;
+    left: calc(100% - 292px);
+    top: 10px;
+    color: black;
+    display: none;
+    margin: 120px 30px;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+    font-weight: 100;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #333;
+    padding: 24px;
+    width: 400px !important;
+    text-align: right;
+  }
+  #menu ul {
+    line-height: 4.7rem;
+  }
+  #menu li {
+    font-size: 50px;
+  }
+}
+@media (max-width: 480px) {
+  .carrousel li p {
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+  }
+
+  .carrousel li q {
+    font-size: 1em;
+  }
+
+  .carrousel li img {
+    width: 2em;
+    margin-left: -1em;
+    margin-right: 0.25em;
+  }
+}
+body {
+  background-color: #fafafa;
+}
+
+.bg-cover {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  z-index: 99;
+  transition: all 350ms ease;
+  opacity: 100;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.prompt {
+  position: fixed;
+  width: 100%;
+  text-align: center;
+  line-height: 114px;
+  font-family: Georgia;
+  color: #666;
+}
+
+.reveal {
+  display: block;
+  pointer-events: auto;
+  visibility: visible;
+}
+
+.hamburger-shell {
+  z-index: 99;
+  margin: 0;
+  position: fixed;
+  overflow: hidden;
+  width: 70px;
+  height: 100px;
+  overflow: auto;
+  left: calc(100% - 100px);
+  top: 20px;
+  cursor: pointer;
+  padding: 0;
+  background: transparent;
+  border: none;
+}
+
+.top, .middle {
+  position: absolute;
+  width: 62px;
+  height: 10px;
+  background-color: black;
+  transition: all 350ms ease-in-out;
+  top: 20px;
+}
+
+.middle {
+  top: 40px;
+}
+
+#menu {
+  z-index: 99;
+  position: fixed;
+  left: 400px;
+  top: 10px;
+  color: black;
+  display: none;
+  margin: 120px 30px;
+  text-decoration: none;
+  font-family: Arial, sans-serif;
+  font-weight: 100;
+  font-size: 75px;
+  text-transform: uppercase;
+  color: #333;
+  padding: 24px;
+  width: 500px;
+  text-align: right;
+}
+
+#menu li {
+  text-decoration: none !important;
+  padding-bottom: 10px;
+  margin-bottom: 12px;
+  border-bottom: 1px solid black;
+  list-style: none;
+  color: #555;
+  transition: all 150ms ease;
+}
+
+#menu li:hover {
+  color: #0079a6;
+  padding-right: 3px;
+}
+
+#menu a {
+  text-decoration: none;
+  color: inherit;
+}
+#menu ul {
+  line-height: 5.4rem;
+}
+
+.menu-open .top {
+  transform: rotate(225deg);
+  -webkit-transform: rotate(225deg);
+  top: 30px;
+  background-color: #C30700;
+  height: 2px;
+}
+
+.menu-open .middle {
+  transform: rotate(-225deg);
+  -webkit-transform: rotate(-225deg);
+  top: 30px;
+  background-color: #C30700;
+  height: 2px;
+}
+
+.menu-name {
+  font-family: Verdana;
+  font-weight: 900;
+  color: black;
+  font-size: 19.5px;
+  text-decoration: none;
+  position: absolute;
+  top: 56px;
+  left: -1px;
+  transition: all 350ms;
+}
+
+.menu-open .menu-name {
+  top: 64px;
+  color: #C30700;
+}
+
+.responsive-box {
+  background-color: #ddd;
+  margin: 2%;
+  float: left;
+}
+
+.box-1 {
+  width: 96%;
+  height: 300px;
+}
+
+.box-2, .box-3, .box-4 {
+  width: 29.333%;
+  height: 140px;
+}
+
+.box-5 {
+  width: 62.666%;
+  height: 492px;
+}
+
+header {
+  width: 100%;
+  height: 120px;
+}
+
+.par-1, .par-2, .par-3 {
+  width: 70%;
+  margin: 1% 2%;
+  background-color: #888;
+  height: 16px;
+  float: left;
+}
+
+.par-2 {
+  width: 56%;
+}
+
+.par-3 {
+  width: 64%;
+}
+
+@media only screen and (max-width: 600px) {
+  #menu {
+    left: calc(100% - 52px);
+    width: 250px !important;
+    text-align: right;
+  }
+  #menu ul {
+    line-height: 4rem;
+  }
+  #menu li {
+    font-size: 30px;
+  }
+}
+@media only screen and (min-width: 601px) and (max-width: 768px) {
+  #menu {
+    z-index: 99;
+    position: fixed;
+    left: calc(100% - 55px);
+    top: 10px;
+    color: black;
+    display: none;
+    margin: 120px 30px;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+    font-weight: 100;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #333;
+    padding: 24px;
+    width: 400px;
+    text-align: right;
+  }
+  #menu ul {
+    line-height: 4.7rem;
+  }
+  #menu li {
+    font-size: 50px;
   }
 }
 * {

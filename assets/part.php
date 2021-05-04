@@ -1,8 +1,6 @@
 <?php 
 
 include "headerClient.php" ?>
-
-
 <h1 class="infiTitle"> Infinity of solutions</h1>
 <h2 class="infiSubtitle"> Rien n'est impossible </h2>
 
@@ -44,15 +42,10 @@ include "headerClient.php" ?>
 </section>
 
 
+<?php include "waves.php"?>
 
-    <?php include "pricingInflu.php"?>
-
-
-
-
-<section class="trust">
-
-
+<section>
+<?php include "ourpartners.php" ?>
 </section>
 
 <?php include "footer.php"?>
