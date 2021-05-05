@@ -4,6 +4,9 @@
     <div class="video">
         <video id="opening" src="vids/opening.mp4" autoplay="" muted="" playsinline=""  loop="" preload="auto" ></video>
     </div>
+    <div class="videoMobile">
+        <video id="openingMobile" src="vids/Infinty_IG_Stories_size.mp4" autoplay="" muted="" playsinline=""  loop="" preload="auto" ></video>
+    </div>
                                     <!-- BUGRER MENU -->
 <?php 
 include "menu.php"
