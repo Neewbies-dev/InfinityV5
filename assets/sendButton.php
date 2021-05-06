@@ -4,5 +4,5 @@
     <div class="left"></div>
     <div class="right"></div>
 </button>
-<script src="JS/sendButton.js" type="text/javascript"></script>
+<script src="../JS/sendButton.js" type="text/javascript"></script>
 

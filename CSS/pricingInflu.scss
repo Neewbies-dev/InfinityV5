@@ -1,30 +1,22 @@
+
+
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700");
 
 $yellow: #f6f792;
 $black: #333745;
-$blue: #77c4d3;
+$blue: #0079a6;
 $lightBlue: #daede2;
-
+$red: #ea2e49;
 $white: #fff;
 
-$dark-orange : #DF7806;
-$light-orange: #F99E0B;
-$red: #C30700;
-
-$mainFont: "Open Sans", sans-serif;
-
+$mainFont: Aargh sans-serif;
 
 
 // PRICING TABLE
 .pricing-table {
-  
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+
   display: flex;
   justify-content: center;
-  margin-top:279px;
-  background: $dark-orange;
 
   // INDIVIDUAL PRICING TABLE
   .card {
@@ -39,17 +31,19 @@ $mainFont: "Open Sans", sans-serif;
     overflow: hidden;
     box-shadow: 2px 2px 46px -4px rgba(0, 0, 0, 0.6);
     transition: all 0.2s ease-in-out;
-    color:white;
-    margin-top:2%;
 
     // SPECIFIC STYLING FOR THE FIRST TABLE
     &:nth-child(1) {
-      background: $red;
-      background: linear-gradient(to left, #F99E0B, #DF7806, #C30700);
+      background: white;
+      z-index: 2;
+      width: 300px;
+      height: 500px;
+
 
       .price {
         &::before {
-          content: "$39";
+          content: "$20";
+          color:rgba(143, 138, 138, 0.171);
         }
       }
     }
@@ -60,24 +54,30 @@ $mainFont: "Open Sans", sans-serif;
       z-index: 2;
       width: 300px;
       height: 550px;
-      background: $red;
-      background: linear-gradient(to right,#F99E0B, #DF7806, #C30700);
+      background: $blue;
+      color:$white;
+      
 
       .price {
         &::before {
-          content: "$69";
+          content: "$50";
+          
         }
       }
     }
 
     // SPECIFIC STYLING FOR THE THIRD TABLE
     &:nth-child(3) {
-      background: $red;
-      background: linear-gradient(to right, #F99E0B, #DF7806, #C30700);
+      background: white;
+      z-index: 2;
+      width: 300px;
+      height: 500px;
+
 
       .price {
         &::before {
-          content: "$89";
+          content: "$100";
+          color:rgba(143, 138, 138, 0.171);
         }
       }
     }
@@ -86,12 +86,13 @@ $mainFont: "Open Sans", sans-serif;
     &:nth-child(1),
     &:nth-child(3) {
       .price {
-        font-size: 6rem;
+        font-size: 4rem;
       }
 
       .buy-button {
         width: 230px;
         height: 170px;
+        background:$blue;
         h3 {
           top: 12%;
           left: 10%;
@@ -174,10 +175,10 @@ $mainFont: "Open Sans", sans-serif;
       position: absolute;
       width: 250px;
       height: 180px;
-      background: $light-orange;
+      background: $white;
       border-radius: 15%;
       right: -34%;
-      bottom: -22%;
+      bottom: -20%;
       transition: all 0.4s ease-in-out;
 
       // BUTTON
@@ -239,5 +240,51 @@ $mainFont: "Open Sans", sans-serif;
   }
   100% {
     right: -30%;
+  }
+}
+
+
+@media only screen and (max-width: 600px) {
+   
+    .card{
+      width:200px;
+      height:300px;
+      font-size:1rem;
+      margin-bottom:5%;
+      &:nth-child(2){
+        width:200px;
+        height:325px;
+      }
+      .price{
+
+        ::before{
+        font-size: 1rem;
+        text-shadow: rgba(53, 52, 52, 0.17);
+        }
+        span{
+          font-size:1.5rem;
+          left:-18%;
+        }
+      }
+    }
+    .buy-button{
+      margin-top:0;
+    }
+
+    .details{
+      line-height: 0rem;
+    }
+  }
+
+@media (min-width: 480px) and (orientation:landscape){
+  .backButton {
+      width:10%;
+  }
+}
+
+
+@media screen and (min-width: 740px) and (max-width:1025px){
+  .backButton {
+      width:10%;
   }
 }

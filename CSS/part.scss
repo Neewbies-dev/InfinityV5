@@ -6,10 +6,11 @@ $red: #C30700;
 
 .services{
 
-    background-image: url("img/infini_vertical_opacity.svg");
+    background-image: url("../img/infini_vertical_opacity.svg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: 15%;
+    margin-bottom:10%;
 }
 .infiTitle {
 
@@ -163,10 +164,10 @@ font-size: 1.8rem;
     }
 
     .pricing-table{
-
         flex-direction: column;
-        align-items:center;
-        margin-bottom:1%;
+        width:100%;
+        align-items: center;
+        top:-25%;
     }
 
     .trust{
@@ -220,10 +221,9 @@ font-size: 1.8rem;
     }
 
     .pricing-table{
-
-        flex-direction: column;
-        align-items:center;
-        margin-bottom:1%;
+        
+            flex-direction: row;
+            margin-top:-600px; 
     }
 
     .trust{
@@ -246,18 +246,3 @@ font-size: 1.8rem;
     }
 }
 
-@font-face {
-    font-family: RabbiHighway sans-serif;
-    src: url('./fonts/RabbidHighwaySignII.otf');
-  }
-  
-  @font-face {
-    font-family: Aargh sans-serif;
-    src: url('./fonts/Aaargh.ttf');
-  }
-  
-
-  @font-face {
-      font-family: StMarie sans-serif;
-      src: url('./fonts/StMarie-Thin.otf;');
-  }

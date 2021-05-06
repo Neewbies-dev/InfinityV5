@@ -56,10 +56,15 @@ h3 {
         width: 40%;
         height:40%;
         position:relative;
+        
+        filter:brightness(50%);
+        transition: .3s ease-in-out;
+        &:hover  {
+            filter:brightness(100%);
+        }
     }
     
- 
-       
+
     i{
 
         color:$red;
@@ -91,6 +96,11 @@ font-family:Aargh sans-serif;
 text-align: justify;
 }
 
+.airplane {
+    width:25%;
+    margin-top:25%;
+}
+
 .tellUs {
 
     background-color: rgba(255, 255, 255, 0.609);
@@ -105,6 +115,41 @@ text-align: justify;
 }
 
 @media only screen and (max-width: 600px) {
+    .button_talk_about {
+        --primary: rgb(233, 225, 212,0.7);
+        --primary-dark: rgb(109, 109, 109);
+        --primary-darkest: rgb(70, 68, 68);
+        --text: #000;
+        --text-opacity: 1;
+        --success: #2B3044;
+        --left-wing-background: var(--primary);
+        --left-body-background: var(--primary);
+        --right-wing-background: var(--primary);
+        --right-body-background: var(--primary);
+          border: 0;
+          padding: 8px 0;
+          min-width: 160px;
+          text-align: center;
+          margin: auto;
+          padding:1.5%;
+          line-height: 24px;
+          font-family: RabbiHighway sans-serif;
+          font-weight: 500;
+          font-size: 14px;
+          background: white;
+          border-radius: 50px;
+          outline: none;
+          color: var(--text);
+          transform: rotate(calc(var(--rotate) * 0deg)) translateZ(0);
+          -webkit-appearance: none;
+          -webkit-tap-highlight-color: transparent;
+          display: block;
+          position: relative;
+          top: 60px;
+      }
+    .Wave_orange_full_screen {
+        height: 100vh;
+    }
     #openingMobile{
         display: block;
         height: 100%;
@@ -178,6 +223,7 @@ text-align: justify;
 @media screen and (max-width: 768px) {
     #openingMobile{
         display: block;
+        height: 100vh;
     }
 
     #opening {
@@ -203,6 +249,7 @@ text-align: justify;
         
         img{
             display:none;
+
         }
 
         .userButton{
@@ -214,6 +261,14 @@ text-align: justify;
 
             color:$red;
         }
+    }
+
+    .airplane {
+        width: 15%;
+        margin-top: 15px;
+        margin-left: 190px;
+        margin-bottom: 10px;
+        width: 170px;
     }
 }
 
@@ -266,14 +321,3 @@ text-align: justify;
     }
 
 }
-
-@font-face {
-    font-family: RabbiHighway sans-serif;
-    src: url('./fonts/RabbidHighwaySignII.otf');
-  }
-  
-  @font-face {
-    font-family: Aargh sans-serif;
-    src: url('./fonts/Aaargh.ttf');
-  }
-  

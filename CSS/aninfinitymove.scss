@@ -63,12 +63,6 @@
     display: flex;
 }
 
-// --------------- For center text in full screen ---------------
-.animate_letter {
-    display: flex;
-    justify-content: center;
-}
-
 // --------------- Render letter "of" ---------------
 
 .title_aninfinity {
@@ -84,23 +78,22 @@
     display: flex;
     flex-direction: column;
     height: 100vh;
-    margin: auto;
 }
 .aninfinitymovallflex {
-    margin: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 15%;
 }
 // --------------- Subtitle of Animation SVG An Infinity and flip text ---------------
 .subtitle_aninfinity {
-    display: flex;
-    justify-content: center;
-    margin-left: 30px;
     h2 {
+        margin-top: 7px;
         font-size: 65px;
         font-weight: 300;
         font-family: RabbiHighway sans-serif;
     }
 }
-@import url('https://fonts.googleapis.com/css?family=Roboto:700');
+
 
 // --------------- Animation flip text ---------------
 
@@ -152,43 +145,54 @@
     .animate_letter {
         display: flex;
         flex-direction: column;
-        margin-left: 15px;
     }
     .subtitle_aninfinity {
         display: flex;
         justify-content: center;
-        margin-left: 30px;
         h2 {
-            margin-top: 40px;
+            margin-top: 10px;
             font-size: 45px;
             font-weight: 300;
             font-family: RabbiHighway sans-serif;
         }
     }
+    .animate_tablet {
+        display: flex;
+        flex-direction: column;
+    }
+    .aninfinitymovallflex {
+        margin-top: auto;
+        margin-bottom: auto;
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+    #flip_aninfinity {
+        height: 55px;
+    }
     #container_aninfinity {
         font-size:40px;
         font-weight:bold;
         font-family: RabbiHighway sans-serif;
-      }
+    }
+    #flip_aninfinity > div > div {
+        height: 31px;
+    }
     #flip_aninfinity div:first-child {
         font-size: 45px;
         animation: show 12s reverse infinite;
     }
-    #container_aninfinity {
-        margin-left: 15px;
-    }
+
     #aninfinitymov {
         width: 230px;
-        margin-left: 15px;
     }
     .title_aninfinity {
         font-size: 2.8rem;
         font-family: RabbiHighway sans-serif;
         text-shadow: rgb(0, 0, 0) 2px 0px 0px, rgb(0, 0, 0) 1.75517px 0.958851px 0px, rgb(0, 0, 0) 1.0806px 1.68294px 0px, rgb(0, 0, 0) 0.141474px 1.99499px 0px, rgb(0, 0, 0) -0.832294px 1.81859px 0px, rgb(0, 0, 0) -1.60229px 1.19694px 0px, rgb(0, 0, 0) -1.97999px 0.28224px 0px, rgb(0, 0, 0) -1.87291px -0.701566px 0px, rgb(0, 0, 0) -1.30729px -1.51361px 0px, rgb(0, 0, 0) -0.421592px -1.95506px 0px, rgb(0, 0, 0) 0.567324px -1.91785px 0px, rgb(0, 0, 0) 1.41734px -1.41108px 0px, rgb(0, 0, 0) 1.92034px -0.558831px 0px;
         color:white;
-        margin-left: 15px;
-        margin-top: 17px;
+        margin-top: -8px;
         margin-right: 15px;
+        margin-left: 0px;
     }
 }
 @media only screen 
@@ -200,7 +204,7 @@
         display: flow-root;
     }
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 601px) and (max-width: 768px) {
     .subtitle_aninfinity{
         h2 {
             font-size: 66px;
@@ -220,6 +224,12 @@
     }
     .animate_letter {
         display: block;
+    }
+    .aninfinitymovallflex {
+        margin-top: auto;
+        margin-bottom: auto;
+        margin-left: 30px;
+        margin-right: 130px;
     }
 }
 @media only screen and (min-width: 1250px) {

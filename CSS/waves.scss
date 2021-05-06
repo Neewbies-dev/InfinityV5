@@ -61,7 +61,6 @@ p {
 
 .content {
   position:relative;
-  height:100vh;
   text-align:center;
   background-color: $dark-orange;
   button {
@@ -72,6 +71,7 @@ p {
         transform:scale(1.15);
   }
 }
+
   p{
 
     width: 50%;
@@ -121,9 +121,6 @@ p {
     height:40px;
     min-height:40px;
   }
-  .content {
-    height:100vh;
-
     .agency-description{
        width:66%;
        font-size: 1rem;
@@ -138,7 +135,6 @@ p {
 
     flex-direction: column;
   }
-}
 
 @media (max-width: 767px) and  (orientation:landscape){
 
@@ -151,12 +147,4 @@ p {
 
 
 
-@font-face {
-  font-family: RabbiHighway sans-serif;
-  src: url('./fonts/RabbidHighwaySignII.otf');
-}
 
-@font-face {
-  font-family: Aargh sans-serif;
-  src: url('./fonts/Aaargh.ttf');
-}
