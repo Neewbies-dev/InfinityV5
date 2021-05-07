@@ -133,3 +133,27 @@ $red: #C30700;
 
 }
 
+@media only screen and (max-width: 767px) {
+  .cardContainer{
+    width:100%;
+  
+    .cardInflu {
+      width: 35%;
+    }
+  }
+  .bubles {
+    top:0%;
+  }
+}
+
+@media screen and  (min-width: 740px) and (max-width: 1024px){
+
+  .cardContainer{
+    width:100%;
+  }
+
+  .bubles{
+    top:-2%;
+    width:20%;
+  }
+}

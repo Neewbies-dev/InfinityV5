@@ -12,6 +12,7 @@ include "menu4.php"
                                     <!-- FIRST TITLE -->
     <div class="text_anime"><?php include "aninfinitymov.php" ?></div>
 </section>
+
                                     <!-- WAVES EFFECTS -->
 <?php 
 include "waves.php"
@@ -25,6 +26,7 @@ include "waves.php"
 <h3 class="joinUs">Nous rejoindre en tant que </h3>
 
 <div class="pictures">
+    <div id="mon-id"></div>
     <img src="img/partenaire2.jpg"/>
     <img src="img/Influ3.jpg" />
     <div class="userButton">
