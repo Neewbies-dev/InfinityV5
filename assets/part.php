@@ -42,7 +42,10 @@ include "headerClient.php" ?>
 </section>
 
 
-<?php include "waves.php"?>
+
+
+<?php include "pricingInflu.php"?>
+
 
 <section>
 <?php include "ourpartners.php" ?>

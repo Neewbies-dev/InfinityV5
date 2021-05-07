@@ -50,7 +50,7 @@ body {
 
 .top, .middle{
 	position: absolute;
-	width: 62px;
+	width: 40px;
 	height: 10px;
 	background-color: black;
 	transition: all 350ms ease-in-out;
@@ -124,7 +124,7 @@ body {
 	font-family: Verdana;
 	font-weight: 900;
 	color: black;
-	font-size: 19.5px;
+	font-size: 13.5px;
 	text-decoration: none;
 	position: absolute;
 	top: 56px;
@@ -180,7 +180,7 @@ header {
 }
 @media only screen and (max-width: 600px) {
    #menu {
-    left: calc(100% - 52px);
+    left: calc(100% - 290px);
 	width: 250px !important;
         text-align: right;
         ul {
@@ -195,7 +195,7 @@ header {
 	#menu {
         z-index: 99;
         position: fixed;
-        left: calc(100% - 55px);
+        left: calc(100% - 290px);
         top: 10px;
         color: black;
         display: none;

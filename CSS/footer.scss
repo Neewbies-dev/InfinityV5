@@ -1,5 +1,6 @@
 footer {
 
+    font-family: Aargh sans-serif;
     .content {
         background: #0079A6;
     }
@@ -33,16 +34,33 @@ footer {
 
 .logoFooter {
 
-    width:5%;
-    margin-left: 41px;
+    width:30%;
+    left:50px;
+    height:70%;
+   
+    position:relative;
 
+}
 
+.pictlogo {
+    display:flex;
+    flex-direction: column;
+    align-self: center;
+    width:100%;
+    justify-content: center;
+    p {
+        width:0;
+    }
+   
 }
 
 .socialFooter {
 
-    width:200%;
+    
     border-right: 1px black solid;
+    display:flex;
+    justify-content: center;
+    width:100%;
 
     p{
         font-size:1rem;
@@ -56,12 +74,20 @@ footer {
 
         display:flex;
         justify-content: center;
-    }
+        align-items: center;
+    
 
     p{
 
-        width: auto;
+        margin:12px;
+        font-size:2rem;
+      
     }
+    img {
+        position:relative;
+        left: 30px;
+    }
+}
 
 }
 
@@ -76,6 +102,10 @@ footer {
     &:nth-child(2){
         order:2;
     }
+
+    li {
+        font-weight: bold;
+    }
 }
 
 
@@ -86,6 +116,7 @@ footer {
     font-size: 1.2rem;
     color: white;
     font-weight: bold;
+    text-transform: uppercase;
 
 }
 
