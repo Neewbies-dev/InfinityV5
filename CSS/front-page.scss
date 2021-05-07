@@ -10,6 +10,9 @@ video {
 #openingMobile {
     display: none;
 }
+// .waves {
+//     transform: scaley(-0.8);
+// }
 .title{
 
     text-align: center;
@@ -222,12 +225,12 @@ text-align: justify;
 
 @media screen and (max-width: 768px) {
     #openingMobile{
-        display: block;
-        height: 100vh;
+        display: none;
     }
 
     #opening {
-        display: none;
+        display: block;
+        height: 100vh;
     }
     video{
     width: 100%;
@@ -284,8 +287,9 @@ text-align: justify;
     .title{
         text-align: center;
     }
-    button{
+    .button_talk_about{
         padding:2%;
+        margin-top: 100px;
     }
     .joinUs{
         margin-top:5%;
@@ -318,6 +322,15 @@ text-align: justify;
 
             width:160px;
         }
+    }
+    .airplane {
+        display: block;
+        position: relative;
+        bottom: 40px;
+        margin-top: 15px;
+        margin-left: 190px;
+        margin-bottom: 25px;
+        width: 220px;
     }
 
 }

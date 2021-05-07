@@ -631,12 +631,12 @@ h3 {
 }
 @media screen and (max-width: 768px) {
   #openingMobile {
-    display: block;
-    height: 100vh;
+    display: none;
   }
 
   #opening {
-    display: none;
+    display: block;
+    height: 100vh;
   }
 
   video {
@@ -689,8 +689,9 @@ h3 {
     text-align: center;
   }
 
-  button {
+  .button_talk_about {
     padding: 2%;
+    margin-top: 100px;
   }
 
   .joinUs {
@@ -717,6 +718,16 @@ h3 {
   }
   .pictures .influ {
     width: 160px;
+  }
+
+  .airplane {
+    display: block;
+    position: relative;
+    bottom: 40px;
+    margin-top: 15px;
+    margin-left: 190px;
+    margin-bottom: 25px;
+    width: 220px;
   }
 }
 footer .content {
