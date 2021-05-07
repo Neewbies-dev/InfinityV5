@@ -1,3 +1,4 @@
+<section class="vertical-scrolling">
 <footer>
 
 <?php 
@@ -49,5 +50,10 @@ include "waves2.php"
         </div>
     </div>
 </footer>
+</section>
+</div>
+<script type="text/javascript">
+        $('#fullpage').fullpage();
+</script>  
 </body>
 </html>

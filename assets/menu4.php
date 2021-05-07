@@ -1,4 +1,4 @@
-<script src="../JS/menu4.js" type="text/javascript"></script>
+<script src="./JS/menu4.js" type="text/javascript"></script>
 <div class="bg-cover" class="none"></div>
 
 <header>
@@ -10,12 +10,11 @@
 	</button>
 
 	<nav id="menu">
-		<ul>
-			<li><a href="#">Home</a></li>
-			<li><a href="#">Portfolio</a></li>
-			<li><a href="#">About Us</a></li>
-			<li><a href="#">Locations</a></li>
-			<li><a href="#">Contact</a></li>
+		<ul id="menu1">
+			<li data-menuanchor="firstPage"><a href="#firstPage">Home</a></li>
+			<li data-menuanchor="secondPage"><a href="#secondPage">Portfolio</a></li>
+			<li data-menuanchor="thirdPage"><a href="#3rdPage">About Us</a></li>
+			<li data-menuanchor="fourthPage"><a href="#4rdPage">Locations</a></li>
 		</ul>
 	</nav>
 </header>

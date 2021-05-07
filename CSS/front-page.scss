@@ -225,12 +225,12 @@ text-align: justify;
 
 @media screen and (max-width: 768px) {
     #openingMobile{
-        display: none;
+        display: block;
+        height: 100vh;
     }
 
     #opening {
-        display: block;
-        height: 100vh;
+        display: none;
     }
     video{
     width: 100%;
