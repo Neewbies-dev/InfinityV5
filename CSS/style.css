@@ -429,8 +429,12 @@ video {
   height: 100vh;
 }
 
+.menu4Sticky {
+  height: 0px;
+}
+
 #fullpage {
-  height: 55vw;
+  height: 100vh;
   overflow-y: hidden;
 }
 
@@ -2206,7 +2210,7 @@ html {
   }
   .subtitle_aninfinity h2 {
     margin-top: 10px;
-    font-size: 45px;
+    font-size: 29px;
     font-weight: 300;
     font-family: RabbiHighway sans-serif;
   }
@@ -2219,35 +2223,41 @@ html {
   .aninfinitymovallflex {
     margin-top: auto;
     margin-bottom: auto;
-    margin-left: 30px;
-    margin-right: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
   }
 
   #flip_aninfinity {
-    height: 55px;
+    display: block;
+    position: relative;
+    bottom: 12px;
+    height: 67px;
   }
 
   #container_aninfinity {
+    display: flex;
     font-size: 40px;
     font-weight: bold;
     font-family: RabbiHighway sans-serif;
   }
 
   #flip_aninfinity > div > div {
-    height: 31px;
+    height: 34px;
+    margin-bottom: 58px;
   }
 
   #flip_aninfinity div:first-child {
-    font-size: 45px;
+    font-size: 58px;
     animation: show 12s reverse infinite;
   }
 
   #aninfinitymov {
-    width: 230px;
+    width: 340px;
+    margin-bottom: 20px;
   }
 
   .title_aninfinity {
-    font-size: 2.8rem;
+    font-size: 58px;
     font-family: RabbiHighway sans-serif;
     text-shadow: black 2px 0px 0px, black 1.75517px 0.958851px 0px, black 1.0806px 1.68294px 0px, black 0.141474px 1.99499px 0px, black -0.832294px 1.81859px 0px, black -1.60229px 1.19694px 0px, black -1.97999px 0.28224px 0px, black -1.87291px -0.701566px 0px, black -1.30729px -1.51361px 0px, black -0.421592px -1.95506px 0px, black 0.567324px -1.91785px 0px, black 1.41734px -1.41108px 0px, black 1.92034px -0.558831px 0px;
     color: white;

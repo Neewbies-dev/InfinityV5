@@ -1,5 +1,10 @@
 <script src="./JS/video_autoscroll.js" type="text/javascript"></script>
 <body>
+    <div class="menu4Sticky">
+        <?php 
+        include "menu4.php"
+        ?>
+    </div>
 <div id="fullpage"> 
 <!-- OPENING VIDEO  -->
     <section class="vertical-scrolling">                                     
@@ -9,14 +14,13 @@
         <div class="videoMobile">
             <video id="openingMobile" src="vids/Orange_Wavy_For_website.mp4" autoplay="" muted="" playsinline=""  loop="" preload="auto" ></video>
         </div>
-        <?php 
-        include "menu4.php"
-        ?>
         </section>
         <!-- BUGRER MENU -->
     <section class="vertical-scrolling">
         <!-- FIRST TITLE -->
-        <div class="text_anime"><?php include "aninfinitymov.php" ?></div>                                   <!-- WAVES EFFECTS -->
+        <div class="text_anime">
+            <?php include "aninfinitymov.php" ?>
+        </div>                                   <!-- WAVES EFFECTS -->
         <?php 
         include "waves.php"
         ?>

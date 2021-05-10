@@ -30,13 +30,13 @@
                     <path d="M324.251 19.2L315.611 38.656L306.203 19.2H294.619L306.459 43.776L308.187 46.912C307.483 54.4 304.155 61.632 298.267 67.712L305.755 72.128C318.491 58.752 323.995 46.784 335.835 19.2H324.251Z" stroke="black" stroke-width="4" mask="url(#path-1-outside-1)"/>
                 </svg>
                 <!-- End of animation svg  -->
+            </div>
+            
+            <!-- flip text  -->
+            <div id=container_aninfinity>
                 <div class="title_aninfinity">
                     of
                 </div>
-            </div>
-
-            <!-- flip text  -->
-            <div id=container_aninfinity>
                 <div id=flip_aninfinity>
                     <div><div>Digital</div></div>
                     <div><div>Strategic</div></div>
