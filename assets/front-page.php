@@ -1,7 +1,8 @@
 <script src="./JS/video_autoscroll.js" type="text/javascript"></script>
 <body>
 <div id="fullpage"> 
-    <section class="vertical-scrolling">                                 <!-- OPENING VIDEO      -->
+<!-- OPENING VIDEO  -->
+    <section class="vertical-scrolling">                                     
         <div class="video">
             <video id="opening" src="vids/opening.mp4" autoplay="" muted="" playsinline=""  loop="" preload="auto" ></video>
         </div>
@@ -11,7 +12,8 @@
         <?php 
         include "menu4.php"
         ?>
-    </section>                                    <!-- BUGRER MENU -->
+        </section>
+        <!-- BUGRER MENU -->
     <section class="vertical-scrolling">
         <!-- FIRST TITLE -->
         <div class="text_anime"><?php include "aninfinitymov.php" ?></div>                                   <!-- WAVES EFFECTS -->
@@ -27,8 +29,9 @@
             </button>
             <img src="./img/Paper_plane.png" class="airplane"/>
         </div>
-    </section>   
-    <h3 class="joinUs">Nous rejoindre en tant que </h3>
+      
+    <!-- <h3 class="joinUs">Nous rejoindre en tant que </h3> -->
+    </section> 
     <section class="vertical-scrolling">
         <div class="pictures">
             <img src="img/partenaire2.jpg"/>
@@ -40,6 +43,7 @@
             </div>
         </div>
     </section> 
+    
 
     
 

@@ -55,7 +55,7 @@
 					delta = e.wheelDelta?e.wheelDelta:-e.detail;
 					targetIndex = that.currIndex + (delta>0?-1:1);
 					that.gotoTarget(targetIndex);
-				},100));
+				},300));
 
 				this.$el.on('touchstart',function(e){     
 					x0 = e.touches[0].clientX;
@@ -80,7 +80,7 @@
 
 				if(this.animating || targetIndex<0 || targetIndex>this.$el.children().length-1) return;
 
-				translateY= 'translateY(-'+targetIndex*100+'%)';
+				translateY= 'translateY(-'+targetIndex*100+'vh)';
 				this.animating = true;
 				$(children[0]).on('transitionend', function callback() {
 			        this.removeEventListener('transitionend', callback);

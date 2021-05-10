@@ -422,6 +422,16 @@ h1 {
 
 video {
   width: 100%;
+  height: 100vh;
+}
+
+.footer100 {
+  height: 100vh;
+}
+
+#fullpage {
+  height: 55vw;
+  overflow-y: hidden;
 }
 
 #openingMobile {
