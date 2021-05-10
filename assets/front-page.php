@@ -1,5 +1,10 @@
 <script src="./JS/video_autoscroll.js" type="text/javascript"></script>
 <body>
+    <div class="menu4Sticky">
+<?php 
+        include "menu4.php"
+        ?>
+        </div>
 <div id="fullpage"> 
 <!-- OPENING VIDEO  -->
     <section class="vertical-scrolling">                                     
@@ -9,9 +14,7 @@
         <div class="videoMobile">
             <video id="openingMobile" src="vids/Orange_Wavy_For_website.mp4" autoplay="" muted="" playsinline=""  loop="" preload="auto" ></video>
         </div>
-        <?php 
-        include "menu4.php"
-        ?>
+       
         </section>
         <!-- BUGRER MENU -->
     <section class="vertical-scrolling">
@@ -22,15 +25,18 @@
         ?>
     </section>
     <section class="vertical-scrolling">
+   
         <div class="content flex">
             <p class="agency-description">Communication. Présence digitale. Développement. Infinity est une agence belge située à liège qui vous fournit une infinité de solutions personnalisées pour votre e-commerce grâce à notre panel d'experts. Awesome</p>
-            <button class="button_talk_about">
+            <button class="button">
                 Parlons-en
             </button>
             <img src="./img/Paper_plane.png" class="airplane"/>
+           
         </div>
       
     <!-- <h3 class="joinUs">Nous rejoindre en tant que </h3> -->
+    
     </section> 
     <section class="vertical-scrolling">
         <div class="pictures">

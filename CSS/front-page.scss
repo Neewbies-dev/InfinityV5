@@ -11,8 +11,12 @@ video {
 .footer100 {
     height: 100vh;
 }
+
+.menu4Sticky{
+    height:0px;
+}
 #fullpage {
-    height: 55vw;
+    height: 100vh;
     overflow-y: hidden;
 }
 #openingMobile {
@@ -125,39 +129,19 @@ text-align: justify;
     font-size: 22px;
 }
 
+.button {
+
+    background:rgba(255, 255, 255, 0.609);
+    color:black;
+    width:150px;
+    border-radius:28px;
+    border:none;
+    padding:2%;
+    font-weight: bold;
+}
+
 @media only screen and (max-width: 600px) {
-    .button_talk_about {
-        --primary: rgb(233, 225, 212,0.7);
-        --primary-dark: rgb(109, 109, 109);
-        --primary-darkest: rgb(70, 68, 68);
-        --text: #000;
-        --text-opacity: 1;
-        --success: #2B3044;
-        --left-wing-background: var(--primary);
-        --left-body-background: var(--primary);
-        --right-wing-background: var(--primary);
-        --right-body-background: var(--primary);
-          border: 0;
-          padding: 8px 0;
-          min-width: 160px;
-          text-align: center;
-          margin: auto;
-          padding:1.5%;
-          line-height: 24px;
-          font-family: RabbiHighway sans-serif;
-          font-weight: 500;
-          font-size: 14px;
-          background: white;
-          border-radius: 50px;
-          outline: none;
-          color: var(--text);
-          transform: rotate(calc(var(--rotate) * 0deg)) translateZ(0);
-          -webkit-appearance: none;
-          -webkit-tap-highlight-color: transparent;
-          display: block;
-          position: relative;
-          top: 60px;
-      }
+ 
     .Wave_orange_full_screen {
         height: 100vh;
     }
@@ -194,6 +178,16 @@ text-align: justify;
     
         position:relative;
     } 
+
+    .agency-description{
+        margin-right:0;
+    }
+
+    .button {
+        margin-left:10%;
+    }
+
+    
 }
 @media only screen and (max-width: 812px) and (orientation : landscape) {
     #openingMobile{
@@ -256,12 +250,13 @@ text-align: justify;
         justify-content: center;
         padding: 5%;
         color:black;
+        height:100vh;
 
-        
         img{
-            display:none;
-
+            width:initial;
+            height: initial;
         }
+    
 
         .userButton{
 
@@ -276,11 +271,11 @@ text-align: justify;
     }
 
     .airplane {
-        width: 15%;
-        margin-top: 15px;
-        margin-left: 190px;
-        margin-bottom: 10px;
-        width: 170px;
+            width:90%;
+            margin-top:0;
+            margin-left:0;
+            
+        
     }
 }
 
