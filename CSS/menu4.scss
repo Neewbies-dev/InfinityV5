@@ -40,8 +40,8 @@ body {
 	width: 70px;
 	height: 100px;
 	overflow: auto;
-	left: calc(100% - 100px);
-	top: 20px;
+	left: calc(100% - 85px);
+	// top: 20px; review for desktop mode, create a media queries for this !!!
 	cursor: pointer;
 	padding: 0;
 	background: transparent;
@@ -50,11 +50,11 @@ body {
 
 .top, .middle{
 	position: absolute;
-	width: 40px;
-	height: 10px;
+	width: 62px;
+	height: 6px;
 	background-color: black;
 	transition: all 350ms ease-in-out;
-	top: 20px;
+	top: 27px;
 }
 
 .middle {
@@ -122,9 +122,9 @@ body {
 
 .menu-name {
 	font-family: Verdana;
-	font-weight: 900;
+	font-weight: 100;
 	color: black;
-	font-size: 13.5px;
+	font-size: 21.5px;
 	text-decoration: none;
 	position: absolute;
 	top: 56px;
