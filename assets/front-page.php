@@ -14,16 +14,17 @@
         <div class="videoMobile">
             <video id="openingMobile" src="vids/Orange_Wavy_For_website.mp4" autoplay="" muted="" playsinline=""  loop="" preload="auto" ></video>
         </div>
-       
         </section>
         <!-- BUGRER MENU -->
     <section class="vertical-scrolling">
         <!-- FIRST TITLE -->
-        <div class="text_anime"><?php include "aninfinitymov.php" ?></div>                                   <!-- WAVES EFFECTS -->
-        <?php 
-        include "waves.php"
-        ?>
+
+        <div class="text_anime">
+            <?php include "aninfinitymov.php" ?>
+        </div>
+       
     </section>
+
     <section class="vertical-scrolling">
    
         <div class="content flex">
