@@ -67,25 +67,31 @@ h3 {
     display:flex;
     justify-content:center;
 
+
     img{
         width: 40%;
         height:40%;
         position:relative;
-        
-        filter:brightness(50%);
         transition: .3s ease-in-out;
-        &:hover  {
-            filter:brightness(100%);
+        transform: scale(1);
+        filter: brightness(50%);
+        &:hover {
+           
+            transform: scale(1.1);
+            filter: invert(7%) sepia(75%) saturate(290%) hue-rotate(356deg) brightness(80%) contrast(95%);
+            background:linear-gradient(rgba(249, 158, 11, 0.253), rgba(249, 158, 11, 0.253));
+        }
+
+        a {
+            color:black; 
+            font-weight: bold;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 2.1rem;
         }
     }
-    
-
-    i{
-
-        color:$red;
-        margin-left:3px;
-    }
 }
+
+
 
 .userButton{
     position:absolute;
@@ -139,6 +145,42 @@ text-align: justify;
     padding:2%;
     font-weight: bold;
 }
+
+.blur-out-contract {
+	-webkit-animation: blur-out-contract 5s cubic-bezier(0.550, 0.085, 0.680, 0.530) 1s reverse both;
+	        animation: blur-out-contract 5s cubic-bezier(0.550, 0.085, 0.680, 0.530) 1s reverse both;
+}
+
+
+/**
+ * ----------------------------------------
+ * animation blur-out-contract
+ * ----------------------------------------
+ */
+@-webkit-keyframes blur-out-contract {
+    0% {
+      -webkit-filter: blur(0.01);
+              filter: blur(0.01);
+    }
+    100% {
+      letter-spacing: -0.5em;
+      -webkit-filter: blur(12px) opacity(0%);
+              filter: blur(12px) opacity(0%);
+    }
+  }
+  @keyframes blur-out-contract {
+    0% {
+      -webkit-filter: blur(0.01);
+              filter: blur(0.01);
+    }
+    100% {
+      letter-spacing: -0.5em;
+      -webkit-filter: blur(12px) opacity(0%);
+              filter: blur(12px) opacity(0%);
+    }
+  }
+  
+  
 
 @media only screen and (max-width: 600px) {
  
@@ -248,13 +290,14 @@ text-align: justify;
     .pictures{
         display:flex;
         justify-content: center;
+        align-items: center;
         padding: 5%;
         color:black;
         height:100vh;
 
         img{
-            width:initial;
-            height: initial;
+            width:60%;
+            height: 40%;
         }
     
 
@@ -264,10 +307,7 @@ text-align: justify;
             margin-top:0;
         }
 
-        i{
-
-            color:$red;
-        }
+      
     }
 
     .airplane {

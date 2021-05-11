@@ -35,7 +35,7 @@
            
         </div>
       
-    <!-- <h3 class="joinUs">Nous rejoindre en tant que </h3> -->
+    <h3 class="joinUs blur-out-contract">Nous rejoindre en tant que </h3> 
     
     </section> 
     <section class="vertical-scrolling">
@@ -43,9 +43,9 @@
             <img src="img/partenaire2.jpg"/>
             <img src="img/Influ3.jpg" />
             <div class="userButton">
-                <p class="part"> <a  href="assets/part.php"> <i class="fas fa-arrow-left"></i> Partenaires    </a> </p>
+                <p class="part"> <a  href="assets/part.php">  Partenaires    </a> </p>
                 
-                <p class="influ"> <a  href="assets/influ.php"> Influenceurs  <i class="fas fa-arrow-right"></i> </a> </p>
+                <p class="influ"> <a  href="assets/influ.php"> Influenceurs  </a> </p>
             </div>
         </div>
     </section> 

@@ -424,15 +424,20 @@ h3 {
   width: 40%;
   height: 40%;
   position: relative;
-  filter: brightness(50%);
   transition: 0.3s ease-in-out;
+  transform: scale(1);
+  filter: brightness(50%);
 }
 .pictures img:hover {
-  filter: brightness(100%);
+  transform: scale(1.1);
+  filter: invert(7%) sepia(75%) saturate(290%) hue-rotate(356deg) brightness(80%) contrast(95%);
+  background: linear-gradient(rgba(249, 158, 11, 0.253), rgba(249, 158, 11, 0.253));
 }
-.pictures i {
-  color: #C30700;
-  margin-left: 3px;
+.pictures img a {
+  color: black;
+  font-weight: bold;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 2.1rem;
 }
 
 .userButton {
@@ -486,6 +491,38 @@ h3 {
   font-weight: bold;
 }
 
+.blur-out-contract {
+  -webkit-animation: blur-out-contract 5s cubic-bezier(0.55, 0.085, 0.68, 0.53) 1s reverse both;
+  animation: blur-out-contract 5s cubic-bezier(0.55, 0.085, 0.68, 0.53) 1s reverse both;
+}
+
+/**
+ * ----------------------------------------
+ * animation blur-out-contract
+ * ----------------------------------------
+ */
+@-webkit-keyframes blur-out-contract {
+  0% {
+    -webkit-filter: blur(0.01);
+    filter: blur(0.01);
+  }
+  100% {
+    letter-spacing: -0.5em;
+    -webkit-filter: blur(12px) opacity(0%);
+    filter: blur(12px) opacity(0%);
+  }
+}
+@keyframes blur-out-contract {
+  0% {
+    -webkit-filter: blur(0.01);
+    filter: blur(0.01);
+  }
+  100% {
+    letter-spacing: -0.5em;
+    -webkit-filter: blur(12px) opacity(0%);
+    filter: blur(12px) opacity(0%);
+  }
+}
 @media only screen and (max-width: 600px) {
   .Wave_orange_full_screen {
     height: 100vh;
@@ -588,20 +625,18 @@ h3 {
   .pictures {
     display: flex;
     justify-content: center;
+    align-items: center;
     padding: 5%;
     color: black;
     height: 100vh;
   }
   .pictures img {
-    width: initial;
-    height: initial;
+    width: 60%;
+    height: 40%;
   }
   .pictures .userButton {
     margin-bottom: 15px;
     margin-top: 0;
-  }
-  .pictures i {
-    color: #C30700;
   }
 
   .airplane {
@@ -2779,6 +2814,10 @@ body {
 @font-face {
   font-family: StMarie sans-serif;
   src: url("../fonts/StMarie-Thin.otf");
+}
+@font-face {
+  font-family: Segoe sans-serif;
+  src: url("../fonts/Segoe UI.ttf");
 }
 
 /*# sourceMappingURL=style.css.map */

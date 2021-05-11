@@ -14,7 +14,8 @@
 			<li data-menuanchor="firstPage"><a href="#firstPage">Home</a></li>
 			<li data-menuanchor="secondPage"><a href="#secondPage">Portfolio</a></li>
 			<li data-menuanchor="thirdPage"><a href="#3rdPage">About Us</a></li>
-			<li data-menuanchor="fourthPage"><a href="#4rdPage">Locations</a></li>
+			<li data-menuanchor="fourthPage"><a href="#4rdPage">Our staff</a></li>
+			<li data-menuanchor="fourthPage"><a href="#4rdPage">Contact</a></li>
 		</ul>
 	</nav>
 </header>

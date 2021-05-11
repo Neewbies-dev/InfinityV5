@@ -15,7 +15,7 @@
                         <div class="socialFooter">
                             
                             <div class="pictlogo">
-                                <h5 class="titleFooter">Suivez-nous sur les réseaux sociaux</h5>
+                                <h5 class="titleFooter">Suivez-nous sur les reseaux sociaux</h5>
                                 <div class="socialIcon">
                                     <p><a href="https://facebook.com"><i class="fab fa-facebook"></i></a></p>
                                     <p><a href="https://www.instagram.com/?hl=fr"><i class="fab fa-instagram-square"></i></a></p>
