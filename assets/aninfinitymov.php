@@ -1,5 +1,8 @@
 <!-- <script type="text/javascript" src="../JS/aninfinitymov.js"></script> -->
 <div class="aninfinitymovall">
+    <div class="text_anime_logo_infinity">
+        <img src="./img/INFINITY.PNG" alt="infinity" class="text_anime_logo_infinity_img">
+    </div>
     <div class="aninfinitymovallflex">
         <div class="animate_letter">
             <div class="animate_tablet">
@@ -51,5 +54,10 @@
         <div class="subtitle_aninfinity">
             <h2>Solutions for e-business</h2>        
         </div>
+    </div>
+    <div class="text_anime_wave_bottom">                                   <!-- WAVES EFFECTS -->
+            <?php 
+            include "waves.php"
+            ?>
     </div>
 </div>

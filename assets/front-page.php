@@ -18,12 +18,12 @@
         <!-- BUGRER MENU -->
     <section class="vertical-scrolling">
         <!-- FIRST TITLE -->
+
         <div class="text_anime">
             <?php include "aninfinitymov.php" ?>
-        </div>                                   <!-- WAVES EFFECTS -->
-        <?php 
-        include "waves.php"
-        ?>
+        </div>
+            
+       
     </section>
     <section class="vertical-scrolling">
         <div class="content flex">
