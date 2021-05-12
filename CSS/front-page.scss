@@ -67,7 +67,14 @@ h3 {
 
     display:flex;
     justify-content:center;
-
+    &:hover .img1:not(:hover) {
+        opacity: .4;
+        transform : scale(1);
+        filter: brightness(50%);
+    }
+    &:hover .img2:not(:hover) {
+        opacity: .4;
+    }
 
     img{
         width: 40%;
@@ -76,18 +83,34 @@ h3 {
         transition: .3s ease-in-out;
         transform: scale(1);
         filter: brightness(50%);
-        &:hover {
-           
-            transform: scale(1.1);
-            filter: invert(7%) sepia(75%) saturate(290%) hue-rotate(356deg) brightness(80%) contrast(95%);
-            background:linear-gradient(rgba(249, 158, 11, 0.253), rgba(249, 158, 11, 0.253));
-        }
+     
+        
 
         a {
             color:black; 
             font-weight: bold;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             font-size: 2.1rem;
+        }
+    }
+    p{
+        font-family: RabbiHighway sans-serif;
+    }
+
+    .img1{
+        transition: 1s;
+        transform : scale(1.1);
+        filter: invert(7%) sepia(75%) saturate(290%) hue-rotate(356deg) brightness(80%) contrast(95%);
+        background:linear-gradient(rgba(249, 158, 11, 0.253), rgba(249, 158, 11, 0.253));
+    }
+    .img2{
+        transition: 1s;
+        transform : scale(1);
+        
+        &:hover{
+            transform : scale(1.1);
+            filter: invert(7%) sepia(75%) saturate(290%) hue-rotate(356deg) brightness(80%) contrast(95%);
+            background:linear-gradient(rgba(249, 158, 11, 0.253), rgba(249, 158, 11, 0.253));
         }
     }
 }
@@ -277,6 +300,10 @@ text-align: justify;
     #opening {
         display: none;
     }
+
+    .videoTablet{
+        display:none;
+    }
     video{
     width: 100%;
     }
@@ -286,7 +313,7 @@ text-align: justify;
         margin-top:100px;
     }
     .joinUs{
-        margin-top:5%;
+        margin-top:15%;
     }
     .pictures{
         display:flex;
@@ -320,15 +347,33 @@ text-align: justify;
     }
 }
 
-@media screen and (min-width: 740px) and (max-width:1025px) {
-    #opening {
-        display: none;
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (orientation: portrait) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+
+
+
+    .text_anime_logo_infinity{
+        display:flex;
+        justify-content: center;
+
+        .text_anime_logo_infinity_img {
+            width:20%;
+        }
     }
     video {
-        width:100%;
+        display: none;
     }
-
+   .videoMobile {
+       display:none;
+   }
     
+   .videoTablet{
+       height:100vh; 
+
+   }
     .title{
         text-align: center;
     }
@@ -346,10 +391,6 @@ text-align: justify;
         padding: 5%;
         color:black;
 
-        img{
-            display:none;
-        }
-
         .userButton{
             justify-content: center;
             
@@ -358,24 +399,89 @@ text-align: justify;
             }
 
         }
-        i{
-
-            color:$red;
-        }
-
-        .influ {
-
-            width:160px;
-        }
     }
     .airplane {
         display: block;
         position: relative;
-        bottom: 40px;
-        margin-top: 15px;
         margin-left: 190px;
-        margin-bottom: 25px;
-        width: 220px;
+        width: 60%;
     }
+
+    .button {
+        margin-left:10%;
+    }
+
+}
+
+
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (orientation: landscape) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+
+
+    .logoFooter{
+    width:30%;
+    margin-bottom: 5%;
+   }
+
+   .text_anime_logo_infinity{
+    display:flex;
+    justify-content: center;
+
+    .text_anime_logo_infinity_img {
+        width:20%;
+    }
+}
+.video{
+    display:none;
+}
+.videoMobile {
+   display:none;
+}
+
+.videoTablet{
+   height:100vh; 
+
+}
+.title{
+    text-align: center;
+}
+.button_talk_about{
+    padding:2%;
+    margin-top: 100px;
+}
+.joinUs{
+  margin:0;
+}
+
+.pictures{
+    display:flex;
+    justify-content: center;
+    padding: 5%;
+    color:black;
+
+    .userButton{
+        justify-content: center;
+        
+        p{
+            margin:auto;
+        }
+
+    }
+}
+.airplane {
+    display: block;
+    position: relative;
+    margin-left: 600px;
+    width: 40%;
+    margin-top:0;
+}
+
+.button {
+    margin-left:10%;
+}
+
 
 }

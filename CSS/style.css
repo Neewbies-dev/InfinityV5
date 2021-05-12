@@ -420,6 +420,14 @@ h3 {
   display: flex;
   justify-content: center;
 }
+.pictures:hover .img1:not(:hover) {
+  opacity: 0.4;
+  transform: scale(1);
+  filter: brightness(50%);
+}
+.pictures:hover .img2:not(:hover) {
+  opacity: 0.4;
+}
 .pictures img {
   width: 40%;
   height: 40%;
@@ -428,16 +436,29 @@ h3 {
   transform: scale(1);
   filter: brightness(50%);
 }
-.pictures img:hover {
-  transform: scale(1.1);
-  filter: invert(7%) sepia(75%) saturate(290%) hue-rotate(356deg) brightness(80%) contrast(95%);
-  background: linear-gradient(rgba(249, 158, 11, 0.253), rgba(249, 158, 11, 0.253));
-}
 .pictures img a {
   color: black;
   font-weight: bold;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-size: 2.1rem;
+}
+.pictures p {
+  font-family: RabbiHighway sans-serif;
+}
+.pictures .img1 {
+  transition: 1s;
+  transform: scale(1.1);
+  filter: invert(7%) sepia(75%) saturate(290%) hue-rotate(356deg) brightness(80%) contrast(95%);
+  background: linear-gradient(rgba(249, 158, 11, 0.253), rgba(249, 158, 11, 0.253));
+}
+.pictures .img2 {
+  transition: 1s;
+  transform: scale(1);
+}
+.pictures .img2:hover {
+  transform: scale(1.1);
+  filter: invert(7%) sepia(75%) saturate(290%) hue-rotate(356deg) brightness(80%) contrast(95%);
+  background: linear-gradient(rgba(249, 158, 11, 0.253), rgba(249, 158, 11, 0.253));
 }
 
 .userButton {
@@ -609,6 +630,10 @@ h3 {
     display: none;
   }
 
+  .videoTablet {
+    display: none;
+  }
+
   video {
     width: 100%;
   }
@@ -619,7 +644,7 @@ h3 {
   }
 
   .joinUs {
-    margin-top: 5%;
+    margin-top: 15%;
   }
 
   .pictures {
@@ -645,13 +670,25 @@ h3 {
     margin-left: 0;
   }
 }
-@media screen and (min-width: 740px) and (max-width: 1025px) {
-  #opening {
-    display: none;
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1) {
+  .text_anime_logo_infinity {
+    display: flex;
+    justify-content: center;
+  }
+  .text_anime_logo_infinity .text_anime_logo_infinity_img {
+    width: 20%;
   }
 
   video {
-    width: 100%;
+    display: none;
+  }
+
+  .videoMobile {
+    display: none;
+  }
+
+  .videoTablet {
+    height: 100vh;
   }
 
   .title {
@@ -673,8 +710,68 @@ h3 {
     padding: 5%;
     color: black;
   }
-  .pictures img {
+  .pictures .userButton {
+    justify-content: center;
+  }
+  .pictures .userButton p {
+    margin: auto;
+  }
+
+  .airplane {
+    display: block;
+    position: relative;
+    margin-left: 190px;
+    width: 60%;
+  }
+
+  .button {
+    margin-left: 10%;
+  }
+}
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1) {
+  .logoFooter {
+    width: 30%;
+    margin-bottom: 5%;
+  }
+
+  .text_anime_logo_infinity {
+    display: flex;
+    justify-content: center;
+  }
+  .text_anime_logo_infinity .text_anime_logo_infinity_img {
+    width: 20%;
+  }
+
+  .video {
     display: none;
+  }
+
+  .videoMobile {
+    display: none;
+  }
+
+  .videoTablet {
+    height: 100vh;
+  }
+
+  .title {
+    text-align: center;
+  }
+
+  .button_talk_about {
+    padding: 2%;
+    margin-top: 100px;
+  }
+
+  .joinUs {
+    margin: 0;
+  }
+
+  .pictures {
+    display: flex;
+    justify-content: center;
+    padding: 5%;
+    color: black;
   }
   .pictures .userButton {
     justify-content: center;
@@ -682,21 +779,17 @@ h3 {
   .pictures .userButton p {
     margin: auto;
   }
-  .pictures i {
-    color: #C30700;
-  }
-  .pictures .influ {
-    width: 160px;
-  }
 
   .airplane {
     display: block;
     position: relative;
-    bottom: 40px;
-    margin-top: 15px;
-    margin-left: 190px;
-    margin-bottom: 25px;
-    width: 220px;
+    margin-left: 600px;
+    width: 40%;
+    margin-top: 0;
+  }
+
+  .button {
+    margin-left: 10%;
   }
 }
 footer {
@@ -901,41 +994,74 @@ footer p {
     font-size: 8px;
   }
 }
-@media screen and (min-width: 740px) and (max-width: 1025px) {
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+  footer p {
+    font-family: StMarie sans-serif;
+    font-size: 1.4rem;
+  }
+
+  .mainFooter {
+    justify-content: center;
+  }
+
   .contentFooter {
+    align-items: center;
     flex-direction: column;
   }
 
   .content2Footer {
-    display: flex;
-    justify-content: center;
-    margin-top: 5%;
-    flex-direction: column;
-    width: 100%;
-  }
-
-  .mainFooter {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
 
   .logoFooter {
-    margin-top: 5%;
-    margin-left: auto;
-    margin-right: auto;
-    width: 20%;
+    width: 40%;
+    margin-bottom: 10%;
+    left: 0;
+  }
+
+  .titleFooter {
+    font-size: 1.8rem;
+    font-weight: lighter;
+    margin-bottom: 10%;
   }
 
   .socialFooter {
     width: 100%;
     border: none;
-  }
-  .socialFooter a {
-    font-size: 1.8rem;
+    text-align: center;
   }
   .socialFooter p {
-    font-size: 1.3rem;
+    font-size: 1rem;
+    width: 100%;
+  }
+
+  .socialIcon {
+    text-align: center;
+    width: 30%;
+  }
+  .socialIcon i {
+    font-size: 3.5rem;
+  }
+
+  .infoFooter {
+    display: none;
+  }
+
+  .contactFooter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: none;
+    margin-bottom: 10%;
+  }
+  .contactFooter p {
+    width: 100%;
+  }
+
+  .pictlogo {
+    margin-bottom: 10%;
   }
 
   .copyrightFooter {
@@ -943,21 +1069,15 @@ footer p {
     font-size: 12px;
     color: #bbbbbb;
     display: flex;
+    position: relative;
+    bottom: -160px;
     align-items: center;
   }
-
-  .infoFooter {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
+  .copyrightFooter p {
+    font-size: 8px;
   }
-
-  .contactFooter {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    border: none;
+  .copyrightFooter ul {
+    font-size: 8px;
   }
 }
 @font-face {
@@ -2091,12 +2211,12 @@ textarea {
   }
 
   #flip_aninfinity > div > div {
-    height: 34px;
-    margin-bottom: 58px;
+    height: 40px;
+    margin-bottom: 46px;
   }
 
   #flip_aninfinity div:first-child {
-    font-size: 58px;
+    font-size: 50px;
     animation: show 12s reverse infinite;
   }
 
@@ -2759,7 +2879,7 @@ header {
 @media only screen and (max-width: 600px) {
   #menu {
     left: calc(100% - 290px);
-    width: 250px !important;
+    width: 220px !important;
     text-align: right;
   }
   #menu ul {
