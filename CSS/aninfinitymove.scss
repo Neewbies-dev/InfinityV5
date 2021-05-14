@@ -255,3 +255,36 @@
         margin-left: 0px;
     }
 }
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 812px) 
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: landscape) { 
+
+   .text_anime_logo_infinity_img {
+       width: 100px;
+   }
+   .text_anime_logo_infinity {
+       margin-left: auto;
+       margin-right: auto;
+   }
+   .aninfinitymovallflex {
+       margin-left: 10px;
+   }
+   .animate_letter {
+       display: flex;
+   }
+   #container_aninfinity {
+       display: flex;
+   }
+   .subtitle_aninfinity {
+    // display: flex;
+    // justify-content: center;
+    h2 {
+        margin-top: 10px;
+        font-size: 62px;
+        // font-weight: 10;
+        font-family: RabbiHighway sans-serif;
+    }
+}
+}

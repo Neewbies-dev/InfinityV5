@@ -1,40 +1,39 @@
     <!-- <section class="vertical-scrolling"> -->
         <footer>
         <div class="footer100">
-
-        <?php 
-        include "waves2.php"
-        ?>  
-            <div class="content flex mainFooter">
+            <div class="mainFooter">
                 <div class="contentFooter">
                     
                     <div class="content2Footer">
+                    <img src="./img/INFINITY.png" class="logoFooter">
+
+                    <div class="contactFooter">
+                                <h5 class="titleFooter"> Contactez-nous </h5>
+                                <p> Rue de Wallonie 9b 4460 Grâce-Hollogne, Belgique </p>
+                                <p> info@infinity-agency.be </p> 
+                            </div>
                         <div class="socialFooter">
-                            <img src="../img/INFINITY.png" class="logoFooter">
+                            
                             <div class="pictlogo">
-                                <p class="titleFooter">Follow us</p>
+                                <h5 class="titleFooter">Suivez-nous sur les reseaux sociaux</h5>
                                 <div class="socialIcon">
-                                    <p><a href="https://facebook.com"><i class="fab fa-facebook"></i></a></p>
-                                    <p><a href="https://www.instagram.com/?hl=fr"><i class="fab fa-instagram-square"></i></a></p>
-                                    <p><a href="https://www.linkedin.com/"><i class="fab fa-linkedin"></i></a></p>
+                                    <div class="soialIconLogo1"><a href="https://facebook.com"><i class="fab fa-facebook"></i></a></div>
+                                    <div class="soialIconLogo2"><a href="https://www.instagram.com/?hl=fr"><i class="fab fa-instagram-square"></i></a></div>
+                                    <div class="soialIconLogo3"><a href="https://www.linkedin.com/"><i class="fab fa-linkedin"></i></a></div>
                                 </div>
                             </div>
                         </div>
-                        <div class="infoFooter">
-                            <p class="titleFooter">More</p>
+
+                        <!-- <div class="infoFooter">
+                            <h5 class="titleFooter">More</h5>
                             <ul>
                                 <li><a href="">About Us</a></li>
                                 <li><a href="">Services</a></li>
                                 <li><a href="">Our Team</a></li>
                                 <li><a href="">Contact</a></li>
                             </ul>
-                        </div>
-                            <div class="contactFooter">
-                                <p class="titleFooter"> Contact Us </p>
-                                <p> Rue de Wallonie 9b 4460 Grâce-Hollogne, Belgique </p>
-                                <p> 04 99 99 99 99 </p>
-                                <p> info@infinity.be </p> 
-                            </div>
+                        </div> -->
+                            
                         </div>
                     </div>
                     <div class="copyrightFooter">

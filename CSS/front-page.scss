@@ -11,8 +11,9 @@ video {
 .footer100 {
     height: 100vh;
 }
-.menu4Sticky {
-    height: 0px;
+
+.menu4Sticky{
+    height:0px;
 }
 #fullpage {
     height: 100vh;
@@ -71,21 +72,27 @@ h3 {
         width: 40%;
         height:40%;
         position:relative;
-        
-        filter:brightness(50%);
         transition: .3s ease-in-out;
-        &:hover  {
-            filter:brightness(100%);
+        transform: scale(1);
+        filter: brightness(50%);
+        &:hover {
+            transform: scale(1.1);
+            filter: invert(7%) sepia(75%) saturate(290%) hue-rotate(356deg) brightness(80%) contrast(95%);
+            background:linear-gradient(rgba(249, 158, 11, 0.253), rgba(249, 158, 11, 0.253));
+            z-index: 1;
+        }
+       
+        a {
+            color:black; 
+            font-weight: bold;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 2.1rem;
         }
     }
     
-
-    i{
-
-        color:$red;
-        margin-left:3px;
-    }
 }
+
+
 
 .userButton{
     position:absolute;
@@ -129,39 +136,55 @@ text-align: justify;
     font-size: 22px;
 }
 
+.button {
+
+    background:rgba(255, 255, 255, 0.609);
+    color:black;
+    width:150px;
+    border-radius:28px;
+    border:none;
+    padding:2%;
+    font-weight: bold;
+}
+
+.blur-out-contract {
+	-webkit-animation: blur-out-contract 5s cubic-bezier(0.550, 0.085, 0.680, 0.530) 1s reverse both;
+	        animation: blur-out-contract 5s cubic-bezier(0.550, 0.085, 0.680, 0.530) 1s reverse both;
+}
+
+
+/**
+ * ----------------------------------------
+ * animation blur-out-contract
+ * ----------------------------------------
+ */
+@-webkit-keyframes blur-out-contract {
+    0% {
+      -webkit-filter: blur(0.01);
+              filter: blur(0.01);
+    }
+    100% {
+      letter-spacing: -0.5em;
+      -webkit-filter: blur(12px) opacity(0%);
+              filter: blur(12px) opacity(0%);
+    }
+  }
+  @keyframes blur-out-contract {
+    0% {
+      -webkit-filter: blur(0.01);
+              filter: blur(0.01);
+    }
+    100% {
+      letter-spacing: -0.5em;
+      -webkit-filter: blur(12px) opacity(0%);
+              filter: blur(12px) opacity(0%);
+    }
+  }
+  
+  
+
 @media only screen and (max-width: 600px) {
-    .button_talk_about {
-        --primary: rgb(233, 225, 212,0.7);
-        --primary-dark: rgb(109, 109, 109);
-        --primary-darkest: rgb(70, 68, 68);
-        --text: #000;
-        --text-opacity: 1;
-        --success: #2B3044;
-        --left-wing-background: var(--primary);
-        --left-body-background: var(--primary);
-        --right-wing-background: var(--primary);
-        --right-body-background: var(--primary);
-          border: 0;
-          padding: 8px 0;
-          min-width: 160px;
-          text-align: center;
-          margin: auto;
-          padding:1.5%;
-          line-height: 24px;
-          font-family: RabbiHighway sans-serif;
-          font-weight: 500;
-          font-size: 14px;
-          background: white;
-          border-radius: 50px;
-          outline: none;
-          color: var(--text);
-          transform: rotate(calc(var(--rotate) * 0deg)) translateZ(0);
-          -webkit-appearance: none;
-          -webkit-tap-highlight-color: transparent;
-          display: block;
-          position: relative;
-          top: 60px;
-      }
+ 
     .Wave_orange_full_screen {
         height: 100vh;
     }
@@ -198,6 +221,16 @@ text-align: justify;
     
         position:relative;
     } 
+
+    .agency-description{
+        margin-right:0;
+    }
+
+    .button {
+        margin-left:10%;
+    }
+
+    
 }
 @media only screen and (max-width: 812px) and (orientation : landscape) {
     #openingMobile{
@@ -258,14 +291,16 @@ text-align: justify;
     .pictures{
         display:flex;
         justify-content: center;
+        align-items: center;
         padding: 5%;
         color:black;
+        height:100vh;
 
-        
         img{
-            display:none;
-
+            width:60%;
+            height: 40%;
         }
+    
 
         .userButton{
 
@@ -273,77 +308,68 @@ text-align: justify;
             margin-top:0;
         }
 
-        i{
-
-            color:$red;
-        }
+      
     }
 
     .airplane {
-        width: 15%;
-        margin-top: 15px;
-        margin-left: 190px;
-        margin-bottom: 10px;
-        width: 170px;
+            width:90%;
+            margin-top:0;
+            margin-left:0;
+            
+        
     }
 }
 
-@media screen and (min-width: 740px) and (max-width:1025px) {
-    #opening {
-        display: none;
+
+/* Landscape */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 812px) 
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: landscape) { 
+    .content {
+        padding-left: 50px;
     }
-    video {
-        width:100%;
-    }
-
-    
-    .title{
-        text-align: center;
-    }
-    .button_talk_about{
-        padding:2%;
-        margin-top: 100px;
-    }
-    .joinUs{
-        margin-top:5%;
-    }
-    
-    .pictures{
-        display:flex;
-        justify-content: center;
-        padding: 5%;
-        color:black;
-
-        img{
-            display:none;
-        }
-
-        .userButton{
-            justify-content: center;
-            
-            p{
-                margin:auto;
-            }
-
-        }
-        i{
-
-            color:$red;
-        }
-
-        .influ {
-
-            width:160px;
-        }
+    .agency-description {
+        display: flex;
+        position: relative;
+        top: 50px;
     }
     .airplane {
         display: block;
         position: relative;
-        bottom: 40px;
+        bottom: 100px;
         margin-top: 15px;
-        margin-left: 190px;
+        margin-left: 160px;
         margin-bottom: 25px;
-        width: 220px;
+        width: 230px;
     }
-
+    .pictures {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0%;
+        img {
+            display: block;
+            width: 25%;
+            margin-top: 60px;
+        }
+    }
+    .joinUs {
+        margin-top: 15px;
+    }
+    .userButton {
+        display: flex;
+        justify-content: space-evenly;
+        width: 65%;
+        p {
+            margin: unset;
+        }
+    }
+    .influ {
+      margin-right: 96px;  
+    }
+    .part {
+        margin-left: 160px;
+    }
 }

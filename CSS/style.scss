@@ -54,7 +54,7 @@ table {
 @import "influ.scss";
 @import "part.scss";
 @import "backButton.scss";
-@import "sendButton.scss";
+
 @import "aninfinitymove.scss";
 @import "ourpartners.scss";
 @import "menu4.scss";
@@ -101,4 +101,14 @@ body {
   @font-face {
     font-family: JennaSue serif;
     src: url('../fonts/JennaSue.ttf');
+  }
+
+  @font-face {
+    font-family: StMarie sans-serif;
+    src: url('../fonts/StMarie-Thin.otf');
+  }
+
+  @font-face {
+    font-family: Segoe sans-serif;
+    src: url('../fonts/Segoe\ UI.ttf');
   }
