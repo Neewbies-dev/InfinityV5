@@ -599,6 +599,10 @@ h3 {
     display: none;
   }
 
+  .videoTablet {
+    display: none;
+  }
+
   .title {
     text-align: center;
     font-family: RabbiHighway sans-serif;
@@ -679,7 +683,7 @@ h3 {
     width: 20%;
   }
 
-  video {
+  .video {
     display: none;
   }
 
@@ -729,9 +733,8 @@ h3 {
   }
 }
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1) {
-  .logoFooter {
-    width: 30%;
-    margin-bottom: 5%;
+  video {
+    height: initial;
   }
 
   .text_anime_logo_infinity {
@@ -740,6 +743,7 @@ h3 {
   }
   .text_anime_logo_infinity .text_anime_logo_infinity_img {
     width: 20%;
+    margin-top: 10%;
   }
 
   .video {
@@ -764,14 +768,16 @@ h3 {
   }
 
   .joinUs {
-    margin: 0;
+    margin-top: 5%;
   }
 
   .pictures {
     display: flex;
     justify-content: center;
+    align-items: center;
     padding: 5%;
     color: black;
+    margin-top: 10%;
   }
   .pictures .userButton {
     justify-content: center;
@@ -779,12 +785,16 @@ h3 {
   .pictures .userButton p {
     margin: auto;
   }
+  .pictures img {
+    width: 40%;
+    height: 70%;
+  }
 
   .airplane {
     display: block;
     position: relative;
     margin-left: 600px;
-    width: 40%;
+    width: 30%;
     margin-top: 0;
   }
 
@@ -1078,6 +1088,12 @@ footer p {
   }
   .copyrightFooter ul {
     font-size: 8px;
+  }
+}
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1) {
+  .logoFooter {
+    width: 20%;
+    margin-top: 10%;
   }
 }
 @font-face {

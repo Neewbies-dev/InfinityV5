@@ -264,6 +264,10 @@ text-align: justify;
     #opening {
         display: none;
     }
+
+    .videoTablet {
+        display:none;
+    }
     .title{
 
         text-align: center;
@@ -347,6 +351,8 @@ text-align: justify;
     }
 }
 
+
+// TABLET VERSION
 @media only screen 
   and (min-device-width: 768px) 
   and (max-device-width: 1024px) 
@@ -363,7 +369,7 @@ text-align: justify;
             width:20%;
         }
     }
-    video {
+    .video {
         display: none;
     }
    .videoMobile {
@@ -413,18 +419,18 @@ text-align: justify;
 
 }
 
+// TABLET VERSION LANDSCAPE
 
 @media only screen 
   and (min-device-width: 768px) 
   and (max-device-width: 1024px) 
   and (orientation: landscape) 
   and (-webkit-min-device-pixel-ratio: 1) {
+    video {
+        height:initial;
+    }
 
-
-    .logoFooter{
-    width:30%;
-    margin-bottom: 5%;
-   }
+  
 
    .text_anime_logo_infinity{
     display:flex;
@@ -432,6 +438,7 @@ text-align: justify;
 
     .text_anime_logo_infinity_img {
         width:20%;
+        margin-top:10%;
     }
 }
 .video{
@@ -453,14 +460,16 @@ text-align: justify;
     margin-top: 100px;
 }
 .joinUs{
-  margin:0;
+  margin-top:5%;
 }
 
 .pictures{
     display:flex;
     justify-content: center;
+    align-items: center;
     padding: 5%;
     color:black;
+    margin-top:10%;
 
     .userButton{
         justify-content: center;
@@ -470,12 +479,16 @@ text-align: justify;
         }
 
     }
+    img{
+        width:40%;
+        height:70%;
+    }
 }
 .airplane {
     display: block;
     position: relative;
     margin-left: 600px;
-    width: 40%;
+    width: 30%;
     margin-top:0;
 }
 
