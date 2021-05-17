@@ -56,6 +56,11 @@
         stroke-dashoffset: 0;
     }
 }
+.text_anime_logo_infinity_img {
+    width: 150px;
+    margin-left: 25px;
+    margin-top: 25px;
+}
 // --------------- END of Animation SVG An Infinity ---------------
 
 // --------------- DIV for Tablet only ---------------
@@ -253,6 +258,7 @@
     }
     #container_aninfinity {
         margin-left: 0px;
+        display: flex;
     }
 }
 @media only screen 

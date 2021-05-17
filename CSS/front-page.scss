@@ -58,13 +58,13 @@ h3 {
 
     color: $dark-orange;
     text-align: center;
-    margin: 5%;
+
     font-size: 1.5rem;
     font-family: RabbiHighway sans-serif;
 }
 
 .pictures{
-
+    padding-top: 90px;
     display:flex;
     justify-content:center;
 
@@ -119,8 +119,11 @@ text-align: justify;
 }
 
 .airplane {
-    width:25%;
-    margin-top:25%;
+    width: 40%;
+    display: flex;
+    position: relative;
+    left: 730px;
+    bottom: 350px;
 }
 
 .tellUs {
@@ -313,6 +316,10 @@ text-align: justify;
 
     .airplane {
             width:90%;
+            display: flex;
+            position: relative;
+            left: 20px;
+            bottom: 0px;
             margin-top:0;
             margin-left:0;
             
@@ -338,10 +345,8 @@ text-align: justify;
     .airplane {
         display: block;
         position: relative;
-        bottom: 100px;
-        margin-top: 15px;
-        margin-left: 160px;
-        margin-bottom: 25px;
+        bottom: 144px;
+        left: 500px;
         width: 230px;
     }
     .pictures {
@@ -371,5 +376,10 @@ text-align: justify;
     }
     .part {
         margin-left: 160px;
+    }
+    .content {
+        .button {
+            margin-left: 0px;
+        }
     }
 }

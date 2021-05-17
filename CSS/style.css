@@ -121,12 +121,6 @@ p {
 .content button:hover {
   transform: scale(1.15);
 }
-.content p {
-  width: 50%;
-  padding: 2%;
-  margin: auto;
-  font-family: Aargh sans-serif;
-}
 
 .titleFooter {
   margin-bottom: 6px;
@@ -269,6 +263,7 @@ p {
   background-color: #DF7806;
 }
 .content button {
+  margin-left: 140px;
   transform: scale(1);
   transition: transform 350ms;
   transition-delay: 50ms;
@@ -277,9 +272,11 @@ p {
   transform: scale(1.15);
 }
 .content p {
-  width: 50%;
+  width: 40%;
+  line-height: 30px;
   padding: 2%;
-  margin: auto;
+  margin-left: 110px;
+  margin-top: 450px;
   font-family: Aargh sans-serif;
 }
 
@@ -332,6 +329,21 @@ p {
     font-size: 1rem;
     margin: 0;
   }
+
+  .content {
+    text-align: left;
+  }
+  .content p {
+    line-height: 34px;
+    width: 80%;
+    margin-top: 100px;
+    margin: 0;
+    padding-left: 10%;
+    margin-top: 100px;
+  }
+  .content .button {
+    margin-left: 35px;
+  }
 }
 h1 {
   font-size: 24px;
@@ -340,19 +352,6 @@ h1 {
 .flex {
   flex-direction: column;
   align-items: initial;
-}
-
-.content {
-  text-align: left;
-}
-.content p {
-  width: 80%;
-  padding: 10%;
-  margin: 0;
-  padding-top: 20%;
-  padding-right: 10%;
-  padding-left: 10%;
-  padding-bottom: 10%;
 }
 
 @media (max-width: 767px) and (orientation: landscape) {
@@ -426,12 +425,12 @@ section {
 h3 {
   color: #DF7806;
   text-align: center;
-  margin: 5%;
   font-size: 1.5rem;
   font-family: RabbiHighway sans-serif;
 }
 
 .pictures {
+  padding-top: 90px;
   display: flex;
   justify-content: center;
 }
@@ -481,8 +480,11 @@ h3 {
 }
 
 .airplane {
-  width: 25%;
-  margin-top: 25%;
+  width: 40%;
+  display: flex;
+  position: relative;
+  left: 730px;
+  bottom: 350px;
 }
 
 .tellUs {
@@ -657,6 +659,10 @@ h3 {
 
   .airplane {
     width: 90%;
+    display: flex;
+    position: relative;
+    left: 20px;
+    bottom: 0px;
     margin-top: 0;
     margin-left: 0;
   }
@@ -676,10 +682,8 @@ h3 {
   .airplane {
     display: block;
     position: relative;
-    bottom: 100px;
-    margin-top: 15px;
-    margin-left: 160px;
-    margin-bottom: 25px;
+    bottom: 144px;
+    left: 500px;
     width: 230px;
   }
 
@@ -714,6 +718,10 @@ h3 {
 
   .part {
     margin-left: 160px;
+  }
+
+  .content .button {
+    margin-left: 0px;
   }
 }
 footer {
@@ -2010,6 +2018,12 @@ textarea {
     stroke-dashoffset: 0;
   }
 }
+.text_anime_logo_infinity_img {
+  width: 150px;
+  margin-left: 25px;
+  margin-top: 25px;
+}
+
 .animate_tablet {
   display: flex;
 }
@@ -2222,6 +2236,7 @@ textarea {
 
   #container_aninfinity {
     margin-left: 0px;
+    display: flex;
   }
 }
 @media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
