@@ -217,3 +217,20 @@ header {
         }
     }
 }
+/* Landscape */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 812px) 
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: landscape) { 
+
+	  #menu {
+		  left: 285px;
+		  top: -119px;
+		  width: 287px;
+		  font-size: 46px;
+	  }
+	  #menu ul {
+		line-height: 2.8rem;
+	}
+}

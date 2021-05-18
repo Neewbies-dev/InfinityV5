@@ -58,13 +58,13 @@ h3 {
 
     color: $dark-orange;
     text-align: center;
-    margin: 5%;
+
     font-size: 1.5rem;
     font-family: RabbiHighway sans-serif;
 }
 
 .pictures{
-
+    padding-top: 90px;
     display:flex;
     justify-content:center;
     &:hover .img1:not(:hover) {
@@ -83,9 +83,13 @@ h3 {
         transition: .3s ease-in-out;
         transform: scale(1);
         filter: brightness(50%);
-     
-        
-
+        &:hover {
+            transform: scale(1.1);
+            filter: invert(7%) sepia(75%) saturate(290%) hue-rotate(356deg) brightness(80%) contrast(95%);
+            background:linear-gradient(rgba(249, 158, 11, 0.253), rgba(249, 158, 11, 0.253));
+            z-index: 1;
+        }
+       
         a {
             color:black; 
             font-weight: bold;
@@ -143,8 +147,11 @@ text-align: justify;
 }
 
 .airplane {
-    width:25%;
-    margin-top:25%;
+    width: 40%;
+    display: flex;
+    position: relative;
+    left: 730px;
+    bottom: 350px;
 }
 
 .tellUs {
@@ -345,6 +352,10 @@ text-align: justify;
 
     .airplane {
             width:90%;
+            display: flex;
+            position: relative;
+            left: 20px;
+            bottom: 0px;
             margin-top:0;
             margin-left:0;
             
@@ -385,40 +396,61 @@ text-align: justify;
     .title{
         text-align: center;
     }
-    .button_talk_about{
-        padding:2%;
-        margin-top: 100px;
+}
+/* Landscape */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 812px) 
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: landscape) { 
+    .content {
+        padding-left: 50px;
     }
-    .joinUs{
-        margin-top:5%;
-    }
-    
-    .pictures{
-        display:flex;
-        justify-content: center;
-        padding: 5%;
-        color:black;
-
-        .userButton{
-            justify-content: center;
-            
-            p{
-                margin:auto;
-            }
-
-        }
+    .agency-description {
+        display: flex;
+        position: relative;
+        top: 50px;
     }
     .airplane {
         display: block;
         position: relative;
-        margin-left: 190px;
-        width: 60%;
+        bottom: 144px;
+        left: 500px;
+        width: 230px;
     }
-
-    .button {
-        margin-left:10%;
+    .pictures {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0%;
+        img {
+            display: block;
+            width: 25%;
+            margin-top: 60px;
+        }
     }
-
+    .joinUs {
+        margin-top: 15px;
+    }
+    .userButton {
+        display: flex;
+        justify-content: space-evenly;
+        width: 65%;
+        p {
+            margin: unset;
+        }
+    }
+    .influ {
+      margin-right: 96px;  
+    }
+    .part {
+        margin-left: 160px;
+    }
+    .content {
+        .button {
+            margin-left: 0px;
+        }
+    }
 }
 
 // TABLET VERSION LANDSCAPE
@@ -432,8 +464,6 @@ text-align: justify;
         height:initial;
         width:100%;
     }
-
-  
 
    .text_anime_logo_infinity{
     display:flex;
@@ -499,9 +529,7 @@ text-align: justify;
     margin-top:0;
 }
 
-.button {
-    margin-left:10%;
-}
-
-
+    .button {
+        margin-left:10%;
+    }
 }

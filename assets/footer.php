@@ -5,7 +5,7 @@
                 <div class="contentFooter">
                     
                     <div class="content2Footer">
-                    <img src="../img/INFINITY.png" class="logoFooter">
+                    <img src="./img/INFINITY.png" class="logoFooter">
 
                     <div class="contactFooter">
                                 <h5 class="titleFooter"> Contactez-nous </h5>
@@ -17,14 +17,14 @@
                             <div class="pictlogo">
                                 <h5 class="titleFooter">Suivez-nous sur les reseaux sociaux</h5>
                                 <div class="socialIcon">
-                                    <p><a href="https://facebook.com"><i class="fab fa-facebook"></i></a></p>
-                                    <p><a href="https://www.instagram.com/?hl=fr"><i class="fab fa-instagram-square"></i></a></p>
-                                    <p><a href="https://www.linkedin.com/"><i class="fab fa-linkedin"></i></a></p>
+                                    <div class="soialIconLogo1"><a href="https://facebook.com"><i class="fab fa-facebook"></i></a></div>
+                                    <div class="soialIconLogo2"><a href="https://www.instagram.com/?hl=fr"><i class="fab fa-instagram-square"></i></a></div>
+                                    <div class="soialIconLogo3"><a href="https://www.linkedin.com/"><i class="fab fa-linkedin"></i></a></div>
                                 </div>
                             </div>
                         </div>
 
-                        <div class="infoFooter">
+                        <!-- <div class="infoFooter">
                             <h5 class="titleFooter">More</h5>
                             <ul>
                                 <li><a href="">About Us</a></li>
@@ -32,7 +32,7 @@
                                 <li><a href="">Our Team</a></li>
                                 <li><a href="">Contact</a></li>
                             </ul>
-                        </div>
+                        </div> -->
                             
                         </div>
                     </div>

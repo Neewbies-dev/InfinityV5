@@ -32,7 +32,7 @@
     <section class="vertical-scrolling">
    
         <div class="content flex">
-            <p class="agency-description">Communication. Présence digitale. Développement. Infinity est une agence belge située à liège qui vous fournit une infinité de solutions personnalisées pour votre e-commerce grâce à notre panel d'experts. Awesome</p>
+            <p class="agency-description">Communication. Présence digitale. Développement. Infinity est une agence belge située à liège qui vous fournit une infinité de solutions personnalisées pour votre e-commerce grâce à notre panel d'experts.<br> Awesome</p>
             <button class="button">
                 Parlons-en
             </button>
@@ -48,9 +48,9 @@
             <img src="img/partenaire2.jpg" class="img1"/>
             <img src="img/Influ3.jpg"  class="img2"/>
             <div class="userButton">
-                <p class="part"> <a  href="assets/part.php">  Partenaires    </a> </p>
+                <p class="part"><a href="assets/part.php">Partenaires</a></p>
                 
-                <p class="influ"> <a  href="assets/influ.php"> Influenceurs  </a> </p>
+                <p class="influ"><a href="assets/influ.php">Influenceurs</a></p>
             </div>
         </div>
     </section> 
