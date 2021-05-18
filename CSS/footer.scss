@@ -254,12 +254,15 @@ footer {
     
 }
 
+
+// Tablet version
 @media only screen
 and (min-device-width: 768px)
 and (max-device-width: 1024px)
 and (-webkit-min-device-pixel-ratio: 1) {
 
     footer {
+       
         p {
             font-family: StMarie sans-serif;
             font-size: 1.4rem;
@@ -367,6 +370,9 @@ and (-webkit-min-device-pixel-ratio: 1) {
   and (orientation: landscape) 
   and (-webkit-min-device-pixel-ratio: 1) {
 
+    footer{
+        margin-top:-10%;
+    }
     .logoFooter {
 
         width:20%;
