@@ -25,7 +25,7 @@ footer {
 
     display:flex;
     flex-direction: column;
-    // padding:5%;
+   
     
 }
 
@@ -33,7 +33,7 @@ footer {
 
     display:flex;
     justify-content: space-between;
-    // margin-top:2%;
+    
 }
 
 .logoFooter {
@@ -253,7 +253,13 @@ footer {
     }
     
 }
-
+// landscape tablet
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (orientation: landscape) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+  }
 
 // Tablet version
 @media only screen
@@ -301,13 +307,12 @@ and (-webkit-min-device-pixel-ratio: 1) {
 
         width:100%;
         border:none;
-        text-align: center;
-        
+        margin-top: 15%;
 
-        p{
-
-            font-size:1rem;
-            width:100%;
+        a { 
+            font-size: 2rem;
+            margin-right: 30px;
+            margin-left: 30px;
         }
     }
     .socialIcon {
@@ -348,7 +353,8 @@ and (-webkit-min-device-pixel-ratio: 1) {
         color:rgb(187, 187, 187);
         display:flex;
         position: relative;
-        bottom:-160px;
+        top: 70px;
+       
         align-items:center;
         
         p{
@@ -375,8 +381,15 @@ and (-webkit-min-device-pixel-ratio: 1) {
     }
     .logoFooter {
 
-        width:20%;
-        margin-top:10%;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        width:100%;
+        border:none;
+        margin-top: 15%;
+    }
+    .titleFooter {
+        font-size: 2.2rem;
     }
 
   }
@@ -393,7 +406,7 @@ and (-webkit-min-device-pixel-ratio: 1) {
     src: url('./fonts/Aaargh.ttf');
   }
   
-/* Landscape */
+/* Landscape mobile */
 @media only screen 
   and (min-device-width: 375px) 
   and (max-device-width: 812px) 
@@ -421,10 +434,68 @@ and (-webkit-min-device-pixel-ratio: 1) {
         position: relative;
         line-height: 70px;
         top: 20px;
+        font-size: 1.2rem;
     }
     .copyrightFooter {
         display: flex;
         position: relative;
         top: 10px;
+    }
+    .socialFooter {
+        padding: 0;
+        margin-top: 0;
+    }
+    .contactFooter {
+        margin-top: 0;
+    }
+}
+// portrait tablet
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (orientation: portrait) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+    .logoFooter {
+        margin-top: 0px;
+        margin-bottom: 0px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .socialIcon {
+        display: flex;
+        position: relative;
+        top: 0px;
+        align-items: center;
+    }
+    .soialIconLogo2 {
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+    .titleFooter { 
+        display: flex;
+        position: relative;
+        justify-content: center;
+        line-height: 70px;
+        top: 20px;
+        font-size: 2rem;
+    }
+    .copyrightFooter {
+        display: flex;
+        position: relative;
+        top: 10px;
+    }
+    .socialFooter {
+        padding: 0;
+        margin-top: 0;
+    }
+    .contactFooter {
+        margin-top: 0;
+        border-right: 0px;
+        width: 100%;
+    }
+
+    .content2Footer {
+        display: flex;
+        flex-direction: column;
     }
 }

@@ -23,9 +23,6 @@ $red: #C30700;
     display: none;
 }
 
-// .waves {
-//     transform: scaley(-0.8);
-// }
 .title{
 
     text-align: center;
@@ -51,6 +48,7 @@ $red: #C30700;
 section {
 
     position:relative;
+    
 }
 
 
@@ -67,6 +65,7 @@ h3 {
     padding-top: 90px;
     display:flex;
     justify-content:center;
+    
     &:hover .img1:not(:hover) {
         opacity: .4;
         transform : scale(1);
@@ -179,8 +178,8 @@ text-align: justify;
 }
 
 .blur-out-contract {
-	-webkit-animation: blur-out-contract 5s cubic-bezier(0.550, 0.085, 0.680, 0.530) 1s reverse both;
-	        animation: blur-out-contract 5s cubic-bezier(0.550, 0.085, 0.680, 0.530) 1s reverse both;
+	-webkit-animation: blur-out-contract 15s cubic-bezier(0.550, 0.085, 0.680, 0.530) 20s reverse both;
+	        animation: blur-out-contract 15s cubic-bezier(0.550, 0.085, 0.680, 0.530) 20s reverse both;
 }
 
 
@@ -364,40 +363,7 @@ text-align: justify;
 }
 
 
-// TABLET VERSION
-@media only screen 
-  and (min-device-width: 768px) 
-  and (max-device-width: 1024px) 
-  and (orientation: portrait) 
-  and (-webkit-min-device-pixel-ratio: 1) {
-
-
-
-    .text_anime_logo_infinity{
-        display:flex;
-        justify-content: center;
-
-        .text_anime_logo_infinity_img {
-            width:20%;
-        }
-    }
-    .video {
-        display:none;
-    }
-   .videoMobile {
-       display:none;
-   }
-    
-   .videoTablet{
-       height:100vh;
-       display:block;
-
-   }
-    .title{
-        text-align: center;
-    }
-}
-/* Landscape */
+/* Landscape mobile*/
 @media only screen 
   and (min-device-width: 375px) 
   and (max-device-width: 812px) 
@@ -414,9 +380,9 @@ text-align: justify;
     .airplane {
         display: block;
         position: relative;
-        bottom: 144px;
-        left: 500px;
-        width: 230px;
+        bottom: 144px !important;
+        left: 500px !important;
+        width: 230px !important;
     }
     .pictures {
         display: flex;
@@ -448,88 +414,60 @@ text-align: justify;
     }
     .content {
         .button {
-            margin-left: 0px;
+            margin-left: 0px !important;
         }
     }
 }
-
-// TABLET VERSION LANDSCAPE
-
+// landscape tablet
 @media only screen 
   and (min-device-width: 768px) 
   and (max-device-width: 1024px) 
   and (orientation: landscape) 
-  and (-webkit-min-device-pixel-ratio: 1) {
-    video {
-        height:initial;
-        width:100%;
+  and (-webkit-min-device-pixel-ratio: 2) {
+    .airplane {
+        display: block;
+        position: relative;
+        bottom: 250px;
+        left: 550px;
+        width: 450px;
     }
-
-   .text_anime_logo_infinity{
-    display:flex;
-    justify-content: center;
-
-    .text_anime_logo_infinity_img {
-        width:20%;
-        margin-top:10%;
-    }
-}
-.video{
-    display:none;
-}
-.videoMobile {
-   display:none;
-}
-
-.videoTablet{
-   height:100vh; 
-
-}
-.title{
-    text-align: center;
-}
-
-#fullpage{
-    overflow-y:hidden;
-}
-.button_talk_about{
-    padding:2%;
-    margin-top: 100px;
-}
-.joinUs{
-  margin-top:5%;
-}
-
-.pictures{
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    padding: 5%;
-    color:black;
-    margin-top:10%;
-
-    .userButton{
-        justify-content: center;
-        
-        p{
-            margin:auto;
+    .content{
+        .button{
+            margin-left: 130px;
         }
+    }
 
-    }
-    img{
-        width:40%;
-        height:70%;
-    }
 }
-.airplane {
-    display: block;
-    position: relative;
-    margin-left: 600px;
-    width: 30%;
-    margin-top:0;
+// portrait tablet
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (orientation: portrait) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+    .airplane {
+        width: 70%;
+        display: flex;
+        position: relative;
+        bottom: 100px;
+        left: 195px;
+    }
+    .content {
+        p {
+            width: 90%;
+            line-height: 50px;
+            padding: 0;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 150px;
+            font-family: Aargh sans-serif;
+            font-size: 2.3rem;
+        }
+        .button {
+            margin-top: 50px;
+            margin-left: 40px;
+            font-size: 20px;
+            width: 185px;
+        }
+    }
 }
 
-    .button {
-        margin-left:10%;
-    }
-}
