@@ -194,19 +194,19 @@
     }
     #flip_aninfinity > div > div {
         height: 34px;
-        margin-bottom: 58px;
+        margin-bottom: 50px;
     }
     #flip_aninfinity div:first-child {
-        font-size: 58px;
+        font-size: 50px;
         animation: show 12s reverse infinite;
     }
 
     #aninfinitymov {
-        width: 340px;
+        width: 320px;
         margin-bottom: 20px;
     }
     .title_aninfinity {
-        font-size: 58px;
+        font-size: 50px;
         font-family: RabbiHighway sans-serif;
         text-shadow: rgb(0, 0, 0) 2px 0px 0px, rgb(0, 0, 0) 1.75517px 0.958851px 0px, rgb(0, 0, 0) 1.0806px 1.68294px 0px, rgb(0, 0, 0) 0.141474px 1.99499px 0px, rgb(0, 0, 0) -0.832294px 1.81859px 0px, rgb(0, 0, 0) -1.60229px 1.19694px 0px, rgb(0, 0, 0) -1.97999px 0.28224px 0px, rgb(0, 0, 0) -1.87291px -0.701566px 0px, rgb(0, 0, 0) -1.30729px -1.51361px 0px, rgb(0, 0, 0) -0.421592px -1.95506px 0px, rgb(0, 0, 0) 0.567324px -1.91785px 0px, rgb(0, 0, 0) 1.41734px -1.41108px 0px, rgb(0, 0, 0) 1.92034px -0.558831px 0px;
         color:white;
@@ -228,20 +228,26 @@
     .subtitle_aninfinity{
         h2 {
             font-size: 66px;
-            margin-left: 100px;
+            // margin-left: 100px;
             margin-top: 40px;
         }
     }
     .subtitle_aninfinity {
         margin-left: 0;
+        h2 {
+            margin-top: 10px;
+            font-size: 55px;
+            font-family: RabbiHighway sans-serif;
+            display: ruby;
+        }
     }
     .animate_tablet {
         display: flex;
-        margin-left: 100px;
+        // margin-left: 100px;
     }
-    #container_aninfinity {
-        margin-left: 100px;
-    }
+    // #container_aninfinity {
+    //     margin-left: 100px;
+    // }
     .animate_letter {
         display: block;
     }
@@ -280,17 +286,34 @@
    .animate_letter {
        display: flex;
    }
+   .animate_tablet {
+    width: 300px;
+    display: flex;
+    bottom: 10px;
+    position: relative;
+   }
    #container_aninfinity {
        display: flex;
    }
    .subtitle_aninfinity {
     // display: flex;
     // justify-content: center;
-    h2 {
-        margin-top: 10px;
-        font-size: 62px;
-        // font-weight: 10;
-        font-family: RabbiHighway sans-serif;
+        h2 {
+            margin-top: 10px;
+            font-size: 46px;
+            // font-weight: 10;
+            font-family: RabbiHighway sans-serif;
+        }
     }
-}
+    #flip_aninfinity div:first-child {
+        font-size: 55px;
+    }
+    .title_aninfinity {
+        font-size: 50px;
+    }
+    #flip_aninfinity > div > div {
+        color: black;
+        height: 38px;
+        margin-bottom: 45px;
+    }
 }

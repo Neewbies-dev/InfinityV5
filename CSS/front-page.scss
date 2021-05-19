@@ -347,7 +347,7 @@ text-align: justify;
         display: block;
         position: relative;
         bottom: 144px !important;
-        left: 500px !important;
+        left: 430px !important;
         width: 230px !important;
     }
     .pictures {
@@ -382,6 +382,12 @@ text-align: justify;
         .button {
             margin-left: 0px !important;
         }
+    }
+    .logoFooter {
+        width: 100px !important;
+        display: flex;
+        position: relative;
+        top: 130px;
     }
 }
 // landscape tablet

@@ -180,7 +180,7 @@ header {
 }
 @media only screen and (max-width: 600px) {
    #menu {
-    left: calc(100% - 290px);
+    left: calc(100% - 360px);
 	width: 250px !important;
         text-align: right;
         ul {
@@ -195,7 +195,7 @@ header {
 	#menu {
         z-index: 99;
         position: fixed;
-        left: calc(100% - 290px);
+        left: calc(100% - 550px);
         top: 10px;
         color: black;
         display: none;
@@ -216,6 +216,9 @@ header {
             font-size: 50px;
         }
     }
+	#fullpage {
+		overflow-y: hidden;
+	}
 }
 /* Landscape */
 @media only screen 
@@ -225,12 +228,12 @@ header {
   and (orientation: landscape) { 
 
 	  #menu {
-		  left: 285px;
+		  left: 100px;
 		  top: -119px;
 		  width: 287px;
-		  font-size: 46px;
+		  font-size: 35px;
 	  }
 	  #menu ul {
-		line-height: 2.8rem;
+		line-height: 1.8rem;
 	}
 }
