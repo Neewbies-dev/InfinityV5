@@ -664,7 +664,7 @@ h3 {
     display: flex;
     position: relative;
     left: 20px;
-    bottom: 0px;
+    bottom: 45px;
     margin-top: 0;
     margin-left: 0;
   }
@@ -697,7 +697,8 @@ h3 {
   }
   .pictures img {
     display: block;
-    width: 25%;
+    width: 30%;
+    height: auto;
     margin-top: 60px;
   }
 
@@ -730,7 +731,7 @@ h3 {
     width: 100px !important;
     display: flex;
     position: relative;
-    top: 130px;
+    top: 55px;
   }
 }
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
@@ -1081,14 +1082,14 @@ footer p {
     display: flex;
     position: relative;
     line-height: 70px;
-    top: 20px;
+    top: 40px;
     font-size: 1.2rem;
   }
 
   .copyrightFooter {
     display: flex;
     position: relative;
-    top: 10px;
+    top: 0px;
   }
 
   .socialFooter {
@@ -2913,7 +2914,6 @@ body {
   text-decoration: none !important;
   padding-bottom: 10px;
   margin-bottom: 12px;
-  border-bottom: 1px solid black;
   list-style: none;
   color: #555;
   transition: all 150ms ease;
@@ -3007,17 +3007,42 @@ header {
   width: 64%;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) {
   #menu {
-    left: calc(100% - 360px);
+    margin-top: initial;
+    left: initial;
     width: 250px !important;
-    text-align: right;
+    text-align: left;
   }
   #menu ul {
-    line-height: 4rem;
+    line-height: 18px;
+    font-weight: bold;
   }
   #menu li {
-    font-size: 30px;
+    font-size: 20px;
+  }
+  #menu img {
+    width: 103px;
+    display: block;
+    position: relative;
+    bottom: 20px;
+    right: 25px;
+    margin-bottom: 30px;
+  }
+
+  .hamburger-shell {
+    top: 20px;
+  }
+
+  .menu-name {
+    font-size: 14px;
+    left: 10px;
+  }
+
+  .socialIconMenu {
+    font-size: 39px;
+    margin-top: 40px;
+    margin-bottom: 40px;
   }
 }
 @media only screen and (min-width: 601px) and (max-width: 768px) {

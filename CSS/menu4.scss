@@ -84,7 +84,6 @@ body {
 	text-decoration: none!important;
 	padding-bottom: 10px;
 	margin-bottom: 12px;
-	border-bottom: 1px solid black;
 	list-style: none;
 	color: #555;
 	transition: all 150ms ease;
@@ -178,18 +177,46 @@ header {
 .par-3 {
 	width: 64%;
 }
-@media only screen and (max-width: 600px) {
-   #menu {
-    left: calc(100% - 360px);
-	width: 250px !important;
-        text-align: right;
-        ul {
-            line-height: 4rem;
-        }
-        li {
-            font-size: 30px;
-        }
-   } 
+
+// iphone X Portrait
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 812px) 
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: portrait) { 
+	#menu {
+		margin-top: initial;
+		left: initial;
+		width: 250px !important;
+			text-align: left;
+			ul {
+				line-height: 18px;
+				font-weight: bold;
+			}
+			li {
+				font-size: 20px;
+			}
+			img {
+				width: 103px;
+				display: block;
+				position: relative;
+				bottom: 20px;
+				right: 25px;
+				margin-bottom: 30px;
+			}
+	   } 
+	   .hamburger-shell {
+		   top: 20px;
+	   }
+	   .menu-name {
+		   font-size: 14px;
+		   left: 10px;
+	   }
+	   .socialIconMenu {
+		   	font-size: 39px;
+		   	margin-top: 40px;
+			margin-bottom: 40px;
+	   }
 }
 @media only screen and (min-width:601px) and (max-width:768px) {
 	#menu {

@@ -320,7 +320,7 @@ text-align: justify;
             display: flex;
             position: relative;
             left: 20px;
-            bottom: 0px;
+            bottom: 45px;
             margin-top:0;
             margin-left:0;
             
@@ -357,7 +357,8 @@ text-align: justify;
         padding: 0%;
         img {
             display: block;
-            width: 25%;
+            width: 30%;
+            height: auto;
             margin-top: 60px;
         }
     }
@@ -387,7 +388,7 @@ text-align: justify;
         width: 100px !important;
         display: flex;
         position: relative;
-        top: 130px;
+        top: 55px;
     }
 }
 // landscape tablet
