@@ -2900,11 +2900,10 @@ body {
   display: none;
   margin: 120px 30px;
   text-decoration: none;
-  font-family: Arial, sans-serif;
-  font-weight: 100;
+  font-family: Rabbid Highway Sign II;
   font-size: 75px;
   text-transform: uppercase;
-  color: #333;
+  color: black;
   padding: 24px;
   width: 500px;
   text-align: right;
@@ -2917,11 +2916,6 @@ body {
   list-style: none;
   color: #555;
   transition: all 150ms ease;
-}
-
-#menu li:hover {
-  color: #0079a6;
-  padding-right: 3px;
 }
 
 #menu a {
@@ -3009,17 +3003,18 @@ header {
 
 @media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) {
   #menu {
+    font-family: Rabbid Highway Sign II;
     margin-top: initial;
     left: initial;
-    width: 250px !important;
+    width: 240px !important;
     text-align: left;
   }
   #menu ul {
     line-height: 18px;
-    font-weight: bold;
   }
   #menu li {
     font-size: 20px;
+    color: black;
   }
   #menu img {
     width: 103px;
@@ -3027,7 +3022,7 @@ header {
     position: relative;
     bottom: 20px;
     right: 25px;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
   }
 
   .hamburger-shell {
@@ -3041,8 +3036,85 @@ header {
 
   .socialIconMenu {
     font-size: 39px;
-    margin-top: 40px;
-    margin-bottom: 40px;
+    margin-top: 25px;
+    margin-bottom: initial;
+    display: flex;
+    justify-content: space-between;
+    width: 170px;
+  }
+
+  .stay {
+    font-size: 16px;
+    color: #C30712;
+    font-family: St Marie;
+    font-weight: bold;
+  }
+
+  .news {
+    line-height: 30px;
+    font-family: Rabbid Highway Sign II;
+    font-size: 16px;
+  }
+
+  .buttonsMenu {
+    font-family: Rabbid Highway Sign II;
+    font-size: 11px;
+    width: 300px;
+    display: flex;
+    margin-bottom: 50px;
+    margin-top: 10px;
+  }
+  .buttonsMenu a {
+    width: 126.4px;
+    height: 31.34px;
+    border: 1px solid black;
+    display: flex;
+    margin-right: 8px;
+    border-radius: 13px;
+    justify-content: center;
+    align-items: center;
+    -webkit-box-shadow: 0px 5px 9px -1px rgba(0, 0, 0, 0.22);
+    box-shadow: 0px 5px 9px -1px rgba(0, 0, 0, 0.22);
+  }
+
+  .paperPlaneSolo {
+    display: flex;
+    position: relative;
+    left: 115px;
+    top: 39px;
+  }
+
+  .titleInfoMenu {
+    font-size: 16px;
+    font-family: Rabbid Highway Sign II;
+    color: #C30712;
+    margin-bottom: 15px;
+  }
+
+  .adressInfoMenu {
+    font-size: 14px;
+    font-family: Aaargh;
+    text-transform: lowercase;
+    font-weight: bold;
+  }
+
+  .mailMenu {
+    font-family: Aaargh;
+    font-size: 14px;
+    color: #C30712;
+    margin-top: 20px;
+    width: 290px;
+    font-weight: bold;
+  }
+
+  .copyrightMenu {
+    font-size: 9px;
+    font-family: Aaargh;
+    font-weight: bold;
+    display: flex;
+    position: relative;
+    top: 30px;
+    left: 22px;
   }
 }
 @media only screen and (min-width: 601px) and (max-width: 768px) {
