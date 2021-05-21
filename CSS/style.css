@@ -382,6 +382,10 @@ h1 {
   width: 100%;
   height: 100vh;
 }
+.video #opening {
+  width: 100%;
+  height: 100vh;
+}
 
 .footer100 {
   height: 100vh;
@@ -397,6 +401,10 @@ h1 {
 }
 
 #openingMobile {
+  display: none;
+}
+
+.videoTablet {
   display: none;
 }
 
@@ -443,7 +451,7 @@ h3 {
   opacity: 0.4;
 }
 .pictures img {
-  width: 40%;
+  width: 30%;
   height: 40%;
   position: relative;
   transition: 0.3s ease-in-out;
@@ -491,6 +499,9 @@ h3 {
   cursor: pointer;
   margin-top: 15px;
 }
+.userButton p {
+  margin: auto;
+}
 
 .text_anime {
   display: flex;
@@ -510,7 +521,7 @@ h3 {
   width: 40%;
   display: flex;
   position: relative;
-  left: 730px;
+  left: 760px;
   bottom: 350px;
 }
 
@@ -619,10 +630,6 @@ h3 {
     width: 100%;
   }
 
-  #opening {
-    display: none;
-  }
-
   .videoTablet {
     display: none;
   }
@@ -648,22 +655,24 @@ h3 {
     position: relative;
   }
 }
+/* ----------- iPhone 6, 7, 8 AND XR MOBILE PORTRAIT----------- */
 @media screen and (max-width: 768px) {
-  #openingMobile {
-    display: block;
+  #opening {
+    width: 100%;
     height: 100vh;
   }
 
-  #opening {
-    display: none;
+  .videoMobile {
+    width: 100%;
+    height: 100vh;
   }
 
   .videoTablet {
     display: none;
   }
 
-  video {
-    width: 100%;
+  .video {
+    display: none;
   }
 
   .title {
@@ -693,46 +702,50 @@ h3 {
   }
 
   .airplane {
-    width: 90%;
+    width: 50%;
     display: flex;
     position: relative;
     left: 20px;
     bottom: 0px;
     margin-top: 0;
-    margin-left: 0;
+    margin-left: 150px;
   }
 }
-<<<<<<< HEAD
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1) {
-  .text_anime_logo_infinity {
-    display: flex;
-    justify-content: center;
-  }
-  .text_anime_logo_infinity .text_anime_logo_infinity_img {
-    width: 20%;
-  }
-
+/* ----------- iPhone 6, 7, 8 AND XR MOBILE LANDSCAPE----------- */
+@media screen and (max-width: 768px) and (orientation: landscape) {
   .video {
-    display: none;
-  }
-
-  .videoMobile {
-    display: none;
-  }
-
-  .videoTablet {
-    height: 100vh;
     display: block;
+    height: 100vh;
+  }
+  .video #opening {
+    width: 100%;
+    height: 100vh;
   }
 
-  .title {
-    text-align: center;
+  #openingMobile {
+    display: none;
+  }
+
+  .airplane {
+    bottom: 80px;
+    left: 490px;
+    width: 26%;
+  }
+
+  .pictures {
+    height: 100vh;
+    width: 100%;
+    padding: initial;
+  }
+  .pictures img {
+    width: 28%;
+  }
+
+  .joinUs {
+    margin-top: initial;
   }
 }
-/* Landscape */
-=======
 /* Landscape mobile*/
->>>>>>> ab2b80bac8524b3b9e3a1eba655afb7238a09e5a
 @media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
   .content {
     padding-left: 50px;
@@ -789,6 +802,85 @@ h3 {
     margin-left: 0px !important;
   }
 }
+/* ----------- iPhone 6+, 7+ and 8+ MOBILE LANDSCAPE----------- */
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
+  .content {
+    padding-left: 50px;
+  }
+
+  .agency-description {
+    display: flex;
+    position: relative;
+    top: 50px;
+  }
+
+  .airplane {
+    display: block;
+    position: relative;
+    bottom: 144px !important;
+    left: 450px !important;
+    width: 230px !important;
+  }
+
+  .pictures {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0%;
+  }
+  .pictures img {
+    display: block;
+    width: 25%;
+    margin-top: 60px;
+  }
+
+  .joinUs {
+    margin-top: 15px;
+  }
+
+  .userButton {
+    display: flex;
+    justify-content: space-evenly;
+    width: 65%;
+  }
+  .userButton p {
+    margin: unset;
+  }
+
+  .influ {
+    margin-right: 96px;
+  }
+
+  .part {
+    margin-left: 160px;
+  }
+
+  .content .button {
+    margin-left: 0px !important;
+  }
+
+  .mainFooter {
+    height: initial;
+  }
+}
+/* ----------- iPhone 6, 7, 8 AND XR MOBILE LANDSCAPE----------- */
+@media only screen and (min-device-width: 414px) and (max-device-height: 896px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 3) {
+  .videoMobile {
+    display: none;
+  }
+
+  .videoTablet {
+    display: none;
+  }
+
+  .video {
+    display: block;
+  }
+  .video #opening {
+    width: 100%;
+    height: 100vh;
+  }
+}
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
   .airplane {
     display: block;
@@ -803,6 +895,21 @@ h3 {
   }
 }
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
+  .videoMobile {
+    display: none;
+  }
+
+  .video {
+    display: none;
+  }
+
+  .videoTablet {
+    display: block;
+  }
+  .videoTablet video {
+    width: 100%;
+  }
+
   .airplane {
     width: 70%;
     display: flex;
@@ -828,80 +935,25 @@ h3 {
     width: 185px;
   }
 }
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1) {
-  video {
-    height: initial;
-    width: 100%;
-  }
-
-  .text_anime_logo_infinity {
-    display: flex;
-    justify-content: center;
-  }
-  .text_anime_logo_infinity .text_anime_logo_infinity_img {
-    width: 20%;
-    margin-top: 10%;
-  }
-
-  .video {
-    display: none;
-  }
-
-  .videoMobile {
-    display: none;
-  }
-
-  .videoTablet {
-    height: 100vh;
-  }
-
-  .title {
-    text-align: center;
-  }
-
-  #fullpage {
-    overflow-y: hidden;
-  }
-
-  .button_talk_about {
-    padding: 2%;
-    margin-top: 100px;
-  }
-
-  .joinUs {
-    margin-top: 5%;
-  }
-
-  .pictures {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 5%;
-    color: black;
-    margin-top: 10%;
-  }
-  .pictures .userButton {
-    justify-content: center;
-  }
-  .pictures .userButton p {
-    margin: auto;
-  }
-  .pictures img {
-    width: 40%;
-    height: 70%;
-  }
-
-  .airplane {
-    display: block;
-    position: relative;
-    margin-left: 600px;
-    width: 30%;
-    margin-top: 0;
-  }
-
-  .button {
-    margin-left: 10%;
-  }
+@font-face {
+  font-family: RabbiHighway sans-serif;
+  src: url("../fonts/RabbidHighwaySignII.otf");
+}
+@font-face {
+  font-family: Aargh sans-serif;
+  src: url("../fonts/Aaargh.ttf");
+}
+@font-face {
+  font-family: JennaSue serif;
+  src: url("../fonts/JennaSue.ttf");
+}
+@font-face {
+  font-family: StMarie sans-serif;
+  src: url("../fonts/StMarie-Thin.otf");
+}
+@font-face {
+  font-family: Segoe sans-serif;
+  src: url("../fonts/Segoe UI.ttf");
 }
 footer {
   font-family: Aargh sans-serif;
@@ -1105,16 +1157,77 @@ footer p {
     font-size: 8px;
   }
 }
-<<<<<<< HEAD
+/* Landscape mobile */
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
+  .logoFooter {
+    margin-top: -20px;
+    margin-bottom: 20px;
+  }
+
+  .socialIcon {
+    display: flex;
+    position: relative;
+    top: 0px;
+    align-items: center;
+  }
+
+  .soialIconLogo2 {
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+
+  .titleFooter {
+    display: flex;
+    position: relative;
+    line-height: 70px;
+    top: 20px;
+    font-size: 1.2rem;
+    margin-bottom: 0 !important;
+  }
+
+  .copyrightFooter {
+    display: flex;
+    position: relative;
+    top: 10px;
+  }
+
+  .socialFooter {
+    padding: 0;
+    margin-top: 0;
+  }
+
+  .contactFooter {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+  }
+}
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
+  .logoFooter {
+    width: 30%;
+  }
+}
+@media screen and (max-width: 768px) and (orientation: landscape) {
+  .logoFooter {
+    width: 40%;
+    margin-bottom: initial;
+  }
+
+  .mainFooter {
+    height: initial;
+  }
+
+  .contactFooter {
+    margin-bottom: initial;
+  }
+
+  .titleFooter {
+    margin-bottom: initial;
+  }
+}
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
   footer p {
     font-family: StMarie sans-serif;
     font-size: 1.4rem;
-=======
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
-  .contentFooter {
-    flex-direction: column;
->>>>>>> ab2b80bac8524b3b9e3a1eba655afb7238a09e5a
   }
 
   .mainFooter {
@@ -1147,39 +1260,20 @@ footer p {
   .socialFooter {
     width: 100%;
     border: none;
-<<<<<<< HEAD
-    text-align: center;
-=======
     margin-top: 15%;
   }
   .socialFooter a {
     font-size: 2rem;
     margin-right: 30px;
     margin-left: 30px;
->>>>>>> ab2b80bac8524b3b9e3a1eba655afb7238a09e5a
-  }
-  .socialFooter p {
-    font-size: 1rem;
-    width: 100%;
   }
 
-<<<<<<< HEAD
   .socialIcon {
     text-align: center;
     width: 30%;
   }
   .socialIcon i {
     font-size: 3.5rem;
-=======
-  .copyrightFooter {
-    border-top: 1px black solid;
-    font-size: 12px;
-    color: #bbbbbb;
-    display: flex;
-    position: relative;
-    top: 70px;
-    align-items: center;
->>>>>>> ab2b80bac8524b3b9e3a1eba655afb7238a09e5a
   }
 
   .infoFooter {
@@ -1191,7 +1285,6 @@ footer p {
     flex-direction: column;
     align-items: center;
     border: none;
-<<<<<<< HEAD
     margin-bottom: 10%;
   }
   .contactFooter p {
@@ -1208,7 +1301,7 @@ footer p {
     color: #bbbbbb;
     display: flex;
     position: relative;
-    bottom: -160px;
+    top: 70px;
     align-items: center;
   }
   .copyrightFooter p {
@@ -1217,79 +1310,7 @@ footer p {
   .copyrightFooter ul {
     font-size: 8px;
   }
-}
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1) {
-  footer {
-    margin-top: -10%;
-  }
 
-  .logoFooter {
-    width: 20%;
-    margin-top: 10%;
-=======
-    margin-top: 15%;
-  }
-
-  .titleFooter {
-    font-size: 2.2rem;
->>>>>>> ab2b80bac8524b3b9e3a1eba655afb7238a09e5a
-  }
-}
-@font-face {
-  font-family: RabbiHighway sans-serif;
-  src: url("./fonts/RabbidHighwaySignII.otf");
-}
-@font-face {
-  font-family: Aargh sans-serif;
-  src: url("./fonts/Aaargh.ttf");
-}
-/* Landscape mobile */
-@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
-  .logoFooter {
-    margin-top: -20px;
-    margin-bottom: 20px;
-  }
-
-  .logoFooter {
-    margin-bottom: 20px;
-  }
-
-  .socialIcon {
-    display: flex;
-    position: relative;
-    top: 0px;
-    align-items: center;
-  }
-
-  .soialIconLogo2 {
-    margin-left: 30px;
-    margin-right: 30px;
-  }
-
-  .titleFooter {
-    display: flex;
-    position: relative;
-    line-height: 70px;
-    top: 20px;
-    font-size: 1.2rem;
-  }
-
-  .copyrightFooter {
-    display: flex;
-    position: relative;
-    top: 10px;
-  }
-
-  .socialFooter {
-    padding: 0;
-    margin-top: 0;
-  }
-
-  .contactFooter {
-    margin-top: 0;
-  }
-}
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
   .logoFooter {
     margin-top: 0px;
     margin-bottom: 0px;
@@ -1339,6 +1360,116 @@ footer p {
     display: flex;
     flex-direction: column;
   }
+}
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1) {
+  #fullpage {
+    overflow-y: hidden;
+  }
+
+  #opening {
+    width: 100%;
+  }
+
+  .titleFooter {
+    font-size: 2.2rem;
+  }
+
+  .logoFooter {
+    width: 20%;
+    margin-bottom: 0;
+    margin-top: 5%;
+  }
+
+  .socialFooter {
+    margin-top: 0;
+  }
+
+  .contactFooter {
+    margin-bottom: 7%;
+    margin-top: 5%;
+  }
+  .contactFooter p {
+    text-align: center;
+  }
+
+  .titleFooter {
+    margin-bottom: 5%;
+  }
+
+  .contentFooter {
+    flex-direction: column;
+  }
+
+  .content2Footer {
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .mainFooter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .logoFooter {
+    margin-top: 5%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20%;
+  }
+
+  .socialFooter {
+    width: 100%;
+    border: none;
+  }
+  .socialFooter a {
+    font-size: 2rem;
+    margin-right: 30px;
+    margin-left: 30px;
+  }
+  .socialFooter p {
+    font-size: 1.3rem;
+  }
+
+  .copyrightFooter {
+    border-top: 1px black solid;
+    font-size: 12px;
+    color: #bbbbbb;
+    display: flex;
+    position: relative;
+    top: 70px;
+    align-items: center;
+  }
+
+  .infoFooter {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .contactFooter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    border: none;
+    margin-top: 15%;
+  }
+
+  .titleFooter {
+    font-size: 2.2rem;
+  }
+}
+@font-face {
+  font-family: RabbiHighway sans-serif;
+  src: url("./fonts/RabbidHighwaySignII.otf");
+}
+@font-face {
+  font-family: Aargh sans-serif;
+  src: url("./fonts/Aaargh.ttf");
 }
 .contactUs {
   font-weight: 400;
@@ -2573,6 +2704,60 @@ textarea {
     font-family: RabbiHighway sans-serif;
   }
 }
+/* Landscape mobile*/
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
+  .animate_letter {
+    display: block;
+  }
+
+  .airplane {
+    left: 450px;
+  }
+
+  .aninfinitymovall {
+    margin-top: -10%;
+  }
+}
+/* ----------- iPhone 6+, 7+ and 8+ MOBILE LANDSCAPE----------- */
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
+  .animate_letter {
+    display: block;
+  }
+
+  .airplane {
+    left: 450px;
+  }
+}
+/* ----------- iPhone 6, 7, 8 AND XR MOBILE LANDSCAPE----------- */
+@media screen and (max-width: 768px) and (orientation: landscape) {
+  .animate_tablet {
+    margin-left: initial;
+  }
+
+  #container_aninfinity {
+    margin-left: initial;
+    display: flex;
+  }
+
+  #flip_aninfinity div div {
+    margin-bottom: 39px;
+  }
+  #flip_aninfinity div :first-child {
+    font-size: 3.1rem;
+  }
+
+  #aninfinitymov {
+    display: block;
+    position: relative;
+    top: 15px;
+    width: 285px;
+    height: auto;
+  }
+
+  .subtitle_aninfinity h2 {
+    font-size: 40px;
+  }
+}
 .master_div_our_partners {
   height: 100vh;
   margin-top: 100px;
@@ -3062,7 +3247,7 @@ body {
   margin: 120px 30px;
   text-decoration: none;
   font-family: Arial, sans-serif;
-  font-weight: 100;
+  font-weight: bold;
   font-size: 75px;
   text-transform: uppercase;
   color: #333;
@@ -3075,15 +3260,9 @@ body {
   text-decoration: none !important;
   padding-bottom: 10px;
   margin-bottom: 12px;
-  border-bottom: 1px solid black;
   list-style: none;
-  color: #555;
+  color: #000;
   transition: all 150ms ease;
-}
-
-#menu li:hover {
-  color: #0079a6;
-  padding-right: 3px;
 }
 
 #menu a {
@@ -3111,7 +3290,7 @@ body {
 }
 
 .menu-name {
-  font-family: Verdana;
+  font-family: RabbiHighway sans-serif;
   font-weight: 100;
   color: black;
   font-size: 21.5px;
@@ -3182,7 +3361,8 @@ header {
     font-size: 30px;
   }
 }
-@media only screen and (min-width: 601px) and (max-width: 768px) {
+/* ----------- iPhone 6, 7, 8 AND XR MOBILE PORTRAIT----------- */
+@media screen and (max-width: 768px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
   #menu {
     z-index: 99;
     position: fixed;
@@ -3190,22 +3370,209 @@ header {
     top: 10px;
     color: black;
     display: none;
-    margin: 120px 30px;
+    margin: 83px -30px;
     text-decoration: none;
-    font-family: Arial, sans-serif;
-    font-weight: 100;
-    font-size: 20px;
+    font-family: RabbiHighway serif;
+    font-weight: bold;
+    font-size: 18px;
     text-transform: uppercase;
-    color: #333;
-    padding: 24px;
-    width: 400px;
-    text-align: right;
+    color: black;
+    padding: 0px;
+    width: 100% !important;
+    text-align: left;
   }
   #menu ul {
-    line-height: 4.7rem;
+    line-height: 1rem;
+    margin-top: -10%;
   }
   #menu li {
-    font-size: 50px;
+    font-size: 18px;
+  }
+  #menu img {
+    width: 20%;
+    top: -70px;
+    position: relative;
+    left: -34px;
+  }
+
+  .socialIconMenu {
+    margin-top: 10%;
+    margin-bottom: 10%;
+  }
+  .socialIconMenu a {
+    font-size: 39px;
+    margin: 3%;
+  }
+
+  .newsletterMenu {
+    text-transform: uppercase;
+    display: flex;
+    margin-top: 10%;
+  }
+  .newsletterMenu .paperPlaneSolo {
+    order: 3;
+  }
+  .newsletterMenu div {
+    display: flex;
+    flex-direction: column;
+  }
+  .newsletterMenu .stay {
+    font-family: RabbiHighway sans-serif;
+    font-weight: bold;
+    color: #C30700;
+  }
+  .newsletterMenu .news {
+    font-family: StMarie sans-serif;
+  }
+
+  .buttonsMenu {
+    display: flex;
+    margin-bottom: 10%;
+  }
+  .buttonsMenu a {
+    border: 1px black solid;
+    border-radius: 28px;
+    padding: 2%;
+    font-size: 11px;
+    padding-right: 5%;
+    padding-left: 5%;
+    margin-right: 3%;
+    box-shadow: 0px 7px 16px 1px rgba(0, 0, 0, 0.22);
+  }
+
+  .infosMenu {
+    margin-top: 10%;
+  }
+  .infosMenu .titleInfoMenu {
+    font-family: RabbiHighway sans-serif;
+    font-weight: bold;
+    color: #C30700;
+    text-transform: uppercase;
+    margin-bottom: 3%;
+  }
+  .infosMenu p {
+    font-family: Aargh sans-serif;
+    font-size: 14px;
+    text-transform: initial;
+  }
+  .infosMenu .mailMenu {
+    color: #C30700;
+    margin-top: 3%;
+  }
+
+  .copyrightMenu {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 15px;
+    right: 60px;
+    font-family: Aargh sans-serif;
+    right: 60px;
+  }
+  .copyrightMenu a {
+    font-size: 9px;
+  }
+}
+/* ----------- iPhone 6, 7, 8 AND XR MOBILE LANDSCAPE----------- */
+@media screen and (max-width: 768px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
+  #menu {
+    left: calc(65% - 350px);
+    top: -117px;
+    padding: initial;
+  }
+  #menu li {
+    font-size: 18px;
+  }
+  #menu img {
+    width: 20%;
+    position: relative;
+    left: -400px;
+  }
+  #menu ul {
+    line-height: initial;
+  }
+
+  .socialIconMenu {
+    left: 11px;
+    position: relative;
+    top: 8px;
+  }
+
+  #menu1 {
+    left: 125px;
+    position: relative;
+  }
+  #menu1 li {
+    margin-bottom: initial;
+  }
+
+  .newsletterMenu {
+    top: -188px;
+    left: -357px;
+    position: relative;
+  }
+  .newsletterMenu .stay {
+    color: #C30700;
+    font-weight: bold;
+    font-family: RabbiHighway sans-serif;
+    font-size: 16px;
+  }
+  .newsletterMenu .news {
+    font-size: 16px;
+    font-family: StMarie sans-serif;
+  }
+
+  .infosMenu {
+    position: relative;
+    top: -387px;
+    left: -75px;
+    text-align: left;
+    text-transform: initial;
+  }
+  .infosMenu .titleInfoMenu {
+    font-family: RabbiHighway sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  .infosMenu .mailMenu {
+    margin-top: 5%;
+    color: #C30700;
+    text-transform: initial;
+  }
+
+  .titleInfoMenu {
+    color: #C30700;
+    margin-bottom: 5%;
+  }
+
+  .buttonsMenu {
+    top: -134px;
+    position: relative;
+    font-size: 11px;
+    left: -200px;
+  }
+  .buttonsMenu a {
+    border: 1px black solid;
+    border-radius: 28px;
+    padding: 2%;
+    font-size: 11px;
+    padding-right: 5%;
+    padding-left: 5%;
+    margin-right: 3%;
+  }
+
+  .paperPlaneSolo {
+    position: relative;
+    left: 55px;
+    top: 47px;
+  }
+
+  .copyrightMenu {
+    position: relative;
+    top: -227px;
+    font-size: 9px;
+    left: 40px;
+    color: black;
   }
 }
 /* Landscape */
