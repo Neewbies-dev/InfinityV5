@@ -289,7 +289,7 @@ header {
 			left: 22px;
 	   }
 }
-// iphone 6, 7, 8 plus and X landscape
+// iphone 6, 7,8 plus landscape
 
 @media only screen 
   and (min-device-width: 414px) 
@@ -409,13 +409,14 @@ header {
 		font-weight: bold;
 	}
 	.copyrightMenu {
-		font-size: 9px;
-		font-family: Aaargh;
-		font-weight: bold;
-		display: flex;
-		position: relative;
-		top: 15px;
-		left: 22px;
+		a {
+			display: flex;
+			bottom: 150px;
+			position: relative;
+			left: 177px;
+			font-size: 9px;
+			font-family: Aaargh;
+		}
 	}
 	.infosMenu {
 		display: block;
@@ -430,6 +431,149 @@ header {
 		bottom: 10px;
 	}
 }
+@media only screen 
+    and (min-device-width: 375px)
+    and (max-device-height: 812px)
+    and (orientation : landscape)
+    and (-webkit-device-pixel-ratio: 3){
+		#menu {
+			left: 100px !important;
+			top: -130px;
+			width: 287px;
+			font-size: 35px;
+			font-family: Rabbid Highway Sign II;
+			margin-top: initial;
+			left: initial;
+			width: 240px !important;
+				text-align: left;
+				ul {
+					line-height: 18px;
+				}
+				li {
+					font-size: 18px;
+					line-height: 10px;
+					font-family: Rabbid Highway Sign II;
+					color: black;
+					text-align: right;
+				}
+				img {
+					width: 103px;
+					display: block;
+					position: relative;
+					top: 122px;
+					right: 105px;
+				}
+		   } 
+		   .menu-name {
+			font-size: 14px;
+			left: 10px;
+		}
+		#menu1 {
+				display: block;
+				position: relative;
+				left: 300px;
+				top: 160px;
+		}
+		.hamburger-shell {
+			top: 20px;
+		}
+		.socialIconMenu {
+			display: flex;
+			position: relative;
+			top: 125px;
+			left: 230px;
+			font-size: 39px;
+			margin-top: 25px;
+			margin-bottom: initial;
+			display: flex;
+			justify-content: space-between;
+			width: 170px;
+		}
+		.stay {
+			font-size: 16px;
+			color: #C30712;
+			font-family: St Marie;
+			font-weight: bold;
+		
+		}
+		.news {
+			line-height: 30px;
+			font-family: Rabbid Highway Sign II;
+			font-size: 16px;
+		}
+		.buttonsMenu {
+			display: flex;
+			position: relative;
+			right: 92px;
+			bottom: 15px;
+			font-family: St Marie;
+			font-size: 11px;
+			width: 300px;
+			display: flex;
+			margin-bottom: 50px;
+			margin-top: 10px;
+			a {
+				width:126.4px ;
+				height: 31.34px;
+				border: 1px solid black;
+				display: flex;
+				margin-right: 8px;
+				border-radius: 13px;
+				justify-content: center;
+				align-items: center;
+				-webkit-box-shadow: 0px 5px 9px -1px rgba(0, 0, 0, 0.22); 
+				box-shadow: 0px 5px 9px -1px rgba(0, 0, 0, 0.22);
+			}
+		}
+		.paperPlaneSolo {
+		display: flex;
+		position: relative;
+		left: 115px;
+		top: 39px;
+		}
+		.titleInfoMenu {
+			font-size: 16px;
+			font-family: Rabbid Highway Sign II;
+			color: #C30712;
+			margin-bottom: 15px;
+		}
+		.adressInfoMenu {
+			font-size: 14px;
+			font-family: Aaargh;
+			text-transform: lowercase;
+			font-weight: bold;
+		}
+		.mailMenu {
+			font-family: Aaargh;
+			font-size: 14px;
+			color: #C30712;
+			margin-top: 20px;
+			width: 290px;
+			font-weight: bold;
+		}
+		.copyrightMenu {
+			a {
+				display: flex;
+				bottom: 150px;
+				position: relative;
+				left: 205px;
+				font-size: 9px;
+				font-family: Aaargh;
+			}
+		}
+		.infosMenu {
+			display: block;
+			position: relative;
+			bottom: 305px;
+			right: 95px;
+		}
+		.newsletterMenu {
+			display: block;
+			position: relative;
+			right: 93px;
+			bottom: 10px;
+		}
+ }
 
 	/* Landscape */
 	@media only screen 
@@ -438,12 +582,12 @@ header {
 	and (-webkit-min-device-pixel-ratio: 3)
 	and (orientation: landscape) { 
 
-		#menu {
-			left: 100px;
-			top: -119px;
-			width: 287px;
-			font-size: 35px;
-		}
+		// #menu {
+		// 	left: 100px;
+		// 	top: -119px;
+		// 	width: 287px;
+		// 	font-size: 35px;
+		// }
 		#menu ul {
 			line-height: 1.8rem;
 		}

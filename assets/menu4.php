@@ -57,7 +57,7 @@
 			<p class="mailMenu"> contact@infinity-agency.com </p>
 		</div>
 		<div class="copyrightMenu">
-			<a>Mention légales Copyright Infinity Agency </a>
+			<a>Mention légales • Copyright Infinity Agency </a>
 		</div>
 	</nav>
 	</header>
