@@ -84,14 +84,9 @@ body {
 	padding-bottom: 10px;
 	margin-bottom: 12px;
 	list-style: none;
-	color: #555;
+	color: #000;
 	transition: all 150ms ease;
 }
-
-// #menu li:hover {
-// 	color: #0079a6;
-// 	padding-right: 3px;
-// }
 
 #menu { 
 	a {
@@ -119,7 +114,7 @@ body {
 }
 
 .menu-name {
-	font-family: Verdana;
+	font-family:  RabbiHighway sans-serif;
 	font-weight: 100;
 	color: black;
 	font-size: 21.5px;

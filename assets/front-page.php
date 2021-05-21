@@ -14,7 +14,10 @@
         <div class="videoMobile">
             <video id="openingMobile" src="vids/Orange_Wavy_For_website.mp4" autoplay="" muted="" playsinline=""  loop="" preload="auto" ></video>
         </div>
-       
+        <div class="videoTablet">
+            <video  src="vids/vidsTablet.mp4" autoplay="" muted="" playsinline=""  loop="" preload="auto" ></video>
+        </div>
+        
         </section>
         <!-- BUGRER MENU -->
     <section class="vertical-scrolling">
@@ -42,8 +45,8 @@
     </section> 
     <section class="vertical-scrolling">
         <div class="pictures">
-            <img src="img/partenaire2.jpg"/>
-            <img src="img/Influ3.jpg" />
+            <img src="img/partenaire2.jpg" class="img1"/>
+            <img src="img/Influ3.jpg"  class="img2"/>
             <div class="userButton">
                 <p class="part"><a href="assets/part.php">Partenaires</a></p>
                 
