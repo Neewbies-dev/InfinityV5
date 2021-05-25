@@ -2912,7 +2912,7 @@ header {
 .newsletterMenu {
   top: -407px;
   position: relative;
-  right: 718px;
+  right: 655px;
 }
 .newsletterMenu .stay {
   color: #C30700;
@@ -2932,6 +2932,13 @@ header {
   top: -115px;
   position: relative;
   right: -690px;
+}
+
+.copyrightMenu {
+  position: relative;
+  top: -554px;
+  font-size: 9px;
+  font-size: Aargh sans-serif;
 }
 
 /* ----------- iPhone 6, 7, 8 AND XR MOBILE PORTRAIT----------- */
