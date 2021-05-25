@@ -1,0 +1,159 @@
+$dark-orange : #DF7806;
+$light-orange: #F99E0B;
+$red: #C30700;
+
+.trustTitle{
+
+  font-family: RabbiHighway sans-serif;
+  font-size: 3rem;
+  color:black;
+  text-transform: uppercase;
+}
+
+.trustTitle2 {
+
+  text-align:center;
+  font-family: RabbiHighway sans-serif;
+  font-size: 3rem;
+  text-transform: uppercase;
+  color:white;
+  text-shadow: rgb(0, 0, 0) 1px 0px 0px, rgb(0, 0, 0) 0.540302px 0.841471px 0px, rgb(0, 0, 0) -0.416147px 0.909297px 0px, rgb(0, 0, 0) -0.989993px 0.14112px 0px, rgb(0, 0, 0) -0.653644px -0.756803px 0px, rgb(0, 0, 0) 0.283662px -0.958924px 0px, rgb(0, 0, 0) 0.96017px -0.279416px 0px;
+}
+
+.comeBtn{
+  display:flex;
+  flex-direction: column;
+  align-items: end;
+  justify-content: end;
+  margin-right:10%;
+  
+.orangeBtn{
+    background:$light-orange ;
+    color:white;
+    font-size: 1rem;
+    padding:1%;
+    border-radius:5px;
+    text-transform: uppercase;
+    font-weight: bold;
+    width:185px;
+    text-align: center;
+    transition: transform 500ms;
+    
+    
+    &:hover {
+        transform:scale(1.1);
+
+    }
+
+  }
+  p{
+    font-family: JennaSue serif;
+    font-size: 2rem;
+    margin-top:10px;
+    margin-right:25px;
+
+  }
+
+}
+.bubles {
+  width:20%;
+  position:absolute;
+}
+.cardContainer {
+
+  display:flex; 
+  justify-content: center;
+  width:60%;
+  flex-wrap: wrap;
+  margin:auto;
+
+  .cardInflu{
+    width:20%;
+    border: 2px solid #E6E6E6;
+    -webkit-box-shadow: 2px 7px 15px 5px #E6E6E6; 
+    box-shadow: 2px 7px 15px 5px #E6E6E6;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius:5px;
+    margin-top:1%;
+    margin-right:1%;
+    text-align:center;
+    transform: scale(1); 
+    transition: transform 500ms;
+    
+    
+    &:hover {
+        transform:scale(1.15);
+
+    }
+  }
+ 
+
+  .nbrCom{
+    display:flex;
+    .numbers{
+      margin-right:10%;
+      margin-left:10%;
+    }
+    .numbersDescription{
+      font-size:0.5rem;
+    }
+  }
+
+  img{
+    width:30%;
+    margin-top:10%;
+    margin-bottom:10%;
+  }
+
+  .name {
+
+    font-weight: bold;
+    font-size:1rem;
+  }
+  .type{
+    font-size:0.7;
+    margin-bottom:10%;
+  }
+
+  .socialNumbers{
+
+    display:flex;
+    margin-bottom:10%;
+
+    div{
+
+      margin-top:10%;
+      margin-right:5px;
+      font-size:0.5rem;
+      text-align:center;
+    }
+  }
+
+}
+
+@media only screen and (max-width: 767px) {
+  .cardContainer{
+    width:100%;
+  
+    .cardInflu {
+      width: 35%;
+    }
+  }
+  .bubles {
+    top:0%;
+  }
+}
+
+@media screen and  (min-width: 740px) and (max-width: 1024px){
+
+  .cardContainer{
+    width:100%;
+  }
+
+  .bubles{
+    top:-2%;
+    width:20%;
+  }
+}
