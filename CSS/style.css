@@ -3318,16 +3318,15 @@ header {
   }
 
   .stay {
-    font-size: 16px;
+    font-size: 24px;
     color: #C30712;
-    font-family: StMarie sans-serif;
-    font-weight: bold;
+    font-family: RabbiHighway sans-serif;
   }
 
   .news {
     line-height: 30px;
-    font-family: RabbiHighway sans-serif;
-    font-size: 16px;
+    font-family: StMarie sans-serif;
+    font-size: 24px;
   }
 
   .buttonsMenu {
@@ -3354,8 +3353,12 @@ header {
   .paperPlaneSolo {
     display: flex;
     position: relative;
-    left: 115px;
-    top: 39px;
+    left: 185px;
+    top: 55px;
+  }
+  .paperPlaneSolo svg {
+    width: 56px;
+    height: auto;
   }
 
   .titleInfoMenu {
