@@ -582,6 +582,8 @@ header {
 		margin-top: initial;
 		left: initial;
 		width: 240px !important;
+		margin-left: 75px;
+		margin-top: 20px;	
 			text-align: left;
 			ul {
 				line-height: 30px;
@@ -595,7 +597,7 @@ header {
 				display: block;
 				position: relative;
 				bottom: 20px;
-				right: 25px;
+				right: 45px;
 				margin-bottom: 10px;
 			}
 	   } 
@@ -632,21 +634,26 @@ header {
 	   .buttonsMenu {
 			font-family: StMarie sans-serif;;
 			font-size: 11px;
-			width: 300px;
+			width: 320px;
 			display: flex;
 			margin-bottom: 50px;
 			margin-top: 10px;
 			a {
-				width:126.4px ;
-				height: 31.34px;
+				width: 142.4px;
+				height: 26.34px;
 				border: 1px solid black;
 				display: flex;
-				margin-right: 8px;
+				margin-right: 20px;
 				border-radius: 13px;
 				justify-content: center;
 				align-items: center;
-				-webkit-box-shadow: 0px 5px 9px -1px rgba(0, 0, 0, 0.22); 
+				-webkit-box-shadow: 0px 5px 9px -1px rgba(0, 0, 0, 0.22);
 				box-shadow: 0px 5px 9px -1px rgba(0, 0, 0, 0.22);
+				font-size: 16px;
+				font-family: RabbiHighway sans-serif;
+				padding-left: 20px;
+				padding-right: 20px;
+				padding-top: 4px;
 			}
 	   }
 	   .paperPlaneSolo {
