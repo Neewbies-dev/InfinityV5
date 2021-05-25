@@ -9,7 +9,8 @@
     </button>
 	
     <nav id="menu">
-		<img src="./img/infinity_one.png"/>
+		<img src="./img/infinity_one.png" class="logoMobile"/>
+		<img src="./img/infinity.png" class="logoDeskop"/>
         <ul id="menu1">
             <li data-menuanchor="firstPage"><a href="#firstPage">Home</a></li>
             <li data-menuanchor="thirdPage"><a href="#secondPage">About Us</a></li>
