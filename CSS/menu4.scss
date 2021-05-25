@@ -70,7 +70,7 @@ body {
 	display: none;
 	margin: 120px 30px;
 	text-decoration: none;
-	font-family: Rabbid Highway Sign II;
+	font-family: RabbiHighway sans-serif;
 	font-size: 75px;
 	text-transform: uppercase;
 	color: black;
@@ -95,6 +95,18 @@ body {
 	}
 	ul {
 	line-height: 5.4rem;
+	}
+
+
+	.logoMobile {
+		display:none;
+	}
+	.logoDeskop {
+		width:50%;
+		left:-570px;
+		position:relative; 
+		top:-100px;
+
 	}
 }
 .menu-open .top {
@@ -172,6 +184,248 @@ header {
 	width: 64%;
 }
 
+
+
+
+/* ----------- iPhone 6, 7, 8 AND XR MOBILE PORTRAIT----------- */
+@media screen and (max-width:768px) and (orientation:portrait) and 
+(-webkit-min-device-pixel-ratio: 2){
+	#menu {
+        z-index: 99;
+        position: fixed;
+        left: calc(100% - 290px);
+        top: 10px;
+        color: black;
+        display: none;
+        margin: 83px -30px;
+        text-decoration: none;
+		font-family: RabbiHighway sans-serif;
+        font-weight: bold;
+        font-size: 18px;
+        text-transform: uppercase;
+        color: rgb(0, 0, 0);
+        padding: 0px;
+        width: 100%!important;
+        text-align: left;
+        ul {
+            line-height: 1rem;
+			margin-top:-10%;
+        }
+        li {
+            font-size: 18px;
+        }
+		img{
+			width:20%;
+			top:-70px;
+			position:relative;
+			left:-34px;
+			display:block;
+		}
+    }
+	.socialIconMenu{
+		margin-top:10%;
+		margin-bottom:10%;
+		a{
+			font-size:39px;
+			margin:3%;
+		}
+	}
+	.newsletterMenu{
+		text-transform: uppercase;
+		display:flex;
+		margin-top:10%;
+		.paperPlaneSolo{
+			order:3;
+		}
+		div{
+			display:flex;
+			flex-direction: column;
+		}
+		.stay{
+			font-family: RabbiHighway sans-serif;
+			font-weight: bold;
+			color:$red;
+		}
+		.news{
+			font-family: StMarie sans-serif;
+
+		}
+	}
+	.buttonsMenu{
+		display:flex;
+		margin-bottom: 10%;
+		a {
+			border: 1px black solid;
+			border-radius:28px;
+			padding:2%; 
+			font-size:11px;
+			padding-right: 5%;
+			padding-left: 5%;
+			margin-right: 3%;
+			; 
+			box-shadow: 0px 7px 16px 1px rgba(0,0,0,0.22);
+
+		}
+	}
+	.infosMenu{
+		margin-top:10%;
+		.titleInfoMenu{
+			font-family: RabbiHighway sans-serif;
+			font-weight: bold;
+			color:$red;
+			text-transform: uppercase;
+			margin-bottom:3%;
+
+		}
+		p{
+			font-family: Aargh sans-serif;
+			font-size:14px;
+			text-transform: initial;
+		}
+		
+		.mailMenu{
+			color:$red;
+			margin-top:3%;
+		}
+
+	}
+
+	.copyrightMenu{
+		display: flex;
+		justify-content: center;
+		position:relative;
+		top:15px;
+		right:60px;
+		font-family: Aargh sans-serif;
+		right:60px;
+
+		a{
+			font-size:9px;
+		}
+	}
+}
+
+/* ----------- iPhone 6, 7, 8 AND XR MOBILE LANDSCAPE----------- */
+@media screen and (max-width:768px) and (orientation:landscape) and(-webkit-min-device-pixel-ratio: 2){
+
+	#menu {
+		left: calc(65% - 350px);
+		top:-117px;
+		padding:initial; 
+		
+		li{
+			font-size:18px;
+		}
+		img{
+			width:20%;
+			position:relative;
+			left:-400px;
+		}
+		ul{
+			line-height: initial;
+		}
+	}
+
+	.socialIconMenu{
+		left:11px;
+		position:relative;
+		top:8px;
+	}
+
+	#menu1{
+		left:125px;
+		position:relative;
+		li{
+			margin-bottom:initial;
+		}
+	}
+
+	.newsletterMenu{
+		top:-188px;
+		left:-357px;
+		position:relative;
+		.stay{
+			color:$red;
+			font-weight: bold;
+			font-family: RabbiHighway sans-serif;
+			font-size:16px;
+		}
+		.news{
+			font-size:16px;
+			font-family: StMarie sans-serif;
+		}
+	}
+	.infosMenu{
+		position:relative;
+		top:-387px;
+		left:-75px;
+		text-align: left;
+		text-transform: initial;
+		.titleInfoMenu{
+			font-family: RabbiHighway sans-serif;
+			font-weight: bold;
+			text-transform: uppercase;
+
+		}
+		.mailMenu{
+			margin-top:5%;
+			color:$red;
+			text-transform: initial;
+		}
+	}
+	.titleInfoMenu{
+		color:$red;
+		margin-bottom:5%;
+	}
+	.buttonsMenu{
+		top:-134px;
+		position:relative;
+		font-size:11px;
+		left:-200px;
+		a{
+			border: 1px black solid;
+			border-radius:28px;
+			padding:2%; 
+			font-size:11px;
+			padding-right: 5%;
+			padding-left: 5%;
+			margin-right: 3%
+		}
+	}
+
+	.paperPlaneSolo{
+		position:relative;
+		left:55px;
+		top:47px;
+	}
+
+	.copyrightMenu{
+		position:relative;
+		top:-227px;
+		font-size: 9px;
+		left:40px;
+		color:black;
+	}
+}
+/* Landscape */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 812px) 
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: landscape) { 
+
+	  #menu {
+		  left: 285px;
+		  top: -119px;
+		  width: 287px;
+		  font-size: 46px;
+	  }
+	  #menu ul {
+		line-height: 2.8rem;
+	}
+}
+
+
 // iphone 6, 7, 8 plus and X Portrait
 @media only screen 
   and (min-device-width: 375px) 
@@ -180,7 +434,7 @@ header {
   and (orientation: portrait) { 
 
 	#menu {
-		font-family: Rabbid Highway Sign II;
+		font-family: RabbiHighway sans-serif;
 		margin-top: initial;
 		left: initial;
 		width: 240px !important;
@@ -219,17 +473,17 @@ header {
 	   .stay {
 			font-size: 16px;
 			color: #C30712;
-			font-family: St Marie;
+			font-family: StMarie sans-serif;
 			font-weight: bold;
 		
 	   }
 	   .news {
 			line-height: 30px;
-			font-family: Rabbid Highway Sign II;
+			font-family: RabbiHighway sans-serif;
 			font-size: 16px;
 	   }
 	   .buttonsMenu {
-			font-family: St Marie;
+			font-family: StMarie sans-serif;
 			font-size: 11px;
 			width: 300px;
 			display: flex;
@@ -256,18 +510,18 @@ header {
 	   }
 	   .titleInfoMenu {
 			font-size: 16px;
-			font-family: Rabbid Highway Sign II;
+			font-family: RabbiHighway sans-serif;
 			color: #C30712;
 			margin-bottom: 15px;
 	   }
 	   .adressInfoMenu {
 			font-size: 14px;
-			font-family: Aaargh;
+			font-family:  Aargh sans-serif;
 			text-transform: lowercase;
 			font-weight: bold;
 	   }
 	   .mailMenu {
-			font-family: Aaargh;
+			font-family:  Aargh sans-serif;
 			font-size: 14px;
 			color: #C30712;
 			margin-top: 20px;
@@ -276,7 +530,7 @@ header {
 	   }
 	   .copyrightMenu {
 			font-size: 9px;
-			font-family: Aaargh;
+			font-family:  Aargh sans-serif;
 			font-weight: bold;
 			display: flex;
 			position: relative;
@@ -293,7 +547,7 @@ header {
   and (orientation: landscape) { 
 
 	#menu {
-		font-family: Rabbid Highway Sign II;
+		font-family: RabbiHighway sans-serif;
 		margin-top: initial;
 		left: initial;
 		width: 240px !important;
@@ -304,7 +558,7 @@ header {
 			li {
 				font-size: 18px;
 				line-height: 10px;
-				font-family: Rabbid Highway Sign II;
+				font-family: RabbiHighway sans-serif;
 				color: black;
 				text-align: right;
 			}
@@ -344,13 +598,13 @@ header {
 	.stay {
 		font-size: 16px;
 		color: #C30712;
-		font-family: St Marie;
+		font-family: StMarie sans-serif;
 		font-weight: bold;
 	
 	}
 	.news {
 		line-height: 30px;
-		font-family: Rabbid Highway Sign II;
+		font-family: RabbiHighway sans-serif;
 		font-size: 16px;
 	}
 	.buttonsMenu {
@@ -358,7 +612,7 @@ header {
 		position: relative;
 		right: 92px;
 		bottom: 15px;
-		font-family: St Marie;
+		font-family: StMarie sans-serif;
 		font-size: 11px;
 		width: 300px;
 		display: flex;
@@ -385,18 +639,18 @@ header {
 	}
 	.titleInfoMenu {
 		font-size: 16px;
-		font-family: Rabbid Highway Sign II;
+		font-family: RabbiHighway sans-serif;
 		color: #C30712;
 		margin-bottom: 15px;
 	}
 	.adressInfoMenu {
 		font-size: 14px;
-		font-family: Aaargh;
+		font-family:  Aargh sans-serif;
 		text-transform: lowercase;
 		font-weight: bold;
 	}
 	.mailMenu {
-		font-family: Aaargh;
+		font-family:  Aargh sans-serif;
 		font-size: 14px;
 		color: #C30712;
 		margin-top: 20px;
@@ -410,7 +664,7 @@ header {
 			position: relative;
 			left: 177px;
 			font-size: 9px;
-			font-family: Aaargh;
+			font-family:  Aargh sans-serif;
 		}
 	}
 	.infosMenu {
@@ -436,7 +690,7 @@ header {
 			top: -130px;
 			width: 287px;
 			font-size: 35px;
-			font-family: Rabbid Highway Sign II;
+			font-family: RabbiHighway sans-serif;
 			margin-top: initial;
 			left: initial;
 			width: 240px !important;
@@ -447,7 +701,7 @@ header {
 				li {
 					font-size: 18px;
 					line-height: 10px;
-					font-family: Rabbid Highway Sign II;
+					font-family:RabbiHighway sans-serif;
 					color: black;
 					text-align: right;
 				}
@@ -487,13 +741,13 @@ header {
 		.stay {
 			font-size: 16px;
 			color: #C30712;
-			font-family: St Marie;
+			font-family: StMarie sans-serif;
 			font-weight: bold;
 		
 		}
 		.news {
 			line-height: 30px;
-			font-family: Rabbid Highway Sign II;
+			font-family: RabbiHighway sans-serif;
 			font-size: 16px;
 		}
 		.buttonsMenu {
@@ -501,7 +755,7 @@ header {
 			position: relative;
 			right: 92px;
 			bottom: 15px;
-			font-family: St Marie;
+			font-family: StMarie sans-serif;
 			font-size: 11px;
 			width: 300px;
 			display: flex;
@@ -528,18 +782,18 @@ header {
 		}
 		.titleInfoMenu {
 			font-size: 16px;
-			font-family: Rabbid Highway Sign II;
+			font-family: RabbiHighway sans-serif;
 			color: #C30712;
 			margin-bottom: 15px;
 		}
 		.adressInfoMenu {
 			font-size: 14px;
-			font-family: Aaargh;
+			font-family:  Aargh sans-serif;
 			text-transform: lowercase;
 			font-weight: bold;
 		}
 		.mailMenu {
-			font-family: Aaargh;
+			font-family:  Aargh sans-serif;
 			font-size: 14px;
 			color: #C30712;
 			margin-top: 20px;
@@ -553,7 +807,7 @@ header {
 				position: relative;
 				left: 205px;
 				font-size: 9px;
-				font-family: Aaargh;
+				font-family:  Aargh sans-serif;
 			}
 		}
 		.infosMenu {
