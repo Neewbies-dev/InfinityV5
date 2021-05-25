@@ -570,7 +570,7 @@ header {
 		}
  }
 
-//  Tablet portait format
+//  Tablet portait format ipad 3, 4 and pro 9.7
 
 @media only screen 
   and (min-device-width: 768px) 
@@ -581,8 +581,9 @@ header {
 		font-family: RabbiHighway sans-serif;
 		margin-top: initial;
 		left: initial;
-		width: 240px !important;
+		width: 280px !important;
 		margin-left: 75px;
+		margin-right: 75px;
 		margin-top: 20px;	
 			text-align: left;
 			ul {
@@ -692,11 +693,160 @@ header {
 			font-weight: bold;
 			display: flex;
 			position: relative;
-			top: 15px;
-			left: 22px;
+			top: 110px;
+			left: 160px;
+			a{
+				width: 250px;
+			}
 	   }
 }
+// format landscape tablet ipad 3, 4 and pro 9.7
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (orientation: landscape) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+	#menu {
+		font-family: RabbiHighway sans-serif;
+		margin-top: initial;
+		left: initial;
+		width: 240px !important;
+		margin-left: 130px;
+			text-align: left;
+			ul {
+				line-height: 18px;
+			}
+			li {
+				font-size: 18px;
+				line-height: 10px;
+				font-family: RabbiHighway sans-serif;
+				color: black;
+				text-align: right;
+			}
+			img {
+				width: 103px;
+				display: block;
+				position: relative;
+				top: 122px;
+				right: 105px;
+			}
+	   } 
+	   .menu-name {
+		font-size: 14px;
+		left: 10px;
+	}
+	#menu1 {
+			display: block;
+			position: relative;
+			left: 540px;
+			top: 100px;
+			a{
+				font-family: RabbiHighway sans-serif;
+				font-size: 24px;
+				line-height: 30px;
+			}
+	}
+	.hamburger-shell {
+		top: 20px;
+	}
+	.socialIconMenu {
+		display: flex;
+		position: relative;
+		top: 125px;
+		left: 207px;
+		font-size: 39px;
+		margin-top: 25px;
+		margin-bottom: initial;
+		display: flex;
+		justify-content: space-between;
+		width: 170px;
+	}
+	.stay {
+		font-size: 16px;
+		color: #C30712;
+		font-family: StMarie sans-serif;;
+		font-weight: bold;
+	
+	}
+	.news {
+		line-height: 30px;
+		font-family: RabbiHighway sans-serif;
+		font-size: 16px;
+	}
+	.buttonsMenu {
+		display: flex;
+		position: relative;
+		right: 92px;
+		bottom: 15px;
+		font-family: StMarie sans-serif;;
+		font-size: 11px;
+		width: 300px;
+		display: flex;
+		margin-bottom: 50px;
+		margin-top: 10px;
+		a {
+			width:126.4px ;
+			height: 31.34px;
+			border: 1px solid black;
+			display: flex;
+			margin-right: 8px;
+			border-radius: 13px;
+			justify-content: center;
+			align-items: center;
+			-webkit-box-shadow: 0px 5px 9px -1px rgba(0, 0, 0, 0.22); 
+			box-shadow: 0px 5px 9px -1px rgba(0, 0, 0, 0.22);
+		}
+	}
+	.paperPlaneSolo {
+	display: flex;
+	position: relative;
+	left: 115px;
+	top: 39px;
+	}
+	.titleInfoMenu {
+		font-size: 16px;
+		font-family: RabbiHighway sans-serif;
+		color: #C30712;
+		margin-bottom: 15px;
+	}
+	.adressInfoMenu {
+		font-size: 14px;
+		font-family: Aargh sans-serif;;
+		text-transform: lowercase;
+		font-weight: bold;
+	}
+	.mailMenu {
+		font-family: Aargh sans-serif;;
+		font-size: 14px;
+		color: #C30712;
+		margin-top: 20px;
+		width: 290px;
+		font-weight: bold;
+	}
+	.copyrightMenu {
+		a {
+			display: flex;
+			bottom: 150px;
+			position: relative;
+			left: 177px;
+			font-size: 9px;
+			font-family: Aargh sans-serif;;
+		}
+	}
+	.infosMenu {
+		display: block;
+		position: relative;
+		bottom: 305px;
+		right: 95px;
+	}
+	.newsletterMenu {
+		display: block;
+		position: relative;
+		right: 93px;
+		bottom: 10px;
+	} 
 
+}
 	/* Landscape */
 	@media only screen 
 	and (min-device-width: 375px) 
