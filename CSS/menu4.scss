@@ -220,8 +220,39 @@ header {
 		right:-400px;
 	}
 }
+.socialIconMenu{
+	position: relative;
+	top: -360px;
+	right: 678px;
+}
 
+.newsletterMenu{
+	top: -407px;
+	position: relative;
+	right: 718px;
 
+	.stay{
+		color:$red;
+		font-family: RabbiHighway sans-serif;
+		font-size:24px;
+	}
+}
+
+.paperPlaneSolo{
+
+	position: relative;
+	right: -50px;
+	top: 50px;
+
+}
+
+#menu1{
+	text-align: left;
+	font-size: 40px;
+	top: -115px;
+	position: relative;
+	right: -690px;
+}
 
 /* ----------- iPhone 6, 7, 8 AND XR MOBILE PORTRAIT----------- */
 @media screen and (max-width:768px) and (orientation:portrait) and 
