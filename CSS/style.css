@@ -2868,6 +2868,30 @@ header {
   width: 64%;
 }
 
+.infosMenu {
+  position: relative;
+  top: -986px;
+  left: -320px;
+  text-align: left;
+}
+.infosMenu .titleInfoMenu {
+  top: -60px;
+  position: relative;
+  font-family: RabbiHighway sans-serif;
+  color: #C30700;
+  font-size: 28px;
+}
+.infosMenu .adressInfoMenu {
+  font-family: Aargh sans-serif;
+  font-size: 24px;
+  text-transform: initial;
+}
+.infosMenu .mailMenu {
+  top: 30px;
+  position: relative;
+  color: #C30700;
+}
+
 /* ----------- iPhone 6, 7, 8 AND XR MOBILE PORTRAIT----------- */
 @media screen and (max-width: 768px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
   #menu {

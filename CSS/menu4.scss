@@ -184,6 +184,30 @@ header {
 	width: 64%;
 }
 
+.infosMenu{
+	position: relative;
+	top: -986px;
+	left: -320px;
+	text-align: left;
+	.titleInfoMenu{
+		top: -60px;
+		position: relative;
+		font-family: RabbiHighway sans-serif;
+		color: $red;
+		font-size:28px;
+		
+	}
+	.adressInfoMenu{
+		font-family: Aargh sans-serif;
+		font-size:24px;
+		text-transform: initial;
+	}
+	.mailMenu{
+		top:30px;
+		position:relative; 
+		color:$red;
+	}
+}
 
 
 
