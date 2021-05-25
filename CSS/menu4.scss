@@ -584,7 +584,7 @@ header {
 		width: 240px !important;
 			text-align: left;
 			ul {
-				line-height: 18px;
+				line-height: 30px;
 			}
 			li {
 				font-size: 24px;
@@ -608,12 +608,16 @@ header {
 	   }
 	   .socialIconMenu {
 		   	font-size: 39px;
-		   	margin-top: 25px;
-			margin-bottom: initial;
+		   	margin-top: 45px;
+			margin-bottom: 15px;
 			display: flex;
 			justify-content: space-between;
 			width: 170px;
-	   }
+			svg {
+				width: 47px;
+				height: auto;
+			}
+		}
 	   .stay {
 			font-size: 16px;
 			color: #C30712;

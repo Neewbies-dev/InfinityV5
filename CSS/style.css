@@ -3280,7 +3280,7 @@ header {
     text-align: left;
   }
   #menu ul {
-    line-height: 18px;
+    line-height: 30px;
   }
   #menu li {
     font-size: 24px;
@@ -3306,11 +3306,15 @@ header {
 
   .socialIconMenu {
     font-size: 39px;
-    margin-top: 25px;
-    margin-bottom: initial;
+    margin-top: 45px;
+    margin-bottom: 15px;
     display: flex;
     justify-content: space-between;
     width: 170px;
+  }
+  .socialIconMenu svg {
+    width: 47px;
+    height: auto;
   }
 
   .stay {
