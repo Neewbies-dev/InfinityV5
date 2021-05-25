@@ -2781,7 +2781,12 @@ body {
   color: inherit;
 }
 #menu ul {
-  line-height: 5.4rem;
+  line-height: 4rem;
+  right: -348px;
+  position: relative;
+  text-align: right;
+  top: -172px;
+  font-size: 40px;
 }
 #menu .logoMobile {
   display: none;
@@ -2870,7 +2875,7 @@ header {
 
 .infosMenu {
   position: relative;
-  top: -986px;
+  top: -870px;
   left: -320px;
   text-align: left;
 }
@@ -2890,6 +2895,12 @@ header {
   top: 30px;
   position: relative;
   color: #C30700;
+}
+.infosMenu #menu1 {
+  position: relative;
+  top: -131px;
+  font-size: 40px;
+  right: -400px;
 }
 
 /* ----------- iPhone 6, 7, 8 AND XR MOBILE PORTRAIT----------- */

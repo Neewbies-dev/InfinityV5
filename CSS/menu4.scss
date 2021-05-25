@@ -94,7 +94,12 @@ body {
 	color: inherit;
 	}
 	ul {
-	line-height: 5.4rem;
+		line-height: 4rem;
+		right: -348px;
+		position: relative;
+		text-align: right;
+		top: -172px;
+		font-size: 40px;
 	}
 
 
@@ -186,7 +191,7 @@ header {
 
 .infosMenu{
 	position: relative;
-	top: -986px;
+	top: -870px;
 	left: -320px;
 	text-align: left;
 	.titleInfoMenu{
@@ -206,6 +211,13 @@ header {
 		top:30px;
 		position:relative; 
 		color:$red;
+	}
+
+	#menu1{
+		position:relative;
+		top:-131px;
+		font-size: 40px;
+		right:-400px;
 	}
 }
 
