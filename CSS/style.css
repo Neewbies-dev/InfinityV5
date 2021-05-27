@@ -3556,6 +3556,7 @@ header {
   }
   #menu ul {
     line-height: 30px;
+    top: 0px !important;
   }
   #menu li {
     font-size: 24px;
@@ -3688,6 +3689,7 @@ header {
   }
   #menu ul {
     line-height: 18px;
+    top: 60px;
   }
   #menu li {
     font-size: 18px;
@@ -3703,6 +3705,13 @@ header {
     top: 122px;
     right: 105px;
   }
+  #menu .logoDeskop {
+    width: 82%;
+    left: -50px;
+    position: relative;
+    top: 10px;
+    margin-bottom: 10px;
+  }
 
   .menu-name {
     font-size: 14px;
@@ -3713,7 +3722,6 @@ header {
     display: block;
     position: relative;
     left: 540px;
-    top: 100px;
   }
   #menu1 a {
     font-family: RabbiHighway sans-serif;
@@ -3783,25 +3791,23 @@ header {
     top: 39px;
   }
 
-  .titleInfoMenu {
+  .infosMenu .titleInfoMenu {
     font-size: 16px;
     font-family: RabbiHighway sans-serif;
     color: #C30712;
     margin-bottom: 15px;
   }
-
-  .adressInfoMenu {
+  .infosMenu .adressInfoMenu {
     font-size: 14px;
     font-family: Aargh sans-serif;
     text-transform: lowercase;
     font-weight: bold;
   }
-
-  .mailMenu {
+  .infosMenu .mailMenu {
     font-family: Aargh sans-serif;
     font-size: 14px;
     color: #C30712;
-    margin-top: 20px;
+    margin-top: 0px;
     width: 290px;
     font-weight: bold;
   }
@@ -3818,8 +3824,12 @@ header {
   .infosMenu {
     display: block;
     position: relative;
-    bottom: 305px;
-    right: 95px;
+    top: -515px;
+    left: -50px;
+    width: 500px;
+  }
+  .infosMenu .titleInfoMenu {
+    top: 0px;
   }
 
   .newsletterMenu {
