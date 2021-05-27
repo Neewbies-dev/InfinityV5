@@ -948,13 +948,13 @@ header {
 	}
 
 	.copyrightMenu{
-		display: flex;
-		justify-content: center;
-		position:relative;
-		top:15px;
-		right:60px;
-		font-family: Aargh sans-serif;
-		right:60px;
+		// display: flex;
+		// justify-content: center;
+		// position:relative;
+		// top:15px;
+		// right:60px;
+		// font-family: Aargh sans-serif;
+		// right:60px;
 
 		a{
 			font-size:9px;
@@ -1211,13 +1211,13 @@ header {
 			font-weight: bold;
 	   }
 	   .copyrightMenu {
-			font-size: 9px;
-			font-family:  Aargh sans-serif;
-			font-weight: bold;
-			display: flex;
-			position: relative;
-			top: 30px;
-			left: 45px;
+			// font-size: 9px;
+			// font-family:  Aargh sans-serif;
+			// font-weight: bold;
+			// display: flex;
+			// position: relative;
+			// top: 30px;
+			// left: 45px;
 	   }
 }
 // iphone 6, 7,8 plus landscape
@@ -1516,7 +1516,7 @@ header {
  }
 
 
-// IPHONE X
+// IPHONE X portrait
  @media only screen
   and (min-device-width: 375px)
   and (max-device-width: 812px)
@@ -1530,7 +1530,7 @@ header {
         top: 10px;
         color: black;
         display: none;
-        margin: -20px -30px;
+        margin: 5px -45px;
         text-decoration: none;
 		font-family: RabbiHighway sans-serif;
         font-weight: bold;
@@ -1542,7 +1542,7 @@ header {
         text-align: left;
         ul {
             line-height: 1rem;
-			margin-top:17%;
+			margin-top:12%;
         }
         li {
             font-size: 18px;
@@ -1551,7 +1551,7 @@ header {
 			width:20%;
 			top:20px;
 			position:relative;
-			left:-34px;
+			left:-25px;
 			display:block;
 		}
 		.logoMobile{
@@ -1565,7 +1565,7 @@ header {
 
 	.socialIconMenu{
 		margin-top:7%;
-		margin-bottom:6%;
+		margin-bottom:1%;
 		a{
 			font-size:39px;
 			margin:3%;
@@ -1574,12 +1574,12 @@ header {
 	.newsletterMenu{
 		text-transform: uppercase;
 		// display:flex;
-		margin-top:7%;
+		margin-top:0%;
 		.paperPlaneSolo{
 			display:flex;
 			position:relative;
-			left:100px;
-			top:36px;
+			left:120px;
+			top:40px;
 		}
 		div{
 			display:flex;
@@ -1598,10 +1598,11 @@ header {
 	.buttonsMenu{
 		display:flex;
 		margin-bottom: 7%;
+		margin-top: 2%;
 		a {
 			border: 1px black solid;
-			border-radius:28px;
-			padding:2%;
+			border-radius: 13px;
+			padding: 0%;
 			font-size:11px;
 			padding-right: 5%;
 			padding-left: 5%;
@@ -1612,7 +1613,7 @@ header {
 		}
 	}
 	.infosMenu{
-		margin-top:7%;
+		margin-top:15%;
 		.titleInfoMenu{
 			font-family: RabbiHighway sans-serif;
 			font-weight: bold;
@@ -1635,13 +1636,10 @@ header {
 	}
 
 	.copyrightMenu{
-		display: flex;
-		justify-content: center;
 		position:relative;
-		top:15px;
-		right:60px;
+		top:30px;
+		left:20px;
 		font-family: Aargh sans-serif;
-		right:60px;
 
 		a{
 			font-size:9px;

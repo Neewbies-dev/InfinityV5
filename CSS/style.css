@@ -3587,15 +3587,6 @@ header {
     margin-top: 3%;
   }
 
-  .copyrightMenu {
-    display: flex;
-    justify-content: center;
-    position: relative;
-    top: 15px;
-    right: 60px;
-    font-family: Aargh sans-serif;
-    right: 60px;
-  }
   .copyrightMenu a {
     font-size: 9px;
   }
@@ -3841,16 +3832,6 @@ header {
     margin-top: 20px;
     width: 290px;
     font-weight: bold;
-  }
-
-  .copyrightMenu {
-    font-size: 9px;
-    font-family: Aargh sans-serif;
-    font-weight: bold;
-    display: flex;
-    position: relative;
-    top: 30px;
-    left: 45px;
   }
 }
 @media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
@@ -4166,7 +4147,7 @@ header {
     top: 10px;
     color: black;
     display: none;
-    margin: -20px -30px;
+    margin: 5px -45px;
     text-decoration: none;
     font-family: RabbiHighway sans-serif;
     font-weight: bold;
@@ -4179,7 +4160,7 @@ header {
   }
   #menu ul {
     line-height: 1rem;
-    margin-top: 17%;
+    margin-top: 12%;
   }
   #menu li {
     font-size: 18px;
@@ -4188,7 +4169,7 @@ header {
     width: 20%;
     top: 20px;
     position: relative;
-    left: -34px;
+    left: -25px;
     display: block;
   }
   #menu .logoMobile {
@@ -4200,7 +4181,7 @@ header {
 
   .socialIconMenu {
     margin-top: 7%;
-    margin-bottom: 6%;
+    margin-bottom: 1%;
   }
   .socialIconMenu a {
     font-size: 39px;
@@ -4209,13 +4190,13 @@ header {
 
   .newsletterMenu {
     text-transform: uppercase;
-    margin-top: 7%;
+    margin-top: 0%;
   }
   .newsletterMenu .paperPlaneSolo {
     display: flex;
     position: relative;
-    left: 100px;
-    top: 36px;
+    left: 120px;
+    top: 40px;
   }
   .newsletterMenu div {
     display: flex;
@@ -4233,11 +4214,12 @@ header {
   .buttonsMenu {
     display: flex;
     margin-bottom: 7%;
+    margin-top: 2%;
   }
   .buttonsMenu a {
     border: 1px black solid;
-    border-radius: 28px;
-    padding: 2%;
+    border-radius: 13px;
+    padding: 0%;
     font-size: 11px;
     padding-right: 5%;
     padding-left: 5%;
@@ -4246,7 +4228,7 @@ header {
   }
 
   .infosMenu {
-    margin-top: 7%;
+    margin-top: 15%;
   }
   .infosMenu .titleInfoMenu {
     font-family: RabbiHighway sans-serif;
@@ -4266,13 +4248,10 @@ header {
   }
 
   .copyrightMenu {
-    display: flex;
-    justify-content: center;
     position: relative;
-    top: 15px;
-    right: 60px;
+    top: 30px;
+    left: 20px;
     font-family: Aargh sans-serif;
-    right: 60px;
   }
   .copyrightMenu a {
     font-size: 9px;
