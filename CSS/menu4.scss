@@ -88,31 +88,18 @@ body {
 	transition: all 150ms ease;
 }
 
-#menu { 
+#menu {
 	a {
 	text-decoration: none;
 	color: inherit;
 	}
 	ul {
 		line-height: 4rem;
-		right: -348px;
-		position: relative;
-		text-align: right;
-		top: -172px;
-		font-size: 40px;
+
 	}
 
 
-	.logoMobile {
-		display:none;
-	}
-	.logoDeskop {
-		width:50%;
-		left:-570px;
-		position:relative; 
-		top:-100px;
 
-	}
 }
 .menu-open .top {
 	transform: rotate(225deg);
@@ -189,74 +176,283 @@ header {
 	width: 64%;
 }
 
-.infosMenu{
-	position: relative;
-	top: -870px;
-	left: -320px;
-	text-align: left;
-	.titleInfoMenu{
-		top: -60px;
-		position: relative;
-		font-family: RabbiHighway sans-serif;
-		color: $red;
-		font-size:28px;
-		
-	}
-	.adressInfoMenu{
-		font-family: Aargh sans-serif;
-		font-size:24px;
-		text-transform: initial;
-	}
-	.mailMenu{
-		top:30px;
-		position:relative; 
-		color:$red;
-	}
+// SCREEN WITHOUT RETINA
+@media screen
+  and (min-device-width: 1200px)
+  and (max-device-width: 1600px)
+  and (-webkit-min-device-pixel-ratio: 1) {
 
-	#menu1{
+	.logoMobile {
+		display:none;
+	}
+	.logoDeskop {
+		width:50%;
+		left:-570px;
 		position:relative;
-		top:-131px;
-		font-size: 40px;
-		right:-400px;
+		top:-100px;
+
 	}
-}
-.socialIconMenu{
-	position: relative;
-	top: -360px;
-	right: 678px;
-}
 
-.newsletterMenu{
-	top: -407px;
-	position: relative;
-	right: 718px;
+	#menu{
+		margin: 230px -371px;
+		font-size: 24px;
+		ul{
+			font-size: 24px;
+			text-align: right;
+			bottom: 150px;
+			position: relative;
+			left: 870px;
+			line-height: initial;
+		}
+		li{
+			font-size:24px;
+		}
+		.logoMobile{
+			display:none;
+		}
+		.logoDeskop{
+			left: -217px;
+			top: -250px;
+		}
+	}
 
-	.stay{
-		color:$red;
+	.socialIconMenu{
+		bottom:300px;
+		position:relative;
+		right:310px;
+		a{
+			margin-right:2%;
+		}
+	}
+
+	.newsletterMenu{
+		bottom: 270px;
+		position: relative;
+		right: 290px;
+		.stay {
+			font-size: 24px;
+			color: #C30712;
+			font-family: RabbiHighway sans-serif;
+			font-weight: bold;
+
+		}
+		.news {
+			line-height: 30px;
+			font-family: StMarie sans-serif;
+			font-size: 24px;
+		}
+	}
+
+	.paperPlaneSolo{
+		position:relative;
+		left:45px;
+		top:40px;
+	}
+
+	.buttonsMenu{
+		position:relative;
+		bottom:50px;
+		a {
+			border: 1px black solid;
+			border-radius:28px;
+			padding:2%;
+			font-size:11px;
+			padding-right: 5%;
+			padding-left: 5%;
+			margin-right: 3%;
+			box-shadow: 0px 7px 16px 1px rgba(0,0,0,0.22);
+
+		}
+	}
+
+	.titleInfoMenu {
+		font-size: 16px;
 		font-family: RabbiHighway sans-serif;
-		font-size:24px;
+		color: #C30712;
+		margin-bottom: 15px;
+	}
+	.adressInfoMenu {
+		font-size: 14px;
+		font-family:  Aargh sans-serif;
+		text-transform: lowercase;
+		font-weight: bold;
+	}
+	.mailMenu {
+		font-family:  Aargh sans-serif;
+		font-size: 14px;
+		color: #C30712;
+		margin-top: 20px;
+		width: 290px;
+		font-weight: bold;
+	}
+	.copyrightMenu {
+		position:relative;
+		top: -100px;
+		right: -500px;
+		a {
+			display: flex;
+			bottom: 150px;
+			position: relative;
+			left: 205px;
+			font-size: 9px;
+			font-family:  Aargh sans-serif;
+		}
+	}
+	.infosMenu {
+		display: block;
+		position: relative;
+		bottom: 0px;
+		right: -35px;
+		top:-649px;
+		text-align: left;
+	}
+	.buttonsMenu{
+		bottom:235px;
+		right:150px;
 	}
 }
+/* ----------- Retina Screens ----------- */
+@media screen
+  and (min-device-width: 1200px)
+  and (max-device-width: 1600px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (min-resolution: 192dpi) {
 
-.paperPlaneSolo{
+	.logoMobile {
+		display:none;
+	}
+	.logoDeskop {
+		width:50%;
+		left:-570px;
+		position:relative;
+		top:-100px;
 
-	position: relative;
-	right: -50px;
-	top: 50px;
+	}
 
+	#menu{
+		margin: 230px -371px;
+		font-size: 24px;
+		ul{
+			font-size: 24px;
+			text-align: right;
+			bottom: 150px;
+			position: relative;
+			left: 870px;
+			line-height: initial;
+		}
+		li{
+			font-size:24px;
+		}
+		.logoMobile{
+			display:none;
+		}
+		.logoDeskop{
+			left: -217px;
+			top: -250px;
+		}
+	}
+
+	.socialIconMenu{
+		bottom:300px;
+		position:relative;
+		right:310px;
+		a{
+			margin-right:2%;
+		}
+	}
+
+	.newsletterMenu{
+		bottom: 270px;
+		position: relative;
+		right: 290px;
+		.stay {
+			font-size: 24px;
+			color: #C30712;
+			font-family: RabbiHighway sans-serif;
+			font-weight: bold;
+
+		}
+		.news {
+			line-height: 30px;
+			font-family: StMarie sans-serif;
+			font-size: 24px;
+		}
+	}
+
+	.paperPlaneSolo{
+		position:relative;
+		left:45px;
+		top:40px;
+	}
+
+	.buttonsMenu{
+		position:relative;
+		bottom:50px;
+		a {
+			border: 1px black solid;
+			border-radius:28px;
+			padding:2%;
+			font-size:11px;
+			padding-right: 5%;
+			padding-left: 5%;
+			margin-right: 3%;
+			box-shadow: 0px 7px 16px 1px rgba(0,0,0,0.22);
+
+		}
+	}
+
+	.titleInfoMenu {
+		font-size: 16px;
+		font-family: RabbiHighway sans-serif;
+		color: #C30712;
+		margin-bottom: 15px;
+	}
+	.adressInfoMenu {
+		font-size: 14px;
+		font-family:  Aargh sans-serif;
+		text-transform: lowercase;
+		font-weight: bold;
+	}
+	.mailMenu {
+		font-family:  Aargh sans-serif;
+		font-size: 14px;
+		color: #C30712;
+		margin-top: 20px;
+		width: 290px;
+		font-weight: bold;
+	}
+	.copyrightMenu {
+		position:relative;
+		top: -100px;
+		right: -500px;
+		a {
+			display: flex;
+			bottom: 150px;
+			position: relative;
+			left: 205px;
+			font-size: 9px;
+			font-family:  Aargh sans-serif;
+		}
+	}
+	.infosMenu {
+		display: block;
+		position: relative;
+		bottom: 0px;
+		right: -35px;
+		top:-649px;
+		text-align: left;
+	}
+	.buttonsMenu{
+		bottom:235px;
+		right:160px;
+	}
 }
-
-#menu1{
-	text-align: left;
-	font-size: 40px;
-	top: -115px;
-	position: relative;
-	right: -690px;
-}
-
-/* ----------- iPhone 6, 7, 8 AND XR MOBILE PORTRAIT----------- */
-@media screen and (max-width:768px) and (orientation:portrait) and 
-(-webkit-min-device-pixel-ratio: 2){
+//  HUAWEI LITE MATE 20 PRO
+@media screen
+  and (device-width: 360px)
+  and (device-height: 780px)
+  and (-webkit-device-pixel-ratio: 4)
+  and (orientation: portrait) {
 	#menu {
         z-index: 99;
         position: fixed;
@@ -264,7 +460,7 @@ header {
         top: 10px;
         color: black;
         display: none;
-        margin: 83px -30px;
+        margin: -20px -30px;
         text-decoration: none;
 		font-family: RabbiHighway sans-serif;
         font-weight: bold;
@@ -276,22 +472,30 @@ header {
         text-align: left;
         ul {
             line-height: 1rem;
-			margin-top:-10%;
+			margin-top:17%;
         }
         li {
             font-size: 18px;
         }
 		img{
 			width:20%;
-			top:-70px;
+			top:20px;
 			position:relative;
 			left:-34px;
 			display:block;
 		}
+		.logoMobile{
+			display:block;
+
+		}
+		.logoDeskop{
+			display:none;
+		}
     }
+
 	.socialIconMenu{
-		margin-top:10%;
-		margin-bottom:10%;
+		margin-top:7%;
+		margin-bottom:6%;
 		a{
 			font-size:39px;
 			margin:3%;
@@ -299,10 +503,13 @@ header {
 	}
 	.newsletterMenu{
 		text-transform: uppercase;
-		display:flex;
-		margin-top:10%;
+		// display:flex;
+		margin-top:7%;
 		.paperPlaneSolo{
-			order:3;
+			display:flex;
+			position:relative;
+			left:100px;
+			top:36px;
 		}
 		div{
 			display:flex;
@@ -320,22 +527,22 @@ header {
 	}
 	.buttonsMenu{
 		display:flex;
-		margin-bottom: 10%;
+		margin-bottom: 7%;
 		a {
 			border: 1px black solid;
 			border-radius:28px;
-			padding:2%; 
+			padding:2%;
 			font-size:11px;
 			padding-right: 5%;
 			padding-left: 5%;
 			margin-right: 3%;
-			; 
+			;
 			box-shadow: 0px 7px 16px 1px rgba(0,0,0,0.22);
 
 		}
 	}
 	.infosMenu{
-		margin-top:10%;
+		margin-top:7%;
 		.titleInfoMenu{
 			font-family: RabbiHighway sans-serif;
 			font-weight: bold;
@@ -349,7 +556,272 @@ header {
 			font-size:14px;
 			text-transform: initial;
 		}
-		
+
+		.mailMenu{
+			color:$red;
+			margin-top:3%;
+		}
+
+	}
+
+	.copyrightMenu{
+		display: flex;
+		justify-content: center;
+		position:relative;
+		top:15px;
+		right:60px;
+		font-family: Aargh sans-serif;
+		right:60px;
+
+		a{
+			font-size:9px;
+		}
+	}
+  }
+
+/* ----------- GALAXY MOBILE PORTRAIT----------- */
+@media screen
+  and (device-width: 360px)
+  and (device-height: 740px)
+  and (-webkit-device-pixel-ratio: 4)
+  and (orientation: portrait) {
+	#menu {
+        z-index: 99;
+        position: fixed;
+        left: calc(100% - 290px);
+        top: 10px;
+        color: black;
+        display: none;
+        margin: -20px -30px;
+        text-decoration: none;
+		font-family: RabbiHighway sans-serif;
+        font-weight: bold;
+        font-size: 18px;
+        text-transform: uppercase;
+        color: rgb(0, 0, 0);
+        padding: 0px;
+        width: 100%!important;
+        text-align: left;
+        ul {
+            line-height: 1rem;
+			margin-top:17%;
+        }
+        li {
+            font-size: 18px;
+        }
+		img{
+			width:20%;
+			top:20px;
+			position:relative;
+			left:-34px;
+			display:block;
+		}
+		.logoMobile{
+			display:block;
+
+		}
+		.logoDeskop{
+			display:none;
+		}
+    }
+
+	.socialIconMenu{
+		margin-top:7%;
+		margin-bottom:6%;
+		a{
+			font-size:39px;
+			margin:3%;
+		}
+	}
+	.newsletterMenu{
+		text-transform: uppercase;
+		// display:flex;
+		margin-top:7%;
+		.paperPlaneSolo{
+			display:flex;
+			position:relative;
+			left:100px;
+			top:36px;
+		}
+		div{
+			display:flex;
+			flex-direction: column;
+		}
+		.stay{
+			font-family: RabbiHighway sans-serif;
+			font-weight: bold;
+			color:$red;
+		}
+		.news{
+			font-family: StMarie sans-serif;
+
+		}
+	}
+	.buttonsMenu{
+		display:flex;
+		margin-bottom: 7%;
+		a {
+			border: 1px black solid;
+			border-radius:28px;
+			padding:2%;
+			font-size:11px;
+			padding-right: 5%;
+			padding-left: 5%;
+			margin-right: 3%;
+			;
+			box-shadow: 0px 7px 16px 1px rgba(0,0,0,0.22);
+
+		}
+	}
+	.infosMenu{
+		margin-top:7%;
+		.titleInfoMenu{
+			font-family: RabbiHighway sans-serif;
+			font-weight: bold;
+			color:$red;
+			text-transform: uppercase;
+			margin-bottom:3%;
+
+		}
+		p{
+			font-family: Aargh sans-serif;
+			font-size:14px;
+			text-transform: initial;
+		}
+
+		.mailMenu{
+			color:$red;
+			margin-top:3%;
+		}
+
+	}
+
+	.copyrightMenu{
+		display: flex;
+		justify-content: center;
+		position:relative;
+		top:15px;
+		right:60px;
+		font-family: Aargh sans-serif;
+		right:60px;
+
+		a{
+			font-size:9px;
+		}
+	}
+
+}
+
+/* ----------- iPhone 6, 7, 8 AND XR MOBILE PORTRAIT----------- */
+@media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 667px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+	#menu {
+        z-index: 99;
+        position: fixed;
+        left: calc(100% - 290px);
+        top: 10px;
+        color: black;
+        display: none;
+        margin: -20px -30px;
+        text-decoration: none;
+		font-family: RabbiHighway sans-serif;
+        font-weight: bold;
+        font-size: 18px;
+        text-transform: uppercase;
+        color: rgb(0, 0, 0);
+        padding: 0px;
+        width: 100%!important;
+        text-align: left;
+        ul {
+            line-height: 1rem;
+			margin-top:17%;
+        }
+        li {
+            font-size: 18px;
+        }
+		img{
+			width:20%;
+			top:20px;
+			position:relative;
+			left:-34px;
+			display:block;
+		}
+		.logoMobile{
+			display:block;
+
+		}
+		.logoDeskop{
+			display:none;
+		}
+    }
+
+	.socialIconMenu{
+		margin-top:7%;
+		margin-bottom:6%;
+		a{
+			font-size:39px;
+			margin:3%;
+		}
+	}
+	.newsletterMenu{
+		text-transform: uppercase;
+		// display:flex;
+		margin-top:7%;
+		.paperPlaneSolo{
+			display:flex;
+			position:relative;
+			left:100px;
+			top:36px;
+		}
+		div{
+			display:flex;
+			flex-direction: column;
+		}
+		.stay{
+			font-family: RabbiHighway sans-serif;
+			font-weight: bold;
+			color:$red;
+		}
+		.news{
+			font-family: StMarie sans-serif;
+
+		}
+	}
+	.buttonsMenu{
+		display:flex;
+		margin-bottom: 7%;
+		a {
+			border: 1px black solid;
+			border-radius:28px;
+			padding:2%;
+			font-size:11px;
+			padding-right: 5%;
+			padding-left: 5%;
+			margin-right: 3%;
+			;
+			box-shadow: 0px 7px 16px 1px rgba(0,0,0,0.22);
+
+		}
+	}
+	.infosMenu{
+		margin-top:7%;
+		.titleInfoMenu{
+			font-family: RabbiHighway sans-serif;
+			font-weight: bold;
+			color:$red;
+			text-transform: uppercase;
+			margin-bottom:3%;
+
+		}
+		p{
+			font-family: Aargh sans-serif;
+			font-size:14px;
+			text-transform: initial;
+		}
+
 		.mailMenu{
 			color:$red;
 			margin-top:3%;
@@ -373,30 +845,42 @@ header {
 }
 
 /* ----------- iPhone 6, 7, 8 AND XR MOBILE LANDSCAPE----------- */
-@media screen and (max-width:768px) and (orientation:landscape) and(-webkit-min-device-pixel-ratio: 2){
+@media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 667px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) {
 
 	#menu {
 		left: calc(65% - 350px);
 		top:-117px;
-		padding:initial; 
-		
+		padding:initial;
+
 		li{
 			font-size:18px;
 		}
 		img{
 			width:20%;
 			position:relative;
-			left:-400px;
+			right:80px;
+
 		}
 		ul{
 			line-height: initial;
+			top:50px;
+		}
+		.logoMobile{
+			display:block;
+		}
+		.logoDeskop{
+			display:none;
 		}
 	}
 
 	.socialIconMenu{
 		left:11px;
 		position:relative;
-		top:8px;
+		top:60px;
 	}
 
 	#menu1{
@@ -408,7 +892,7 @@ header {
 	}
 
 	.newsletterMenu{
-		top:-188px;
+		bottom:150px;
 		left:-357px;
 		position:relative;
 		.stay{
@@ -424,7 +908,7 @@ header {
 	}
 	.infosMenu{
 		position:relative;
-		top:-387px;
+		bottom:350px;
 		left:-75px;
 		text-align: left;
 		text-transform: initial;
@@ -445,14 +929,14 @@ header {
 		margin-bottom:5%;
 	}
 	.buttonsMenu{
-		top:-134px;
+		bottom:90px;
 		position:relative;
 		font-size:11px;
 		left:-200px;
 		a{
 			border: 1px black solid;
 			border-radius:28px;
-			padding:2%; 
+			padding:2%;
 			font-size:11px;
 			padding-right: 5%;
 			padding-left: 5%;
@@ -468,18 +952,18 @@ header {
 
 	.copyrightMenu{
 		position:relative;
-		top:-227px;
+		top:-170px;
 		font-size: 9px;
 		left:40px;
 		color:black;
 	}
 }
 /* Landscape */
-@media only screen 
-  and (min-device-width: 375px) 
-  and (max-device-width: 812px) 
+@media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 812px)
   and (-webkit-min-device-pixel-ratio: 3)
-  and (orientation: landscape) { 
+  and (orientation: landscape) {
 
 	  #menu {
 		  left: 285px;
@@ -493,21 +977,22 @@ header {
 }
 
 
-// iphone 6, 7, 8 plus and X Portrait
-@media only screen 
-  and (min-device-width: 375px) 
-  and (max-device-width: 812px) 
+// iphone 6, 7, 8 plus Portrait
+@media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 812px)
   and (-webkit-min-device-pixel-ratio: 3)
-  and (orientation: portrait) { 
+  and (orientation: portrait) {
 
 	#menu {
 		font-family: RabbiHighway sans-serif;
 		margin-top: initial;
-		left: initial;
+		left: 80px;
 		width: 240px !important;
-			text-align: left;
+		text-align: left;
 			ul {
 				line-height: 18px;
+				margin-top:initial;
 			}
 			li {
 				font-size: 20px;
@@ -518,10 +1003,15 @@ header {
 				display: block;
 				position: relative;
 				bottom: 20px;
+				top:-10px;
 				right: 25px;
 				margin-bottom: 10px;
+				margin-top:initial;
 			}
-	   } 
+			.logoDeskop{
+				display:none;
+			}
+	   }
 	   .hamburger-shell {
 		   top: 20px;
 	   }
@@ -531,7 +1021,7 @@ header {
 	   }
 	   .socialIconMenu {
 		   	font-size: 39px;
-		   	margin-top: 25px;
+		   	margin-top: 5%;
 			margin-bottom: initial;
 			display: flex;
 			justify-content: space-between;
@@ -542,7 +1032,7 @@ header {
 			color: #C30712;
 			font-family: StMarie sans-serif;
 			font-weight: bold;
-		
+
 	   }
 	   .news {
 			line-height: 30px;
@@ -550,12 +1040,12 @@ header {
 			font-size: 16px;
 	   }
 	   .buttonsMenu {
-			font-family: StMarie sans-serif;
+			font-family: RabbiHighway sans-serif;
 			font-size: 11px;
 			width: 300px;
 			display: flex;
-			margin-bottom: 50px;
-			margin-top: 10px;
+			margin-bottom: 5%;
+			margin-top: 5%;
 			a {
 				width:126.4px ;
 				height: 31.34px;
@@ -565,14 +1055,18 @@ header {
 				border-radius: 13px;
 				justify-content: center;
 				align-items: center;
-				-webkit-box-shadow: 0px 5px 9px -1px rgba(0, 0, 0, 0.22); 
+				-webkit-box-shadow: 0px 5px 9px -1px rgba(0, 0, 0, 0.22);
 				box-shadow: 0px 5px 9px -1px rgba(0, 0, 0, 0.22);
 			}
+	   }
+	   .newsletterMenu{
+		   margin-top: initial;
+		   bottom:15px;
 	   }
 	   .paperPlaneSolo {
 		display: flex;
 		position: relative;
-		left: 115px;
+		left: 110px;
 		top: 39px;
 	   }
 	   .titleInfoMenu {
@@ -586,6 +1080,9 @@ header {
 			font-family:  Aargh sans-serif;
 			text-transform: lowercase;
 			font-weight: bold;
+	   }
+	   .infosMenu{
+		   margin-top:10%;
 	   }
 	   .mailMenu {
 			font-family:  Aargh sans-serif;
@@ -601,17 +1098,17 @@ header {
 			font-weight: bold;
 			display: flex;
 			position: relative;
-			top: 15px;
-			left: 22px;
+			top: 30px;
+			left: 45px;
 	   }
 }
 // iphone 6, 7,8 plus landscape
 
-@media only screen 
-  and (min-device-width: 414px) 
-  and (max-device-width: 736px) 
+@media only screen
+  and (min-device-width: 414px)
+  and (max-device-width: 736px)
   and (-webkit-min-device-pixel-ratio: 3)
-  and (orientation: landscape) { 
+  and (orientation: landscape) {
 
 	#menu {
 		font-family: RabbiHighway sans-serif;
@@ -636,7 +1133,13 @@ header {
 				top: 122px;
 				right: 105px;
 			}
-	   } 
+			.logoDeskop{
+				display:none;
+			}
+			.logoMobile{
+				display:block;
+			}
+	   }
 	   .menu-name {
 		font-size: 14px;
 		left: 10px;
@@ -667,7 +1170,7 @@ header {
 		color: #C30712;
 		font-family: StMarie sans-serif;
 		font-weight: bold;
-	
+
 	}
 	.news {
 		line-height: 30px;
@@ -694,7 +1197,7 @@ header {
 			border-radius: 13px;
 			justify-content: center;
 			align-items: center;
-			-webkit-box-shadow: 0px 5px 9px -1px rgba(0, 0, 0, 0.22); 
+			-webkit-box-shadow: 0px 5px 9px -1px rgba(0, 0, 0, 0.22);
 			box-shadow: 0px 5px 9px -1px rgba(0, 0, 0, 0.22);
 		}
 	}
@@ -747,7 +1250,7 @@ header {
 		bottom: 10px;
 	}
 }
-@media only screen 
+@media only screen
     and (min-device-width: 375px)
     and (max-device-height: 812px)
     and (orientation : landscape)
@@ -779,7 +1282,10 @@ header {
 					top: 122px;
 					right: 105px;
 				}
-		   } 
+				.logoDeskop{
+					display:none;
+				}
+		   }
 		   .menu-name {
 			font-size: 14px;
 			left: 10px;
@@ -810,7 +1316,7 @@ header {
 			color: #C30712;
 			font-family: StMarie sans-serif;
 			font-weight: bold;
-		
+
 		}
 		.news {
 			line-height: 30px;
@@ -837,7 +1343,7 @@ header {
 				border-radius: 13px;
 				justify-content: center;
 				align-items: center;
-				-webkit-box-shadow: 0px 5px 9px -1px rgba(0, 0, 0, 0.22); 
+				-webkit-box-shadow: 0px 5px 9px -1px rgba(0, 0, 0, 0.22);
 				box-shadow: 0px 5px 9px -1px rgba(0, 0, 0, 0.22);
 			}
 		}
@@ -891,20 +1397,391 @@ header {
 		}
  }
 
-	/* Landscape */
-	@media only screen 
-	and (min-device-width: 375px) 
-	and (max-device-width: 812px) 
-	and (-webkit-min-device-pixel-ratio: 3)
-	and (orientation: landscape) { 
 
-		// #menu {
-		// 	left: 100px;
-		// 	top: -119px;
-		// 	width: 287px;
-		// 	font-size: 35px;
-		// }
-		#menu ul {
-			line-height: 1.8rem;
+// IPHONE X
+ @media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 812px)
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: portrait) {
+
+	#menu {
+        z-index: 99;
+        position: fixed;
+        left: calc(100% - 290px);
+        top: 10px;
+        color: black;
+        display: none;
+        margin: -20px -30px;
+        text-decoration: none;
+		font-family: RabbiHighway sans-serif;
+        font-weight: bold;
+        font-size: 18px;
+        text-transform: uppercase;
+        color: rgb(0, 0, 0);
+        padding: 0px;
+        width: 100%!important;
+        text-align: left;
+        ul {
+            line-height: 1rem;
+			margin-top:17%;
+        }
+        li {
+            font-size: 18px;
+        }
+		img{
+			width:20%;
+			top:20px;
+			position:relative;
+			left:-34px;
+			display:block;
 		}
+		.logoMobile{
+			display:block;
+
+		}
+		.logoDeskop{
+			display:none;
+		}
+    }
+
+	.socialIconMenu{
+		margin-top:7%;
+		margin-bottom:6%;
+		a{
+			font-size:39px;
+			margin:3%;
+		}
+	}
+	.newsletterMenu{
+		text-transform: uppercase;
+		// display:flex;
+		margin-top:7%;
+		.paperPlaneSolo{
+			display:flex;
+			position:relative;
+			left:100px;
+			top:36px;
+		}
+		div{
+			display:flex;
+			flex-direction: column;
+		}
+		.stay{
+			font-family: RabbiHighway sans-serif;
+			font-weight: bold;
+			color:$red;
+		}
+		.news{
+			font-family: StMarie sans-serif;
+
+		}
+	}
+	.buttonsMenu{
+		display:flex;
+		margin-bottom: 7%;
+		a {
+			border: 1px black solid;
+			border-radius:28px;
+			padding:2%;
+			font-size:11px;
+			padding-right: 5%;
+			padding-left: 5%;
+			margin-right: 3%;
+			;
+			box-shadow: 0px 7px 16px 1px rgba(0,0,0,0.22);
+
+		}
+	}
+	.infosMenu{
+		margin-top:7%;
+		.titleInfoMenu{
+			font-family: RabbiHighway sans-serif;
+			font-weight: bold;
+			color:$red;
+			text-transform: uppercase;
+			margin-bottom:3%;
+
+		}
+		p{
+			font-family: Aargh sans-serif;
+			font-size:14px;
+			text-transform: initial;
+		}
+
+		.mailMenu{
+			color:$red;
+			margin-top:3%;
+		}
+
+	}
+
+	.copyrightMenu{
+		display: flex;
+		justify-content: center;
+		position:relative;
+		top:15px;
+		right:60px;
+		font-family: Aargh sans-serif;
+		right:60px;
+
+		a{
+			font-size:9px;
+		}
+	}
+
 }
+/* ----------- iPad 3, 4 and Pro 9.7 Portrait  -----------*/
+@media only screen
+  and (min-device-width: 768px)
+  and (max-device-width: 1024px)
+  and (orientation: portrait)
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+	#menu{
+		margin: 230px -371px;
+		font-size: 24px;
+		ul{
+			font-size: 24px;
+			text-align: left;
+			bottom: 150px;
+			position: relative;
+			left: 30px;
+			line-height: initial;
+		}
+		li{
+			font-size:24px;
+		}
+		.logoMobile{
+			display:block;
+			width:20%;
+			position:relative;
+			bottom:194px;
+		}
+
+		.logoDeskop{
+			display:none
+		}
+	}
+
+	.socialIconMenu{
+		bottom:120px;
+		position:relative;
+		right:245px;
+
+	}
+
+	.newsletterMenu{
+		bottom: 110px;
+		position: relative;
+		right: 197px;
+		.stay {
+			font-size: 24px;
+			color: #C30712;
+			font-family: RabbiHighway sans-serif;
+			font-weight: bold;
+			position:relative;
+			left:-3px;
+
+		}
+		.news {
+			line-height: 30px;
+			font-family: StMarie sans-serif;
+			font-size: 24px;
+		}
+	}
+
+	.paperPlaneSolo{
+		position:relative;
+		left:45px;
+		top:40px;
+	}
+
+	.buttonsMenu{
+		position:relative;
+		bottom:50px;
+		a {
+			border: 1px black solid;
+			border-radius:28px;
+			padding:2%;
+			font-size:11px;
+			padding-right: 5%;
+			padding-left: 5%;
+			margin-right: 3%;
+			box-shadow: 0px 7px 16px 1px rgba(0,0,0,0.22);
+
+		}
+	}
+
+	.titleInfoMenu {
+		font-size: 16px;
+		font-family: RabbiHighway sans-serif;
+		color: #C30712;
+		margin-bottom: 15px;
+	}
+	.adressInfoMenu {
+		font-size: 14px;
+		font-family:  Aargh sans-serif;
+		text-transform: lowercase;
+		font-weight: bold;
+	}
+	.mailMenu {
+		font-family:  Aargh sans-serif;
+		font-size: 14px;
+		color: #C30712;
+		margin-top: 20px;
+		width: 290px;
+		font-weight: bold;
+	}
+	.copyrightMenu {
+		position:relative;
+		top:250px;
+		a {
+			display: flex;
+			bottom: 150px;
+			position: relative;
+			left: 205px;
+			font-size: 9px;
+			font-family:  Aargh sans-serif;
+		}
+	}
+	.infosMenu {
+		display: block;
+		position: relative;
+		bottom: 0px;
+		right: -35px;
+		text-align: left;
+	}
+	.buttonsMenu{
+		bottom:90px;
+		right:90px;
+	}
+}
+
+/* ----------- iPad 3, 4 and Pro 9.7 Landscape  -----------*/
+@media only screen
+  and (min-device-width: 768px)
+  and (max-device-width: 1024px)
+  and (orientation: landscape)
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+	#menu{
+		margin: 230px -371px;
+		font-size: 24px;
+		ul{
+			font-size: 24px;
+			text-align: right;
+			bottom: 150px;
+			position: relative;
+			left: 360px;
+			line-height: initial;
+		}
+		li{
+			font-size:24px;
+		}
+		.logoMobile{
+			display:none;
+		}
+		.logoDeskop{
+			left: -315px;
+			top: -250px;
+			width:30%;
+			position:relative;
+		}
+	}
+
+	.socialIconMenu{
+		bottom:300px;
+		position:relative;
+		right:310px;
+		a{
+			margin-right:2%;
+		}
+	}
+
+	.newsletterMenu{
+		bottom: 270px;
+		position: relative;
+		right: 290px;
+		.stay {
+			font-size: 24px;
+			color: #C30712;
+			font-family: RabbiHighway sans-serif;
+			font-weight: bold;
+
+		}
+		.news {
+			line-height: 30px;
+			font-family: StMarie sans-serif;
+			font-size: 24px;
+		}
+	}
+
+	.paperPlaneSolo{
+		position:relative;
+		left:45px;
+		top:40px;
+	}
+
+	.buttonsMenu{
+		position:relative;
+		bottom:50px;
+		a {
+			border: 1px black solid;
+			border-radius:28px;
+			padding:2%;
+			font-size:11px;
+			padding-right: 5%;
+			padding-left: 5%;
+			margin-right: 3%;
+			box-shadow: 0px 7px 16px 1px rgba(0,0,0,0.22);
+
+		}
+	}
+
+	.titleInfoMenu {
+		font-size: 16px;
+		font-family: RabbiHighway sans-serif;
+		color: #C30712;
+		margin-bottom: 15px;
+	}
+	.adressInfoMenu {
+		font-size: 14px;
+		font-family:  Aargh sans-serif;
+		text-transform: lowercase;
+		font-weight: bold;
+	}
+	.mailMenu {
+		font-family:  Aargh sans-serif;
+		font-size: 14px;
+		color: #C30712;
+		margin-top: 20px;
+		width: 290px;
+		font-weight: bold;
+	}
+	.copyrightMenu {
+		position:relative;
+		top:-100px;
+		a {
+			display: flex;
+			bottom: 150px;
+			position: relative;
+			left: 380px;
+			font-size: 9px;
+			font-family:  Aargh sans-serif;
+		}
+	}
+	.infosMenu {
+		display: block;
+		position: relative;
+		bottom: 0px;
+		right: -35px;
+		top:-649px;
+		text-align: left;
+	}
+	.buttonsMenu{
+		bottom:235px;
+		right:160px;
+	}
+}
+
